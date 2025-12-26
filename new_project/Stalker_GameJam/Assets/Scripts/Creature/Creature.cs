@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Creature : MonoBehaviour
 {
+    public int CurrentHealth => currentHealth;
+    public int MaxHealth => creatureData != null ? creatureData.maxHealth : 0;
+
     [Header("Data")]
     [SerializeField] private CreatureData creatureData;
     [SerializeField] private WeaponData weaponData;

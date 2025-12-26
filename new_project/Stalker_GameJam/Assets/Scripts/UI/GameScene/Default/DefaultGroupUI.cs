@@ -12,6 +12,7 @@ public class DefaultGroupUI : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI playerCurrentObjectText;
+    public Player player;
 
     // Start is called before the first frame update
     void Start()
@@ -30,10 +31,10 @@ public class DefaultGroupUI : MonoBehaviour
 
         // 플레이어 체력
         healthBar.fillAmount =
-            (float)GameManager.Instance.Player.CurrentHealth
-            / GameManager.Instance.Player.MaxHealth;
+            (float)player.CurrentHealth
+            / player.MaxHealth;
         healthText.text =
-            $"{GameManager.Instance.Player.CurrentHealth:D2}/{GameManager.Instance.Player.MaxHealth:D2}";
+            $"{player.CurrentHealth:D2}/{player.MaxHealth:D2}";
 
         // 플레이어 경험치
         // TODO - 다음 머지에 추가

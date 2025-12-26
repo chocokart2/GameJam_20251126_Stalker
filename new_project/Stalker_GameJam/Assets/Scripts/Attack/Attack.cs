@@ -19,7 +19,6 @@ public abstract class Attack : MonoBehaviour
     {
         if (target == null) return false;
         if (target.Type == immuneTargetType) return false;
-        if (owner != null && target.Type == owner.Type) return false; // 아군 판정
         if (target.IsDead) return false;
         return true;
     }

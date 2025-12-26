@@ -228,7 +228,7 @@ MonoBehaviour:
   weaponData: {fileID: 11400000, guid: cc6bd02e666b59c44a9824af81c67b3d, type: 2}
   firePoint: {fileID: 1628661481696392784}
   knockbackOrigin: {fileID: 880524485147700389}
-  rb: {fileID: 6826898293715688419}
+  rb: {fileID: 8165805557654696345}
   currentHealth: 0
   currentBulletCount: 0
   target: {fileID: 0}
@@ -239,9 +239,9 @@ MonoBehaviour:
   fireAngleTolerance: 5
   useLeadShot: 0
   maxLeadTime: 0.5
---- !u!54 &6826898293715688419 stripped
+--- !u!54 &8165805557654696345 stripped
 Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 3623318305345992141, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+  m_CorrespondingSourceObject: {fileID: 2135933266004189111, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
     type: 3}
   m_PrefabInstance: {fileID: 7851637955070635566}
   m_PrefabAsset: {fileID: 0}

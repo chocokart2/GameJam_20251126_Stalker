@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Player : Creature
 {
+    public float PushSkillCooldown => pushSkillCooldown;
+
     [Header("Move")]
     [SerializeField] private float moveSpeed = 6f;
 
@@ -15,7 +17,8 @@ public class Player : Creature
 
     private bool hasAim;
     private Vector3 aimDir; // y=0 평면 방향
-
+    private float pushSkillCooldown = 0f;
+    
 
     protected override void Update()
     {
@@ -30,7 +33,7 @@ public class Player : Creature
         if (wantsFire) TryFire();
 
         wantsPush = Input.GetKeyDown(KeyCode.C);
-        if (wantsPush)
+        if (wantsPush) TryPushSkill();
 
         if (Input.GetKeyDown(KeyCode.R)) TryReload();
     }
@@ -107,7 +110,11 @@ public class Player : Creature
 
     protected override void Die()
     {
-        Destroy(gameObject);
         Debug.Log("Player has died!");
+    }
+
+    private void TryPushSkill()
+    {
+
     }
 }

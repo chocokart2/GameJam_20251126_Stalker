@@ -140,7 +140,7 @@ public class Creature : MonoBehaviour
     {
         if (weaponData == null || weaponData.attackPrefab == null) return;
 
-        Attack atk = Instantiate(weaponData.attackPrefab, FirePoint.position, FirePoint.rotation);
+        Attack atk = Instantiate(weaponData.attackPrefab, FirePoint.position, GetFireRotation());
         atk.SetOwner(this);
 
         // Bullet이면 무기 데이터로 세팅
@@ -157,7 +157,10 @@ public class Creature : MonoBehaviour
             );
         }
     }
-
+    protected virtual Quaternion GetFireRotation()
+    {
+        return FirePoint.rotation;
+    }
     // ------------------------
     // Push Skill Runtime
     // ------------------------

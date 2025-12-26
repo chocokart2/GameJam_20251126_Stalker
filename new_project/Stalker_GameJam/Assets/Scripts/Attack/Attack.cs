@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-///     ¸ðµç °ø°Ý ¹üÀ§ °ÔÀÓ¿ÀºêÁ§Æ®¿¡ ´ëÇÑ ¼­¼ú
+///     ëª¨ë“  ê³µê²© ë²”ìœ„ ê²Œìž„ì˜¤ë¸Œì íŠ¸ì— ëŒ€í•œ ì„œìˆ 
 /// </summary>
 public abstract class Attack : MonoBehaviour
 {
@@ -12,7 +12,7 @@ public abstract class Attack : MonoBehaviour
     [SerializeField] protected float stunDuration;
     [SerializeField] protected CreatureType immuneTargetType;
 
-    // Bullet ¸Þ¼­µåÀÇ ÄÁÇÇ±Ô¾î ¸Þ¼­µå¿Í ºñ½ÁÇÔ
+    // Bullet ë©”ì„œë“œì˜ ì»¨í”¼ê·œì–´ ë©”ì„œë“œì™€ ë¹„ìŠ·í•¨
     public void Configure(
         int _damage,
         float _knockbackForce,
@@ -46,14 +46,13 @@ public abstract class Attack : MonoBehaviour
     {
         if (target == null) return false;
         if (target.Type == immuneTargetType) return false;
-        //if (owner != null && target.Type == owner.Type) return false; // ¾Æ±º ÆÇÁ¤
         if (target.IsDead) return false;
         return true;
     }
 
-    // KR: °á·Ð. ¸ðµç °ø°Ý ¹Ý¿µ ·ÎÁ÷Àº ÀÌ ºÎ¸ð Å¬·¡½º¿¡¼­ Ã³¸®ÇÑ´Ù.
+    // KR: ê²°ë¡ . ëª¨ë“  ê³µê²© ë°˜ì˜ ë¡œì§ì€ ì´ ë¶€ëª¨ í´ëž˜ìŠ¤ì—ì„œ ì²˜ë¦¬í•œë‹¤.
     // EN: In conclusion, all attack application logic is handled in this parent class.
-    // KR: ±Ù°Å 1) ÀÚ½Ä °ø°Ý ¿ÀºêÁ§Æ®µéÀº ÀüºÎ Ãæµ¹Ã¼¸¦ °¡Áü. ±×¸®°í Ãæµ¹ ½Ã Ã³¸®ÇÏ´Â ³»¿ëÀº "¸é¿ª ÆÇÁ¤, µ¥¹ÌÁö ¹Ý¿µ, ³Ë¹é ¹Ý¿µ"À» ´Ù ¶È°°ÀÌ Ã³¸®ÇÏ±â ¶§¹®. ¹Ù²î´Â°ÍÀº ÇØ´ç ÇÔ¼ö ³» º¯¼öÀÇ °ªÀÏ »Ó ·ÎÁ÷Àº ¹Ù²îÁö ¾Ê¾Æ¼­ ´ÙÇü¼º, °¡»óÇÔ¼ö, ÇÔ¼ö ¿À¹ö¶óÀÌµåµµ ÇÊ¿äÇÏÁö ¾ÊÀ½.
+    // KR: ê·¼ê±° 1) ìžì‹ ê³µê²© ì˜¤ë¸Œì íŠ¸ë“¤ì€ ì „ë¶€ ì¶©ëŒì²´ë¥¼ ê°€ì§. ê·¸ë¦¬ê³  ì¶©ëŒ ì‹œ ì²˜ë¦¬í•˜ëŠ” ë‚´ìš©ì€ "ë©´ì—­ íŒì •, ë°ë¯¸ì§€ ë°˜ì˜, ë„‰ë°± ë°˜ì˜"ì„ ë‹¤ ë˜‘ê°™ì´ ì²˜ë¦¬í•˜ê¸° ë•Œë¬¸. ë°”ë€ŒëŠ”ê²ƒì€ í•´ë‹¹ í•¨ìˆ˜ ë‚´ ë³€ìˆ˜ì˜ ê°’ì¼ ë¿ ë¡œì§ì€ ë°”ë€Œì§€ ì•Šì•„ì„œ ë‹¤í˜•ì„±, ê°€ìƒí•¨ìˆ˜, í•¨ìˆ˜ ì˜¤ë²„ë¼ì´ë“œë„ í•„ìš”í•˜ì§€ ì•ŠìŒ.
     // EN: Rationale 1) All child attack objects have colliders. And the content processed upon collision is the same: "immunity check, damage application, knockback application". The only thing that changes are the values of the variables within that function, so polymorphism, virtual functions, and function overrides are not necessary.
     private void OnTriggerEnter(Collider collider)
     //protected void ApplyHit(Creature target)
@@ -63,19 +62,19 @@ public abstract class Attack : MonoBehaviour
 
         if (!CanHit(target)) return;
 
-        // 1) µ¥¹ÌÁö
+        // 1) ë°ë¯¸ì§€
         if (damage != 0)
             target.TakeDamage(damage);
 
-        // 2) ³Ë¹é
+        // 2) ë„‰ë°±
         if (knockbackForce > 0f)
             ApplyKnockback(target);
 
-        // 3) ½ºÅÏ
+        // 3) ìŠ¤í„´
         if (stunDuration > 0f)
             target.ApplyStun(stunDuration);
 
-        // 4) ÆÄ»ý Ã³¸®(ÃÑ¾Ë ÆÄ±«, ÀÌÆåÆ® µî)
+        // 4) íŒŒìƒ ì²˜ë¦¬(ì´ì•Œ íŒŒê´´, ì´íŽ™íŠ¸ ë“±)
         OnHit(target);
     }
 

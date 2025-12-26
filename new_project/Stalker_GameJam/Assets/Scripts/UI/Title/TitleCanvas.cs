@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TitleCanvas : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public void OnClickStart() 
+    { 
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene("Map1Scene");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnClickExit()
     {
-        
+        Application.Quit();
+
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }

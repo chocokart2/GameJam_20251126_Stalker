@@ -325,6 +325,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   aimMaxDistance: 500
+  pushSkillData: {fileID: 11400000, guid: 251afdf6eb0126b4aa0e9ad8123e9094, type: 2}
+  instancePushSkillCooldown: 0
 --- !u!114 &2945624410019512347
 MonoBehaviour:
   m_ObjectHideFlags: 0

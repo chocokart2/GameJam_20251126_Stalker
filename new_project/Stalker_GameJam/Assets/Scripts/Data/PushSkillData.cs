@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "PushSkillData", menuName = "Scriptable Objects/PushSkillData")]
 public class PushSkillData : SkillData
 {
     public float range;

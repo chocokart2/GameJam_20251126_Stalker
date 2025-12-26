@@ -2,7 +2,12 @@ using UnityEngine;
 
 public class MeleeAttack : Attack
 {
+    public void Start()
+    {
+        // VFX/SFX º“»Ø
 
+        Destroy(gameObject, 1f);
+    }
 
     //[Header("Skill")]
     //[SerializeField] private PushSkillData pushData;

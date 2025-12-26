@@ -51,16 +51,17 @@ public class Bullet : Attack
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log($"HIT RAW: {other.name}");
+    //부모가 처리함
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    Debug.Log($"HIT RAW: {other.name}");
 
-        Creature target = other.GetComponentInParent<Creature>();
-        if (target == null) return;
+    //    Creature target = other.GetComponentInParent<Creature>();
+    //    if (target == null) return;
 
-        ApplyHit(target);
-        Debug.Log($"HIT: {other.name}");
-    }
+    //    ApplyHit(target);
+    //    Debug.Log($"HIT: {other.name}");
+    //}
 
     protected override void OnHit(Creature target)
     {

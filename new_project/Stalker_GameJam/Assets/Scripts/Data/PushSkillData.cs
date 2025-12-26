@@ -7,4 +7,5 @@ public class PushSkillData : SkillData
     public int damage;
     public float knockbackForce;
     public float stunDuration;
+    public GameObject prefab;
 }

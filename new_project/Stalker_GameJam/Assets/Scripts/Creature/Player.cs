@@ -1,8 +1,9 @@
 using UnityEngine;
+using static UnityEngine.Mesh;
 
 public class Player : Creature
 {
-    public float PushSkillCooldown => pushSkillCooldown;
+    public float PushSkillCooldown => Mathf.Max(nextPushTime - Time.time, 0);
 
     [Header("Move")]
     [SerializeField] private float moveSpeed = 6f;
@@ -11,13 +12,18 @@ public class Player : Creature
     [SerializeField] private LayerMask aimMask;         // Ground만 체크 추천
     [SerializeField] private float aimMaxDistance = 500f;
 
+    [Header("Push Skill")]
+    [SerializeField] PushSkillData pushSkillData;
+    public PushSkillData PushSkillData => pushSkillData;
+    float nextPushTime = 0f;
+    public float instancePushSkillCooldown;
+
     private Vector2 moveInput;
     private bool wantsFire;
     private bool wantsPush;
 
     private bool hasAim;
     private Vector3 aimDir; // y=0 평면 방향
-    private float pushSkillCooldown = 0f;
     
 
     protected override void Update()
@@ -33,7 +39,10 @@ public class Player : Creature
         if (wantsFire) TryFire();
 
         wantsPush = Input.GetKeyDown(KeyCode.C);
-        if (wantsPush) TryPushSkill();
+        if (wantsPush)
+        {
+            TryPushSkill();
+        }
 
         if (Input.GetKeyDown(KeyCode.R)) TryReload();
     }
@@ -113,8 +122,33 @@ public class Player : Creature
         Debug.Log("Player has died!");
     }
 
+    private bool CanPushNow()
+    {
+        if (IsDead || IsStunned) return false;
+        if (pushSkillData == null) return false;
+        if (Time.time < nextPushTime) return false;
+        return true;
+    }
+
     private void TryPushSkill()
     {
+        Debug.Assert(pushSkillData != null, "Push Skill Data is not assigned!");
+        Debug.Assert(pushSkillData.prefab != null, "Push Skill Prefab is not assigned!");
 
+        if (!CanPushNow()) return;
+        nextPushTime = Time.time + pushSkillData.cooldown;
+
+        // MeleeAttack은 “발동 즉시 판정”이라 Instantiate 후 즉시 Activate 호출하고 끝
+        GameObject go = Instantiate(pushSkillData.prefab, transform.position, transform.rotation);
+        MeleeAttack meleeAttack = go.GetComponent<MeleeAttack>();
+        meleeAttack.Configure(
+            pushSkillData,
+            this); //
+        //MeleeAttack melee = Instantiate(meleePrefab, transform.position, transform.rotation);
+        //melee.Activate(this, pushData);
+        // 히트박스가 지속되지 않으니 바로 제거
+        //Destroy(melee.gameObject);
+
+        return; // true;
     }
 }

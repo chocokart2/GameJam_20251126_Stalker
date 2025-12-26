@@ -15,7 +15,7 @@ MonoBehaviour:
   weaponId: WPN_001_PLAYERGUN
   weaponType: 0
   damage: 20
-  fireRate: 500
+  fireRate: 120
   range: 20
   maxAmmo: 15
   bulletReloadTime: 2

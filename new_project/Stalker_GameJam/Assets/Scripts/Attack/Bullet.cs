@@ -9,40 +9,57 @@ public class Bullet : Attack
 
     private Vector3 spawnPos;
     private float dieAtTime;
+    private Rigidbody rb;
+
     private void Awake()
     {
-        spawnPos = transform.position;
+        rb = GetComponent<Rigidbody>(); // 루트에 Rigidbody
     }
 
     private void OnEnable()
     {
         spawnPos = transform.position;
         dieAtTime = Time.time + lifeTime;
+
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.position = transform.position;
+            rb.rotation = transform.rotation;
+        }
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        transform.position += transform.forward * moveSpeed * Time.deltaTime;
+        if (Time.time >= dieAtTime) { Destroy(gameObject); return; }
 
-        if (Time.time >= dieAtTime)
+        if (range > 0f && (transform.position - spawnPos).sqrMagnitude >= range * range)
         {
             Destroy(gameObject);
             return;
         }
 
-        if (range > 0f && Vector3.SqrMagnitude(transform.position - spawnPos) >= range * range)
+        if (rb != null)
         {
-            Destroy(gameObject);
-            return;
+            Vector3 nextPos = rb.position + transform.forward * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(nextPos);
+        }
+        else
+        {
+            transform.position += transform.forward * moveSpeed * Time.fixedDeltaTime;
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"HIT RAW: {other.name}");
+
         Creature target = other.GetComponentInParent<Creature>();
         if (target == null) return;
 
         ApplyHit(target);
+        Debug.Log($"HIT: {other.name}");
     }
 
     protected override void OnHit(Creature target)
@@ -50,7 +67,6 @@ public class Bullet : Attack
         Destroy(gameObject);
     }
 
-    // Creature가 무기 데이터로 세팅하게끔
     public void Configure(int dmg, float speed, float rng, float stun, float kb, Transform origin)
     {
         damage = dmg;

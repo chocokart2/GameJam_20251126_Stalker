@@ -102,6 +102,7 @@ public class Player : Creature
 
     protected override void Die()
     {
+        Destroy(gameObject);
         Debug.Log("Player has died!");
     }
 }

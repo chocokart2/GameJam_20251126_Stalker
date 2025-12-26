@@ -15,10 +15,10 @@ MonoBehaviour:
   weaponId: WPN_001_ENEYMGUN
   weaponType: 0
   damage: 15
-  fireRate: 400
+  fireRate: 60
   range: 20
   maxAmmo: 15
   bulletReloadTime: 3
   attackPrefab: {fileID: 4182758190909113278, guid: 01443fb36cbaad7428e345b8775bf608,
     type: 3}
-  projectileSpeed: 0
+  projectileSpeed: 10

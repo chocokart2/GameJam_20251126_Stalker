@@ -18,6 +18,9 @@ public class Creature : MonoBehaviour
     [SerializeField] private int currentHealth;
     [SerializeField] private int currentBulletCount;
 
+    public float AttackRange => weaponData != null ? weaponData.range : 0f;
+    public float ProjectileSpeed => weaponData != null ? weaponData.projectileSpeed : 0f;
+
     private bool reloading;
     private float stunRemain;
 
@@ -26,6 +29,7 @@ public class Creature : MonoBehaviour
 
     public CreatureType Type => creatureData != null ? creatureData.creatureType : CreatureType.Enemy;
     public float MoveSpeed => creatureData != null ? creatureData.moveSpeed : 0f;
+
 
     public bool IsDead => currentHealth <= 0;
     public bool IsStunned => stunRemain > 0f;

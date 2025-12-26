@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 893d92a1d06eb8a4aa5ef8f0a66963dc, type: 3}
   m_Name: EnemyData
   m_EditorClassIdentifier: 
-  creatureType: 0
-  memberName: 
-  maxHealth: 0
-  moveSpeed: 0
+  creatureType: 1
+  memberName: Enemy001
+  maxHealth: 80
+  moveSpeed: 2.6
   pushSkillData: {fileID: 0}

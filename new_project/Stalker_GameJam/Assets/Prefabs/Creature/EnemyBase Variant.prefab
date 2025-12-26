@@ -132,7 +132,7 @@ PrefabInstance:
     - target: {fileID: 8318851792577338778, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -7.7
       objectReference: {fileID: 0}
     - target: {fileID: 8318851792577338778, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
@@ -168,6 +168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821625759948494974, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.73
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3394922697501247902, guid: 8cfd6269f01fbf54ca9b8c839ba18761, type: 3}
@@ -220,12 +225,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureData: {fileID: 11400000, guid: 0396376c61e1efe478c2e881d5e59424, type: 2}
-  weaponData: {fileID: 11400000, guid: f3db9abb58aabd84680963b8f66e0888, type: 2}
+  weaponData: {fileID: 11400000, guid: cc6bd02e666b59c44a9824af81c67b3d, type: 2}
   firePoint: {fileID: 1628661481696392784}
   knockbackOrigin: {fileID: 880524485147700389}
   rb: {fileID: 6826898293715688419}
   currentHealth: 0
   currentBulletCount: 0
+  target: {fileID: 0}
+  searchRange: 25
+  attackRangeOverride: 0
+  notFoundDieSeconds: 120
+  turnDegPerSec: 720
+  fireAngleTolerance: 5
+  useLeadShot: 0
+  maxLeadTime: 0.5
 --- !u!54 &6826898293715688419 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 3623318305345992141, guid: 8cfd6269f01fbf54ca9b8c839ba18761,

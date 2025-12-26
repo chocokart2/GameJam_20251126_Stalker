@@ -120,6 +120,8 @@ public class Player : Creature
     protected override void Die()
     {
         Debug.Log("Player has died!");
+
+        Destroy(gameObject);
     }
 
     private bool CanPushNow()

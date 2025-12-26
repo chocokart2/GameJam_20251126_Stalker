@@ -38,8 +38,8 @@ public class DefaultGroupUI : MonoBehaviour
             $"{player.CurrentHealth:D2}/{player.MaxHealth:D2}";
 
         // 플레이어 스킬 쿨타임
-        skillCooltimeBar.fillAmount =
-            1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
+        //skillCooltimeBar.fillAmount =
+        //    1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
 
         // 플레이어 경험치
         // TODO - 다음 머지에 추가

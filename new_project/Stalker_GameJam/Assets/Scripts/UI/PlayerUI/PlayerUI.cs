@@ -7,7 +7,7 @@ public class PlayerUI : MonoBehaviour
     public List<Transform> MissionPosition;
     public int missionIndex;
     public Transform navigatorArrow;
-    public GameObject PushCooltimeUI;
+    //public GameObject PushCooltimeUI;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +19,6 @@ public class PlayerUI : MonoBehaviour
     void Update()
     {
         navigatorArrow.LookAt(MissionPosition[missionIndex]);
-        PushCooltimeUI.transform.forward = Camera.main.transform.forward;
+        // PushCooltimeUI.transform.forward = Camera.main.transform.forward;
     }
 }

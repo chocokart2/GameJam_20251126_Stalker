@@ -25,6 +25,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3470462421924104062, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623318305345992141, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623318305345992141, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8318851792577338778, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -74,6 +89,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8821625759948494974, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.679
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3394922697501247902, guid: 8cfd6269f01fbf54ca9b8c839ba18761, type: 3}
@@ -128,3 +148,8 @@ MonoBehaviour:
   rb: {fileID: 6140348617200021199}
   currentHealth: 0
   currentBulletCount: 0
+  moveSpeed: 6
+  aimMask:
+    serializedVersion: 2
+    m_Bits: 8
+  aimMaxDistance: 500

@@ -11,9 +11,11 @@ public class Player : Creature
 
     private Vector2 moveInput;
     private bool wantsFire;
+    private bool wantsPush;
 
     private bool hasAim;
     private Vector3 aimDir; // y=0 평면 방향
+
 
     protected override void Update()
     {
@@ -26,6 +28,9 @@ public class Player : Creature
 
         wantsFire = Input.GetMouseButton(0);
         if (wantsFire) TryFire();
+
+        wantsPush = Input.GetKeyDown(KeyCode.C);
+        if (wantsPush)
 
         if (Input.GetKeyDown(KeyCode.R)) TryReload();
     }

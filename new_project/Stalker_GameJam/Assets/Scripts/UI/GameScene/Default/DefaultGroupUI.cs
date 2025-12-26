@@ -7,6 +7,7 @@ using TMPro;
 public class DefaultGroupUI : MonoBehaviour
 {
     public Image healthBar;
+    public Image skillCooltimeBar;
     public Image levelExpBar;
     public Image[] giftSlot;
     public TextMeshProUGUI healthText;
@@ -35,6 +36,10 @@ public class DefaultGroupUI : MonoBehaviour
             / player.MaxHealth;
         healthText.text =
             $"{player.CurrentHealth:D2}/{player.MaxHealth:D2}";
+
+        // 플레이어 스킬 쿨타임
+        skillCooltimeBar.fillAmount =
+            1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
 
         // 플레이어 경험치
         // TODO - 다음 머지에 추가

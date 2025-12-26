@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Creature : MonoBehaviour
@@ -11,6 +12,7 @@ public class Creature : MonoBehaviour
 
     [Header("Refs")]
     [SerializeField] private Transform firePoint;
+    [Obsolete("크리쳐의 트랜스폼이 넉벡오리진입니다.")]
     [SerializeField] private Transform knockbackOrigin;
     [SerializeField] private Rigidbody rb;
 
@@ -25,7 +27,7 @@ public class Creature : MonoBehaviour
     private float stunRemain;
 
     private float nextFireTime;
-    private float nextPushTime;
+    //protected float nextPushTime;
 
     public CreatureType Type => creatureData != null ? creatureData.creatureType : CreatureType.Enemy;
     public float MoveSpeed => creatureData != null ? creatureData.moveSpeed : 0f;
@@ -36,7 +38,7 @@ public class Creature : MonoBehaviour
 
     public Rigidbody Rigidbody => rb != null ? rb : (rb = GetComponent<Rigidbody>());
     public Transform FirePoint => firePoint != null ? firePoint : transform;
-    public Transform KnockbackOrigin => knockbackOrigin;
+    [Obsolete("크리쳐의 트랜스폼이 넉벡오리진입니다.")] public Transform KnockbackOrigin => knockbackOrigin;
 
     protected virtual void Awake()
     {
@@ -64,7 +66,7 @@ public class Creature : MonoBehaviour
         reloading = false;
         stunRemain = 0f;
         nextFireTime = 0f;
-        nextPushTime = 0f;
+        //nextPushTime = 0f;
     }
 
     // ------------------------
@@ -148,7 +150,7 @@ public class Creature : MonoBehaviour
         if (weaponData == null || weaponData.attackPrefab == null) return;
 
         Attack atk = Instantiate(weaponData.attackPrefab, FirePoint.position, GetFireRotation());
-        atk.SetOwner(this);
+        //atk.SetOwner(this);
 
         // Bullet이면 무기 데이터로 세팅
         Bullet bullet = atk as Bullet;
@@ -168,31 +170,34 @@ public class Creature : MonoBehaviour
     {
         return FirePoint.rotation;
     }
+
+    // this push is only for player
     // ------------------------
     // Push Skill Runtime
     // ------------------------
-    public bool CanPushNow(PushSkillData pushData)
-    {
-        if (IsDead || IsStunned) return false;
-        if (pushData == null) return false;
-        if (Time.time < nextPushTime) return false;
-        return true;
-    }
+    //public bool CanPushNow(PushSkillData pushData)
+    //{
+    //    if (IsDead || IsStunned) return false;
+    //    if (pushData == null) return false;
+    //    if (Time.time < nextPushTime) return false;
+    //    return true;
+    //}
 
-    public bool TryPush(MeleeAttack meleePrefab, PushSkillData pushData)
-    {
-        if (!CanPushNow(pushData)) return false;
-        if (meleePrefab == null) return false;
+    // this push is only for player
+    //public bool TryPush(MeleeAttack meleePrefab, PushSkillData pushData)
+    //{
+    //    if (!CanPushNow(pushData)) return false;
+    //    if (meleePrefab == null) return false;
 
-        nextPushTime = Time.time + pushData.cooldown;
+    //    nextPushTime = Time.time + pushData.cooldown;
+    // 
+    //    // MeleeAttack은 “발동 즉시 판정”이라 Instantiate 후 즉시 Activate 호출하고 끝
+    //    MeleeAttack melee = Instantiate(meleePrefab, transform.position, transform.rotation);
+    //    melee.Activate(this, pushData);
 
-        // MeleeAttack은 “발동 즉시 판정”이라 Instantiate 후 즉시 Activate 호출하고 끝
-        MeleeAttack melee = Instantiate(meleePrefab, transform.position, transform.rotation);
-        melee.Activate(this, pushData);
+    //    // 히트박스가 지속되지 않으니 바로 제거
+    //    Destroy(melee.gameObject);
 
-        // 히트박스가 지속되지 않으니 바로 제거
-        Destroy(melee.gameObject);
-
-        return true;
-    }
+    //    return true;
+    //}
 }

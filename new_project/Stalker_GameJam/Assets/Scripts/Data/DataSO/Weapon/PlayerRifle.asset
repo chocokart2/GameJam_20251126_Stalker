@@ -16,8 +16,8 @@ MonoBehaviour:
   weaponType: 0
   damage: 20
   fireRate: 120
-  range: 20
-  maxAmmo: 15
+  range: 25
+  maxAmmo: 30
   bulletReloadTime: 2
   attackPrefab: {fileID: 1336220921454044201, guid: 2a2f16db5fe58ab41a7b7aaaab17412e,
     type: 3}

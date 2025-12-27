@@ -14,16 +14,27 @@ public class DefaultGroupUI : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI playerCurrentObjectText;
     public Player player;
-
+    public PlayerProgress progress;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (player != null && progress == null)
+            progress = player.GetComponent<PlayerProgress>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (player == null)
+        {
+            // 플레이어 오브젝트가 Destroy된 상태 (MissingReference 방지)
+            if (healthBar != null) healthBar.fillAmount = 0f;
+            if (healthText != null) healthText.text = "0/0";
+            if (levelExpBar != null) levelExpBar.fillAmount = 0f;
+
+            enabled = false;  // UI 업데이트 중단
+            return;
+        }
         // 시간 업데이트
         int time = (int)Time.time;
         int minutes = time / 60;
@@ -42,9 +53,34 @@ public class DefaultGroupUI : MonoBehaviour
         //    1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
 
         // 플레이어 경험치
+        if (progress != null && levelExpBar != null)
+        {
+            int need = Mathf.Max(1, progress.NeedExpToNext);
+            levelExpBar.fillAmount = (float)progress.CurrentExpInLevel / need;
+        }
+    }
+
         // TODO - 다음 머지에 추가
+        // 선물 리스트 보관
+        public bool TryAddGiftToFirstEmpty(Sprite giftSprite)
+        {
+        if (giftSprite == null) return false;
+        if (giftSlot == null || giftSlot.Length == 0) return false;
 
+        for (int i = 0; i < giftSlot.Length; i++)
+        {
+            Image slot = giftSlot[i];
+            if (slot == null) continue;
 
-
+            // 빈칸 기준: sprite가 null
+            if (slot.sprite == null)
+            {
+                slot.sprite = giftSprite;
+                slot.enabled = true;  // 혹시 비활성/숨김이면 켜주기
+                slot.color = Color.white; // 알파 0으로 해놨던 경우 대비
+                return true;
+            }
+        }
+        return false; // 빈칸 없음
     }
 }

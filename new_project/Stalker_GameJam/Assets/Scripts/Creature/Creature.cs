@@ -4,7 +4,7 @@ using UnityEngine;
 public class Creature : MonoBehaviour
 {
     public int CurrentHealth => currentHealth;
-    public int MaxHealth => creatureData != null ? creatureData.maxHealth : 0;
+    public int MaxHealth => GetFinalMaxHealth();
 
     [Header("Data")]
     [SerializeField] private CreatureData creatureData;
@@ -20,6 +20,7 @@ public class Creature : MonoBehaviour
     [SerializeField] private int currentHealth;
     [SerializeField] private int currentBulletCount;
 
+    [SerializeField] private StatModifier statMod;
     public float AttackRange => weaponData != null ? weaponData.range : 0f;
     public float ProjectileSpeed => weaponData != null ? weaponData.projectileSpeed : 0f;
 
@@ -58,10 +59,10 @@ public class Creature : MonoBehaviour
     public virtual void ApplyData()
     {
         if (creatureData != null)
-            currentHealth = creatureData.maxHealth;
+            currentHealth = GetFinalMaxHealth();
 
         if (weaponData != null)
-            currentBulletCount = weaponData.maxAmmo;
+            currentBulletCount = GetFinalMaxAmmo();
 
         reloading = false;
         stunRemain = 0f;
@@ -112,8 +113,9 @@ public class Creature : MonoBehaviour
     {
         if (!CanFireNow()) return false;
 
-        // fire rate: "분당" 이면 초당 간격 = 60 / fireRate
-        float fireInterval = (weaponData.fireRate > 0) ? (60f / weaponData.fireRate) : 0.1f;
+        int fr = GetFinalFireRatePerMin();
+        float fireInterval = (fr > 0) ? (60f / fr) : 0.1f;
+
         nextFireTime = Time.time + fireInterval;
 
         currentBulletCount--;
@@ -130,7 +132,8 @@ public class Creature : MonoBehaviour
     {
         if (weaponData == null) return false;
         if (reloading) return false;
-        if (currentBulletCount >= weaponData.maxAmmo) return false;
+        int maxAmmo = GetFinalMaxAmmo();
+        if (currentBulletCount >= maxAmmo) return false;
 
         reloading = true;
         Invoke(nameof(FinishReload), weaponData.bulletReloadTime);
@@ -142,7 +145,7 @@ public class Creature : MonoBehaviour
         reloading = false;
 
         if (weaponData != null)
-            currentBulletCount = weaponData.maxAmmo;
+            currentBulletCount = GetFinalMaxAmmo();
     }
 
     private void SpawnAttackFromWeapon()
@@ -157,12 +160,12 @@ public class Creature : MonoBehaviour
         if (bullet != null)
         {
             bullet.Configure(
-                weaponData.damage,
+                GetFinalWeaponDamage(),
                 weaponData.projectileSpeed,
                 weaponData.range,
                 0f,                 // 총알 스턴 필요하면 WeaponData에 추가해서 넣어라
                 0f,                 // 총알 넉백 필요하면 WeaponData에 추가해서 넣어라
-                KnockbackOrigin != null ? KnockbackOrigin : transform
+                transform
             );
         }
     }
@@ -200,4 +203,47 @@ public class Creature : MonoBehaviour
 
     //    return true;
     //}
+
+    // ------------------------
+    private int GetFinalMaxHealth()
+    {
+        int baseHp = creatureData != null ? creatureData.maxHealth : 0;
+        if (statMod == null) statMod = GetComponent<StatModifier>();
+        if (statMod == null) return baseHp;
+        return Mathf.Max(1, Mathf.RoundToInt(statMod.Eval(StatType.Char_HP, baseHp)));
+    }
+
+    private int GetFinalWeaponDamage()
+    {
+        int baseDmg = weaponData != null ? weaponData.damage : 0;
+        if (statMod == null) statMod = GetComponent<StatModifier>();
+        if (statMod == null) return baseDmg;
+        return Mathf.Max(0, Mathf.RoundToInt(statMod.Eval(StatType.Gun_Damage, baseDmg)));
+    }
+
+    private int GetFinalFireRatePerMin()
+    {
+        int baseRate = weaponData != null ? weaponData.fireRate : 0;
+        if (statMod == null) statMod = GetComponent<StatModifier>();
+        if (statMod == null) return baseRate;
+        return Mathf.Max(1, Mathf.RoundToInt(statMod.Eval(StatType.Gun_FireRate, baseRate)));
+    }
+
+    private int GetFinalMaxAmmo()
+    {
+        int baseAmmo = weaponData != null ? weaponData.maxAmmo : 0;
+        if (statMod == null) statMod = GetComponent<StatModifier>();
+        if (statMod == null) return baseAmmo;
+        return Mathf.Max(0, Mathf.RoundToInt(statMod.Eval(StatType.Gun_MaxAmmo, baseAmmo)));
+    }
+
+    //LevelUp이 호출할 공개 메서드
+    public void RefreshRuntimeStats(bool healToFull)
+    {
+        int finalMaxHp = GetFinalMaxHealth();
+        currentHealth = healToFull ? finalMaxHp : Mathf.Clamp(currentHealth, 0, finalMaxHp);
+
+        int finalMaxAmmo = GetFinalMaxAmmo();
+        currentBulletCount = Mathf.Clamp(currentBulletCount, 0, finalMaxAmmo);
+    }
 }

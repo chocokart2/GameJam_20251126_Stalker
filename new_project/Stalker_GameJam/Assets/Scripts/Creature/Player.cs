@@ -24,7 +24,7 @@ public class Player : Creature
 
     private bool hasAim;
     private Vector3 aimDir; // y=0 평면 방향
-    
+
 
     protected override void Update()
     {
@@ -59,12 +59,13 @@ public class Player : Creature
         if (move.sqrMagnitude > 1f) move.Normalize();
 
         Vector3 vel = rb.velocity;
-        vel.x = move.x * moveSpeed;
-        vel.z = move.z * moveSpeed;
+        float spd = GetFinalMoveSpeed();
+        vel.x = move.x * spd;
+        vel.z = move.z * spd;
         rb.velocity = vel;
     }
 
-    // ★ 총알 “회전”만 마우스 방향으로
+    // 총알 “회전”만 마우스 방향으로
     protected override Quaternion GetFireRotation()
     {
         if (hasAim && aimDir.sqrMagnitude > 0.0001f)
@@ -116,11 +117,15 @@ public class Player : Creature
             }
         }
     }
-
+    private float GetFinalMoveSpeed()
+    {
+        StatModifier stat = GetComponent<StatModifier>();
+        if (stat == null) return moveSpeed;
+        return stat.Eval(StatType.Move_Speed, moveSpeed);
+    }
     protected override void Die()
     {
         Debug.Log("Player has died!");
-
         Destroy(gameObject);
     }
 
@@ -140,17 +145,22 @@ public class Player : Creature
         if (!CanPushNow()) return;
         nextPushTime = Time.time + pushSkillData.cooldown;
 
-        // MeleeAttack은 “발동 즉시 판정”이라 Instantiate 후 즉시 Activate 호출하고 끝
         GameObject go = Instantiate(pushSkillData.prefab, transform.position, transform.rotation);
         MeleeAttack meleeAttack = go.GetComponent<MeleeAttack>();
-        meleeAttack.Configure(
-            pushSkillData,
-            this); //
-        //MeleeAttack melee = Instantiate(meleePrefab, transform.position, transform.rotation);
-        //melee.Activate(this, pushData);
-        // 히트박스가 지속되지 않으니 바로 제거
-        //Destroy(melee.gameObject);
 
-        return; // true;
+        float finalKb = pushSkillData.knockbackForce;
+        StatModifier stat = GetComponent<StatModifier>();
+        if (stat != null)
+            finalKb = stat.Eval(StatType.Push_Force, finalKb);
+
+        // 여기만 바꾸면 Push_Force 카드가 진짜로 반영됨
+        meleeAttack.Configure(
+            pushSkillData.damage,
+            finalKb,
+            transform,                 // 넉백 기준점
+            pushSkillData.stunDuration,
+            Type                       // 자기 타입 면역
+        );
     }
+
 }

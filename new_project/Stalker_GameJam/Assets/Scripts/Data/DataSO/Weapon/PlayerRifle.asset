@@ -19,6 +19,6 @@ MonoBehaviour:
   range: 20
   maxAmmo: 15
   bulletReloadTime: 2
-  attackPrefab: {fileID: 4182758190909113278, guid: 11692147f8539a843a4e6d4899a8e34c,
+  attackPrefab: {fileID: 1336220921454044201, guid: 2a2f16db5fe58ab41a7b7aaaab17412e,
     type: 3}
   projectileSpeed: 25

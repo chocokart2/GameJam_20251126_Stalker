@@ -313,6 +313,9 @@ public class Enemy : Creature
 
         yield return new WaitForSeconds(deathAnimTime);
 
+        // 2.5) 플레이어에게 경험치 지급
+        GiveExpToPlayer();
+
         // 3) 이제 진짜 사망 처리 (Destroy는 Creature에서)
         base.Die();
     }

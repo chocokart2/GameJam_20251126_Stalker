@@ -287,6 +287,9 @@ public class EnemyMelee : Creature
                 deathAnimTime = st.length;
         }
 
+        // 2.5) 플레이어에게 경험치 지급
+        GiveExpToPlayer();
+
         yield return new WaitForSeconds(deathAnimTime);
 
         base.Die();

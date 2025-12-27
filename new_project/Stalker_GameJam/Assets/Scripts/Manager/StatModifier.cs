@@ -9,7 +9,14 @@ public class StatModifier : MonoBehaviour
     private void Awake()
     {
         progress = GetComponent<PlayerProgress>();
+
+        if (progress == null)
+            progress = PlayerProgress.instance;
+
+        if (progress == null)
+            progress = GetComponentInParent<PlayerProgress>();
     }
+
 
     // Final = (Base + AddSum) * Mul
     public float Eval(StatType type, float baseValue)
@@ -41,4 +48,5 @@ public class StatModifier : MonoBehaviour
 
         return (baseValue + addSum) * mul;
     }
+
 }

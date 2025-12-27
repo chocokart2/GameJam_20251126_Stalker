@@ -95,6 +95,7 @@ public class Creature : MonoBehaviour
         if (IsDead) return;
 
         currentHealth -= Mathf.Abs(damage);
+
         if (currentHealth <= 0)
         {
             currentHealth = 0;

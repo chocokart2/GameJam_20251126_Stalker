@@ -118,6 +118,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Melee
       objectReference: {fileID: 0}
+    - target: {fileID: 6184768291590724505, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.632
+      objectReference: {fileID: 0}
+    - target: {fileID: 6184768291590724505, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6184768291590724505, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 2.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8624721641285138219, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
       propertyPath: m_Height

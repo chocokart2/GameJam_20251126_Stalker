@@ -195,6 +195,7 @@ public class LevelUp : MonoBehaviour
 
         // 3) 닫기 + 재개
         Close();
+
     }
 
     // 여기서 Player/Creature에 연결해서 currentHP = finalMaxHP로 맞춰주면 다이어그램 그대로 됨

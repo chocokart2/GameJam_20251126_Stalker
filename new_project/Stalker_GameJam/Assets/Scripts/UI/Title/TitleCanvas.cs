@@ -7,7 +7,7 @@ public class TitleCanvas : MonoBehaviour
     { 
         Time.timeScale = 1f;
 
-        SceneManager.LoadScene("Map1Scene");
+        SceneManager.LoadScene("daehak_Scene");
     }
 
     public void OnClickExit()

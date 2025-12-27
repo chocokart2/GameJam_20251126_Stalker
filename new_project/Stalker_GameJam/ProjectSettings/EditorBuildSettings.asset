@@ -6,6 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/TitleScene.unity
+    guid: d275f573906b2fc4f9695735320bb968
+  - enabled: 1
+    path: Assets/Scenes/daehak_Scene.unity
+    guid: 8572619eb189d144ca9e17b0d72a5bc6
+  - enabled: 1
+    path: Assets/Scenes/kyujin_Scene 1.unity
+    guid: 736bd5fcc85317f48b08b8f68815adbe
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

@@ -326,6 +326,7 @@ public class Enemy : Creature
     {
         PlayerProgress.instance.AddExp(expReward);
     }
+    
 
     private void OnDrawGizmosSelected()
     {

@@ -506,74 +506,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &907602069
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 479481092251176158, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5043051975754946106, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy_Melee
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4, type: 3}
 --- !u!1 &1035394803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,6 +1582,7 @@ MonoBehaviour:
   GiftSprite1: {fileID: 21300000, guid: a588948d4ecc1b64e866d89042420e3a, type: 3}
   GiftSprite2: {fileID: 21300000, guid: 16f73ca414ddda64ebc5e70802cdb3da, type: 3}
   GiftSprite3: {fileID: 21300000, guid: 204e23a13ddc7d54e8d07d934fb1d0fa, type: 3}
+  MonsterSpawnRules: []
   SpawnRangeMinMax: {x: 15, y: 30}
 --- !u!4 &1740414339
 Transform:
@@ -2540,4 +2473,3 @@ SceneRoots:
   - {fileID: 1233974065}
   - {fileID: 1740414339}
   - {fileID: 1588518008}
-  - {fileID: 907602069}

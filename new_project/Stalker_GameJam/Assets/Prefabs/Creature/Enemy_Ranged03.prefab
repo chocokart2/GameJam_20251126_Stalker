@@ -8,10 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 101705355504370452, guid: 8d3a9ed43e488134085a468fc86b46d3,
+        type: 3}
+      propertyPath: weaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: e29da248bbd40144a8a6a04bca53c55d,
+        type: 2}
+    - target: {fileID: 101705355504370452, guid: 8d3a9ed43e488134085a468fc86b46d3,
+        type: 3}
+      propertyPath: creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4985ce03ada280341b26fe35eff6a906,
+        type: 2}
     - target: {fileID: 1125532168275465413, guid: 8d3a9ed43e488134085a468fc86b46d3,
         type: 3}
       propertyPath: m_Name
-      value: EnemyBase Variant Variant
+      value: Enemy_Ranged03
       objectReference: {fileID: 0}
     - target: {fileID: 5531899207491046945, guid: 8d3a9ed43e488134085a468fc86b46d3,
         type: 3}

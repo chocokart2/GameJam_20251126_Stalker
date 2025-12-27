@@ -352,6 +352,8 @@ MonoBehaviour:
   aimMaxDistance: 500
   pushSkillData: {fileID: 11400000, guid: 251afdf6eb0126b4aa0e9ad8123e9094, type: 2}
   instancePushSkillCooldown: 0
+  creatureModel: {fileID: 6298443516930500240}
+  playerAnimator: {fileID: 1474969067852288221}
 --- !u!114 &2945624410019512347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +391,12 @@ MonoBehaviour:
   maxLevel: 30
   expInLevel: 0
   levelUpUI: {fileID: 0}
+--- !u!1 &6298443516930500240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3465215657502899602, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+    type: 3}
+  m_PrefabInstance: {fileID: 7457532474023074562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &8852425095449887925 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 2135933266004189111, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
@@ -468,6 +476,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e7322ab35708984d8ef357c7a960fc0, type: 3}
+--- !u!95 &1474969067852288221 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8824518396052937152, guid: 6e7322ab35708984d8ef357c7a960fc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 7930513726302898461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4798594585426889383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3212984557521290170, guid: 6e7322ab35708984d8ef357c7a960fc0,

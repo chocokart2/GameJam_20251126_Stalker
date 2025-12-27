@@ -196,6 +196,9 @@ public class LevelUp : MonoBehaviour
         // ApplyHealToFull();
 
         // 3) 닫기 + 재개
+        // + 사운드 이펙트
+        SoundManager.Instance.PlaySfx("LvCard_Pick");
+
         Close();
     }
 

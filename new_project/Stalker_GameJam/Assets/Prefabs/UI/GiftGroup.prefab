@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 027197bd1fbfe1246b66ed6a16378122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  giftSlots: []
   giftGroupRoot: {fileID: 4130212094501060860}
   titleText: {fileID: 6762082136311862233}
   giftButton: {fileID: 4508362151836931814}

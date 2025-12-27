@@ -11,7 +11,6 @@ public class EnemyMelee : Creature
     [SerializeField] private float searchRange = 25f;
     [SerializeField] private float meleeRange = 1.8f;     // 근접 공격 사거리(XZ 기준)
     [SerializeField] private float attackStopBuffer = 0.1f; // 너무 딱 붙어서 떨림 방지용
-    [SerializeField] private WeaponData weaponData;
     [SerializeField] private float meleeSpawnForward = 0.8f;
 
     [Header("AI Search Rule")]
@@ -135,11 +134,11 @@ public class EnemyMelee : Creature
 
     private bool TryMeleeAttack()
     {
-        if (weaponData == null) return false;
-        if (weaponData.attackPrefab == null) return false;
+        if (WeaponData == null) return false;
+        if (WeaponData.attackPrefab == null) return false;
         if (Time.time < nextMeleeTime) return false;
 
-        int fr = Mathf.Max(1, weaponData.fireRate);
+        int fr = Mathf.Max(1, WeaponData.fireRate);
         float cd = 60f / fr; // Creature.TryFire()와 동일 규칙
         nextMeleeTime = Time.time + cd;
 
@@ -148,15 +147,15 @@ public class EnemyMelee : Creature
 
         Quaternion rot = Quaternion.LookRotation(aimFlatWS, Vector3.up);
 
-        Attack atk = Instantiate(weaponData.attackPrefab, spawnPos, rot);
+        Attack atk = Instantiate(WeaponData.attackPrefab, spawnPos, rot);
 
         EnemyMeleeAttack meleeAtk = atk as EnemyMeleeAttack;
         if (meleeAtk != null)
         {
             meleeAtk.ConfigureMelee(
-                weaponData.damage,
-                weaponData.projectileSpeed,   // melee에선 “짧은 전진 속도”로 재해석 가능
-                weaponData.range,             // 이동형일 때 최대 거리
+                WeaponData.damage,
+                WeaponData.projectileSpeed,   // melee에선 “짧은 전진 속도”로 재해석 가능
+                WeaponData.range,             // 이동형일 때 최대 거리
                 0f,                           // 넉백 필요하면 WeaponData 확장 추천
                 0f,                           // 스턴 필요하면 WeaponData 확장 추천
                 transform,
@@ -166,7 +165,7 @@ public class EnemyMelee : Creature
         else
         {
             // 최소한 팀킬 방지는 반드시 세팅
-            atk.Configure(weaponData.damage, 0f, transform, 0f, Type);
+            atk.Configure(WeaponData.damage, 0f, transform, 0f, Type);
         }
 
         return true;

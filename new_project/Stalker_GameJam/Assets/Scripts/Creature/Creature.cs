@@ -12,7 +12,7 @@ public class Creature : MonoBehaviour
     [Header("Data")]
     [SerializeField] private CreatureData creatureData;
     [SerializeField] private WeaponData weaponData;
-
+    public WeaponData WeaponData => weaponData;
     [Header("Refs")]
     [SerializeField] private Transform firePoint;
     [Obsolete("크리쳐의 트랜스폼이 넉벡오리진입니다.")]

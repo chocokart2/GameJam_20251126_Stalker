@@ -12,6 +12,7 @@ public class DefaultGroupUI : MonoBehaviour
     public Image skillCooltimeBar;
     public Image levelExpBar;
     public Image[] giftSlot;
+    public TextMeshProUGUI bulletText;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI playerCurrentObjectText;
@@ -51,12 +52,16 @@ public class DefaultGroupUI : MonoBehaviour
         int seconds = time % 60;
         timeText.text = $"{minutes:D2}:{seconds:D2}";
 
+        // 탄약 업데이트
+        bulletText.text = $"{player.CurrentBulletCount:D2}/{player.MaxAmmo:D2}";
+
+
         // 플레이어 체력
         healthBar.fillAmount =
             (float)player.CurrentHealth
             / player.MaxHealth;
         healthText.text =
-            $"{player.CurrentHealth:D2}/{player.MaxHealth:D2}";
+            $"{player.CurrentHealth:D2}";
 
         // 플레이어 스킬 쿨타임
 

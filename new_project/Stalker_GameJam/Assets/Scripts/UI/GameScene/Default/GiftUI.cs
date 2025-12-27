@@ -1,9 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using NUnit.Framework;
 
 public class GiftUI : MonoBehaviour
 {
+    static public GiftUI instance;
+
+    public Image[] giftSlots; //
+
+
     [Header("GiftGroup")]
     [SerializeField] private GameObject giftGroupRoot;
     [SerializeField] private TMP_Text titleText;
@@ -19,6 +25,8 @@ public class GiftUI : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
+
         if (giftButton != null)
             giftButton.onClick.AddListener(OnClickGift);
 

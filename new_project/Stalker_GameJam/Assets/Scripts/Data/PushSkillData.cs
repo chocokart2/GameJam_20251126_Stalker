@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 
+[Serializable]
 [CreateAssetMenu(fileName = "PushSkillData", menuName = "Scriptable Objects/PushSkillData")]
 public class PushSkillData : SkillData
 {

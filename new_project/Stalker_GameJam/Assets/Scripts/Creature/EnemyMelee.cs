@@ -9,8 +9,8 @@ public class EnemyMelee : Creature
 
     [Header("AI Ranges")]
     [SerializeField] private float searchRange = 25f;
-    [SerializeField] private float meleeRange = 1.8f;     // ±ÙÁ¢ °ø°İ »ç°Å¸®(XZ ±âÁØ)
-    [SerializeField] private float attackStopBuffer = 0.1f; // ³Ê¹« µü ºÙ¾î¼­ ¶³¸² ¹æÁö¿ë
+    [SerializeField] private float meleeRange = 1.8f;     // ê·¼ì ‘ ê³µê²© ì‚¬ê±°ë¦¬(XZ ê¸°ì¤€)
+    [SerializeField] private float attackStopBuffer = 0.1f; // ë„ˆë¬´ ë”± ë¶™ì–´ì„œ ë–¨ë¦¼ ë°©ì§€ìš©
     [SerializeField] private WeaponData weaponData;
     [SerializeField] private float meleeSpawnForward = 0.8f;
 
@@ -21,14 +21,14 @@ public class EnemyMelee : Creature
     [SerializeField] private float turnDegPerSec = 720f;
 
     [Header("Melee Attack")]
-    [SerializeField] private GameObject meleePrefab;  // MeleeAttack°¡ ºÙ¾îÀÖ´Â ÇÁ¸®ÆÕ
+    [SerializeField] private GameObject meleePrefab;  // MeleeAttackê°€ ë¶™ì–´ìˆëŠ” í”„ë¦¬íŒ¹
     [SerializeField] private float meleeCooldown = 1.0f;
 
     [SerializeField] private int meleeDamage = 5;
     [SerializeField] private float meleeKnockbackForce = 4f;
     [SerializeField] private float meleeStunDuration = 0f;
 
-    [Tooltip("ÇÁ¸®ÆÕÀÌ ½º½º·Î ÆÄ±«µÇÁö ¾ÊÀ¸¸é ÀÏÁ¤ ½Ã°£ µÚ Á¦°Å")]
+    [Tooltip("í”„ë¦¬íŒ¹ì´ ìŠ¤ìŠ¤ë¡œ íŒŒê´´ë˜ì§€ ì•Šìœ¼ë©´ ì¼ì • ì‹œê°„ ë’¤ ì œê±°")]
     [SerializeField] private float meleePrefabLife = 0.2f;
 
     [Header("Reward")]
@@ -72,7 +72,7 @@ public class EnemyMelee : Creature
 
         state = (dist <= atkRange) ? EnemyState.Attack : EnemyState.Approach;
 
-        // Ç×»ó Å¸°ÙÀ» ¹Ù¶óº¸µµ·Ï È¸Àü ¸ñÇ¥ °»½Å (XZ Æò¸é)
+        // í•­ìƒ íƒ€ê²Ÿì„ ë°”ë¼ë³´ë„ë¡ íšŒì „ ëª©í‘œ ê°±ì‹  (XZ í‰ë©´)
         aimFlatWS = GetDirToTargetXZ();
         if (aimFlatWS.sqrMagnitude < 0.0001f) aimFlatWS = transform.forward;
 
@@ -84,7 +84,7 @@ public class EnemyMelee : Creature
 
             case EnemyState.Approach:
                 {
-                    // ³Ê¹« °¡±î¿ì¸é ¸ØÃç¼­ ¶³¸² ¹æÁö
+                    // ë„ˆë¬´ ê°€ê¹Œìš°ë©´ ë©ˆì¶°ì„œ ë–¨ë¦¼ ë°©ì§€
                     if (dist <= atkRange + attackStopBuffer)
                         desiredMoveDir = Vector3.zero;
                     else
@@ -96,7 +96,7 @@ public class EnemyMelee : Creature
             case EnemyState.Attack:
                 desiredMoveDir = Vector3.zero;
 
-                // Äğ´Ù¿îÀÌ¸é ±ÙÁ¢ °ø°İ ¹ßµ¿
+                // ì¿¨ë‹¤ìš´ì´ë©´ ê·¼ì ‘ ê³µê²© ë°œë™
                 TryMeleeAttack();
                 break;
         }
@@ -111,7 +111,7 @@ public class EnemyMelee : Creature
         Rigidbody rb = Rigidbody;
         if (rb == null) return;
 
-        // 1) ÀÌµ¿
+        // 1) ì´ë™
         Vector3 v = rb.velocity;
 
         if (state == EnemyState.Approach && desiredMoveDir.sqrMagnitude > 0.0001f)
@@ -124,7 +124,7 @@ public class EnemyMelee : Creature
             rb.velocity = new Vector3(0f, v.y, 0f);
         }
 
-        // 2) È¸Àü (YÃà)
+        // 2) íšŒì „ (Yì¶•)
         if (aimFlatWS.sqrMagnitude > 0.0001f)
         {
             Quaternion targetRot = Quaternion.LookRotation(aimFlatWS.normalized, Vector3.up);
@@ -140,7 +140,7 @@ public class EnemyMelee : Creature
         if (Time.time < nextMeleeTime) return false;
 
         int fr = Mathf.Max(1, weaponData.fireRate);
-        float cd = 60f / fr; // Creature.TryFire()¿Í µ¿ÀÏ ±ÔÄ¢
+        float cd = 60f / fr; // Creature.TryFire()ì™€ ë™ì¼ ê·œì¹™
         nextMeleeTime = Time.time + cd;
 
         Vector3 spawnPos = (FirePoint ? FirePoint.position : transform.position)
@@ -155,17 +155,17 @@ public class EnemyMelee : Creature
         {
             meleeAtk.ConfigureMelee(
                 weaponData.damage,
-                weaponData.projectileSpeed,   // melee¿¡¼± ¡°ÂªÀº ÀüÁø ¼Óµµ¡±·Î ÀçÇØ¼® °¡´É
-                weaponData.range,             // ÀÌµ¿ÇüÀÏ ¶§ ÃÖ´ë °Å¸®
-                0f,                           // ³Ë¹é ÇÊ¿äÇÏ¸é WeaponData È®Àå ÃßÃµ
-                0f,                           // ½ºÅÏ ÇÊ¿äÇÏ¸é WeaponData È®Àå ÃßÃµ
+                weaponData.projectileSpeed,   // meleeì—ì„  â€œì§§ì€ ì „ì§„ ì†ë„â€ë¡œ ì¬í•´ì„ ê°€ëŠ¥
+                weaponData.range,             // ì´ë™í˜•ì¼ ë•Œ ìµœëŒ€ ê±°ë¦¬
+                0f,                           // ë„‰ë°± í•„ìš”í•˜ë©´ WeaponData í™•ì¥ ì¶”ì²œ
+                0f,                           // ìŠ¤í„´ í•„ìš”í•˜ë©´ WeaponData í™•ì¥ ì¶”ì²œ
                 transform,
                 Type
             );
         }
         else
         {
-            // ÃÖ¼ÒÇÑ ÆÀÅ³ ¹æÁö´Â ¹İµå½Ã ¼¼ÆÃ
+            // ìµœì†Œí•œ íŒ€í‚¬ ë°©ì§€ëŠ” ë°˜ë“œì‹œ ì„¸íŒ…
             atk.Configure(weaponData.damage, 0f, transform, 0f, Type);
         }
 
@@ -226,7 +226,7 @@ public class EnemyMelee : Creature
 
     private void GiveExpToPlayer()
     {
-        // Enemy.cs ¹æ½Ä ±×´ë·Î
+        // Enemy.cs ë°©ì‹ ê·¸ëŒ€ë¡œ
         PlayerProgress.instance.AddExp(expReward);
     }
 

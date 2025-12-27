@@ -2174,7 +2174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e6aef6568ceca942b26a6fc39bcc996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeMonster: {fileID: 5043051975754946106, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
+  rangeMonster: {fileID: 8981152176713670048, guid: 5cc3bf68b63436b41980f373ae49ce7a,
     type: 3}
   meleeMonster: {fileID: 5043051975754946106, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
     type: 3}

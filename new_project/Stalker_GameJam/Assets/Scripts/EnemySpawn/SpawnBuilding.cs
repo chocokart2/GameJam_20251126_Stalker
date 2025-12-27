@@ -31,18 +31,22 @@ public class SpawnBuilding : MonoBehaviour
             {
                 case EWaveStatus.Default1:
                     if (buildWave != 1) return;
+                    SoundManager.Instance.PlaySfx("Interation");
                     SpawnManager.instance.BeginWave1Coroutine();
                     break;
                 case EWaveStatus.Default2:
                     if (buildWave != 2) return;
+                    SoundManager.Instance.PlaySfx("Interation");
                     SpawnManager.instance.BeginWave2Coroutine();
                     break;
                 case EWaveStatus.Default3:
                     if (buildWave != 3) return;
+                    SoundManager.Instance.PlaySfx("Interation");
                     SpawnManager.instance.BeginWave3Coroutine();
                     break;
                 case EWaveStatus.Wave3:
                     if (buildWave != 4) return;
+                    SoundManager.Instance.PlaySfx("Interation");
                     SpawnManager.instance.GoalReached();
                     break;
                 default:

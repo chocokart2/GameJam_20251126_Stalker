@@ -32,6 +32,20 @@ public class Player : Creature
     [SerializeField] private GameObject creatureModel;
     [SerializeField] Animator playerAnimator;
 
+    public override bool TryReload()
+    {
+        SoundManager.Instance.PlaySfx("Reload");
+        return base.TryReload();
+    }
+
+    public override void TakeDamage(int damage)
+    {
+        base.TakeDamage(damage);
+
+        SoundManager.Instance.PlaySfx("Hit");
+    }
+
+
     private void Awake()
     {
         base.Awake();
@@ -56,17 +70,25 @@ protected override void Update()
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
+        if (moveInput.sqrMagnitude > 0.1)
+        {
+            // 움직임
+            
+        }
         UpdateAimByMouse();
 
         wantsFire = Input.GetMouseButton(0);
         if (wantsFire)
         {
             bool isFired = TryFire();
-            if (isFired) playerAnimator.SetTrigger("Shot");
-            
+            if (isFired)
+            {
+                playerAnimator.SetTrigger("Shot");
+                SoundManager.Instance.PlaySfx("GunShot");
+            }
         }
 
-        wantsPush = Input.GetKeyDown(KeyCode.C);
+        wantsPush = Input.GetKeyDown(KeyCode.Space);
         if (wantsPush)
         {
             TryPushSkill();
@@ -168,6 +190,7 @@ protected override void Update()
 
         PlayerUI.instance.CallWhenDeath();
         SpawnManager.instance.WhenPlayerDeath();
+        SoundManager.Instance.PlaySfx("P_Die");
 
         //Destroy(gameObject);
         Destroy(this); // 컴포넌트만 죽여보기
@@ -189,6 +212,7 @@ protected override void Update()
         if (!CanPushNow()) return;
         nextPushTime = Time.time + pushSkillData.cooldown;
 
+        SoundManager.Instance.PlaySfx("Push");
         GameObject go = Instantiate(pushSkillData.prefab, transform.position, transform.rotation);
         MeleeAttack meleeAttack = go.GetComponent<MeleeAttack>();
 

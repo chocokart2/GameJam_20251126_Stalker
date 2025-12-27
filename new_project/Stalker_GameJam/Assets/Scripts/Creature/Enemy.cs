@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : Creature
@@ -229,13 +230,15 @@ public class Enemy : Creature
     private void GiveExpToPlayer()
     {
         // 가장 단순/안전: 태그로 Player 찾고, PlayerProgress를 가져와서 exp 추가
-        GameObject go = GameObject.FindGameObjectWithTag("Player");
-        if (go == null) return;
+        //GameObject go = GameObject.FindGameObjectWithTag("Player");
+        //if (go == null) return;
 
-        PlayerProgress prog = go.GetComponent<PlayerProgress>();
-        if (prog == null) return;
-
-        prog.AddExp(expReward);
+        //PlayerProgress prog = go.GetComponent<PlayerProgress>();
+        //PlayerProgress prog = Player.instance.gameObject.GetComponent<PlayerProgress>();
+        //if (prog == null) return;
+        
+        //prog.AddExp(expReward);
+        PlayerProgress.instance.AddExp(expReward);
     }
     private void OnDrawGizmosSelected()
     {

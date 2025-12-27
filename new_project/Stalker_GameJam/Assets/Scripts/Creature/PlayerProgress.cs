@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class PlayerProgress : MonoBehaviour
 {
+    static public PlayerProgress instance;
+
+
     [Header("Level")]
     public int level = 1;
     public int maxLevel = 30;
@@ -18,6 +21,8 @@ public class PlayerProgress : MonoBehaviour
     // 몬스터가 주는 exp = 1 (고정)
     public void AddExp(int amount)
     {
+        Debug.Log($"PlayerProgress.AddExp({amount}) called.");
+
         if (amount <= 0) return;
         if (level >= maxLevel) return;
 
@@ -104,5 +109,11 @@ public class PlayerProgress : MonoBehaviour
     public bool HasCard(string cardId)
     {
         return GetCardLevel(cardId) > 0;
+    }
+
+
+    private void Awake()
+    {
+        instance = this;
     }
 }

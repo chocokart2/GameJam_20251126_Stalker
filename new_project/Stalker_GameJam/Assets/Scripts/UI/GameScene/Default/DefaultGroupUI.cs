@@ -15,7 +15,8 @@ public class DefaultGroupUI : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI playerCurrentObjectText;
-    public Player player;
+    Player player;
+    public PlayerProgress progress;
 
     private void Awake()
     {
@@ -25,6 +26,8 @@ public class DefaultGroupUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = Player.instance;
+
         if (player != null && progress == null)
             progress = player.GetComponent<PlayerProgress>();
     }

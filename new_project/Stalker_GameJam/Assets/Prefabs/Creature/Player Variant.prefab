@@ -184,6 +184,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 3470462421924104062, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3623318305345992141, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
       propertyPath: m_Constraints
@@ -197,17 +202,17 @@ PrefabInstance:
     - target: {fileID: 8318851792577338778, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.212349
       objectReference: {fileID: 0}
     - target: {fileID: 8318851792577338778, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.34
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8318851792577338778, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.41384637
       objectReference: {fileID: 0}
     - target: {fileID: 8318851792577338778, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
         type: 3}
@@ -270,6 +275,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2945624410019512347}
+    - targetCorrespondingSourceObject: {fileID: 3470462421924104062, guid: 8cfd6269f01fbf54ca9b8c839ba18761,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7402318826459200875}
   m_SourcePrefab: {fileID: 100100000, guid: 8cfd6269f01fbf54ca9b8c839ba18761, type: 3}
 --- !u!4 &554124180273191305 stripped
 Transform:
@@ -320,6 +329,7 @@ MonoBehaviour:
   rb: {fileID: 8852425095449887925}
   currentHealth: 0
   currentBulletCount: 0
+  statMod: {fileID: 0}
   moveSpeed: 6
   aimMask:
     serializedVersion: 2
@@ -339,10 +349,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 636834af423041c4db05ed198091c4f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MissionPosition: []
+  MissionPosition:
+  - {fileID: 0}
   missionIndex: 0
   navigatorArrow: {fileID: 4682691510672838469}
-  PushCooltimeUI: {fileID: 0}
+--- !u!114 &7402318826459200875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6293768842140523644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e36daa1b674bf418b818ad3c701039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  maxLevel: 30
+  expInLevel: 0
+  levelUpUI: {fileID: 0}
 --- !u!54 &8852425095449887925 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 2135933266004189111, guid: 8cfd6269f01fbf54ca9b8c839ba18761,

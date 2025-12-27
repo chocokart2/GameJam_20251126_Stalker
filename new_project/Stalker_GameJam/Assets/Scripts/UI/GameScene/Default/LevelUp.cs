@@ -17,7 +17,6 @@ public class LevelUp : MonoBehaviour
     public int weightNormal = 70;
     public int weightRare = 25;
     public int weightEpic = 5;
-    public int weightSkill = 2;
 
     private PlayerProgress progress;
     private CardData[] offered = new CardData[3];
@@ -61,7 +60,6 @@ public class LevelUp : MonoBehaviour
         // 중복 방지
         List<CardData> picked = new List<CardData>();
 
-        int safety = 200;
         for (int slot = 0; slot < 3; slot++)
         {
             CardData c = PickOneCard(picked);
@@ -173,7 +171,9 @@ public class LevelUp : MonoBehaviour
 
         // 1) 카드 누적 반영
         progress.AddCardLevel(picked);
-
+        Creature creature = progress.GetComponent<Creature>();
+        if (creature != null)
+            creature.RefreshRuntimeStats(true);
         // 2) HP = MaxHP 요구사항 처리(선택)
         //    네 Creature 구조에 따라 "최종 MaxHP" 계산 후 currentHealth 채우는 함수를 호출하면 됨.
         //    여기서는 훅만 남겨둠:

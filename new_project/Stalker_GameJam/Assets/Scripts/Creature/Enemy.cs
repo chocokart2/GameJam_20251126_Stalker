@@ -20,6 +20,9 @@ public class Enemy : Creature
     [SerializeField] private bool useLeadShot = true;
     [SerializeField] private float maxLeadTime = 0.5f;
 
+    [Header("Reward")]
+    [SerializeField] private int expReward = 1;
+
     private EnemyState state = EnemyState.Search;
     private float notFoundTimer = 0f;
     private Vector3 desiredMoveDir;
@@ -217,7 +220,23 @@ public class Enemy : Creature
         Debug.Log($"Enemy Dead ({reason})");
         Die();
     }
+    protected override void Die()
+    {
+        GiveExpToPlayer();
+        base.Die();
+    }
 
+    private void GiveExpToPlayer()
+    {
+        // 가장 단순/안전: 태그로 Player 찾고, PlayerProgress를 가져와서 exp 추가
+        GameObject go = GameObject.FindGameObjectWithTag("Player");
+        if (go == null) return;
+
+        PlayerProgress prog = go.GetComponent<PlayerProgress>();
+        if (prog == null) return;
+
+        prog.AddExp(expReward);
+    }
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;

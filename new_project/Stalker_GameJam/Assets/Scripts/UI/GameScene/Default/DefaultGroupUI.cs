@@ -6,6 +6,8 @@ using TMPro;
 
 public class DefaultGroupUI : MonoBehaviour
 {
+    public static DefaultGroupUI instance;
+
     public Image healthBar;
     public Image skillCooltimeBar;
     public Image levelExpBar;
@@ -14,6 +16,11 @@ public class DefaultGroupUI : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI playerCurrentObjectText;
     public Player player;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +45,18 @@ public class DefaultGroupUI : MonoBehaviour
             $"{player.CurrentHealth:D2}/{player.MaxHealth:D2}";
 
         // 플레이어 스킬 쿨타임
-        //skillCooltimeBar.fillAmount =
-        //    1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
 
+        if (player.PushSkillCooldown > 0f)
+        {
+            skillCooltimeBar.fillAmount =
+               1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
+        }
+        else
+        {
+            skillCooltimeBar.fillAmount = 0f;
+        }
+
+        
         // 플레이어 경험치
         // TODO - 다음 머지에 추가
 

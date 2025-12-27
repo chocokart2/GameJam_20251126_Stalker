@@ -3,6 +3,8 @@ using static UnityEngine.Mesh;
 
 public class Player : Creature
 {
+    static public Player instance;
+
     public float PushSkillCooldown => Mathf.Max(nextPushTime - Time.time, 0);
 
     [Header("Move")]
@@ -25,6 +27,12 @@ public class Player : Creature
     private bool hasAim;
     private Vector3 aimDir; // y=0 평면 방향
     
+    private void Awake()
+    {
+        base.Awake();
+
+        instance = this;
+    }
 
     protected override void Update()
     {
@@ -59,8 +67,9 @@ public class Player : Creature
         if (move.sqrMagnitude > 1f) move.Normalize();
 
         Vector3 vel = rb.velocity;
-        vel.x = move.x * moveSpeed;
-        vel.z = move.z * moveSpeed;
+        float spd = GetFinalMoveSpeed();
+        vel.x = move.x * spd;
+        vel.z = move.z * spd;
         rb.velocity = vel;
     }
 
@@ -116,10 +125,21 @@ public class Player : Creature
             }
         }
     }
-
+    
+    private float GetFinalMoveSpeed()
+    {
+        StatModifier stat = GetComponent<StatModifier>();
+        if (stat == null) return moveSpeed;
+        return stat.Eval(StatType.Move_Speed, moveSpeed);
+    }
     protected override void Die()
     {
         Debug.Log("Player has died!");
+
+        PlayerUI.instance.CallWhenDeath();
+        SpawnManager.instance.WhenPlayerDeath();
+
+
 
         Destroy(gameObject);
     }
@@ -143,14 +163,18 @@ public class Player : Creature
         // MeleeAttack은 “발동 즉시 판정”이라 Instantiate 후 즉시 Activate 호출하고 끝
         GameObject go = Instantiate(pushSkillData.prefab, transform.position, transform.rotation);
         MeleeAttack meleeAttack = go.GetComponent<MeleeAttack>();
+        float finalKb = pushSkillData.knockbackForce;
+        StatModifier stat = GetComponent<StatModifier>();
+        if (stat != null)
+        {
+            finalKb = stat.Eval(StatType.Push_Force, finalKb);
+        }
         meleeAttack.Configure(
-            pushSkillData,
-            this); //
-        //MeleeAttack melee = Instantiate(meleePrefab, transform.position, transform.rotation);
-        //melee.Activate(this, pushData);
-        // 히트박스가 지속되지 않으니 바로 제거
-        //Destroy(melee.gameObject);
-
-        return; // true;
+            pushSkillData.damage,
+            finalKb,
+            transform,
+            pushSkillData.stunDuration,
+            Type
+        );
     }
 }

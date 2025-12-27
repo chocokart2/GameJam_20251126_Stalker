@@ -4,10 +4,23 @@ using UnityEngine;
 
 public class PlayerUI : MonoBehaviour
 {
+    static public PlayerUI instance;
+
     public List<Transform> MissionPosition;
     public int missionIndex;
     public Transform navigatorArrow;
     //public GameObject PushCooltimeUI;
+
+    public void CallWhenDeath()
+    {
+        instance.missionIndex = 0;
+        instance = null;
+    }
+
+    void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()

@@ -44,6 +44,8 @@ public class LevelUp : MonoBehaviour
         Time.timeScale = 0f;
         levelUpGroup.SetActive(true);
 
+        SoundManager.Instance.PlaySfx("Lv_Up");
+
         GenerateThreeCards();
         RefreshUI();
     }

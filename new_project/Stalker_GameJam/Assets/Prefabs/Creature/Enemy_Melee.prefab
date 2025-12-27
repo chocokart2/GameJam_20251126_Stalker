@@ -8,10 +8,15 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3629019778995599787, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4371653501837930106, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
       propertyPath: m_Name
-      value: EnemyBase Variant Variant
+      value: Enemy_Melee
       objectReference: {fileID: 0}
     - target: {fileID: 9219091897945240734, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
@@ -66,5 +71,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4371653501837930106, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8134758657232665870}
   m_SourcePrefab: {fileID: 100100000, guid: fe2d47682e0bff24082955c6a9950080, type: 3}
+--- !u!1 &5043051975754946106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4371653501837930106, guid: fe2d47682e0bff24082955c6a9950080,
+    type: 3}
+  m_PrefabInstance: {fileID: 8743666932677408832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8134758657232665870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5043051975754946106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a30e66e232f6649b1e1cf514a1ad7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  creatureData: {fileID: 11400000, guid: 0396376c61e1efe478c2e881d5e59424, type: 2}
+  weaponData: {fileID: 11400000, guid: a041fbd8f8125fb4ab405b8366bcbcba, type: 2}
+  firePoint: {fileID: 0}
+  knockbackOrigin: {fileID: 0}
+  rb: {fileID: 0}
+  currentHealth: 0
+  currentBulletCount: 0
+  statMod: {fileID: 0}
+  target: {fileID: 0}
+  searchRange: 25
+  meleeRange: 1.8
+  attackStopBuffer: 0.1
+  weaponData: {fileID: 0}
+  meleeSpawnForward: 0.8
+  notFoundDieSeconds: 120
+  turnDegPerSec: 720
+  meleePrefab: {fileID: 0}
+  meleeCooldown: 1
+  meleeDamage: 5
+  meleeKnockbackForce: 4
+  meleeStunDuration: 0
+  meleePrefabLife: 0.2
+  expReward: 1

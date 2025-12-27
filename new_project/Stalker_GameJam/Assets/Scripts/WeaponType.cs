@@ -2,5 +2,7 @@ using UnityEngine;
 
 public enum WeaponType
 {
-    RIFLE
+    RIFLE,
+    MELEE,
+    MAX,
 }

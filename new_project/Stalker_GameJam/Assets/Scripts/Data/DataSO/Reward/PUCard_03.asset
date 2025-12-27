@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ca14b4668877ee46badd73824ccf89d, type: 3}
+  m_Name: PUCard_03
+  m_EditorClassIdentifier: 
+  cardId: PUCard_03
+  rarity: 2
+  cardName: "\uBC00\uCE58\uAE30 \uBC94\uC704 30%\uC99D\uAC00!"
+  description: "\uBC00\uCE58\uAE30 \uBC94\uC704 30%\uC99D\uAC00!"
+  statType: 5
+  calcType: 1
+  value: 0.3
+  maxLevel: 99
+  prerequisiteCardId: 
+  icon: {fileID: 21300000, guid: a210af0523aff794bb700caa325ba671, type: 3}

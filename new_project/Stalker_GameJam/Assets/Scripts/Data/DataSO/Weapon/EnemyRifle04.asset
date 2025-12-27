@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdf22e7b5335774fb345cb96095b972, type: 3}
+  m_Name: EnemyRifle04
+  m_EditorClassIdentifier: 
+  weaponId: WPN_001_ENEYMGUN_4
+  weaponType: 0
+  damage: 12
+  fireRate: 30
+  range: 15
+  maxAmmo: 15
+  bulletReloadTime: 3
+  attackPrefab: {fileID: 4309779466971081785, guid: 0ba13f39252c4af4d8afc0973c3288e7,
+    type: 3}
+  projectileSpeed: 8

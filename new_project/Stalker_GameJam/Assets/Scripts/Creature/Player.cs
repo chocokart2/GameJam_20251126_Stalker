@@ -1,3 +1,4 @@
+using Autodesk.Fbx;
 using UnityEngine;
 using static UnityEngine.Mesh;
 
@@ -26,7 +27,11 @@ public class Player : Creature
 
     private bool hasAim;
     private Vector3 aimDir; // y=0 평면 방향
-    
+    private float aimDirLengthSqr;
+
+    [SerializeField] private GameObject creatureModel;
+    [SerializeField] Animator playerAnimator;
+
     private void Awake()
     {
         base.Awake();
@@ -34,9 +39,19 @@ public class Player : Creature
         instance = this;
     }
 
-    protected override void Update()
+    private void Start()
+    {
+
+    }
+
+protected override void Update()
     {
         base.Update();
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            creatureModel.transform.Rotate(0, 30, 0);
+        }
 
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
@@ -44,7 +59,12 @@ public class Player : Creature
         UpdateAimByMouse();
 
         wantsFire = Input.GetMouseButton(0);
-        if (wantsFire) TryFire();
+        if (wantsFire)
+        {
+            bool isFired = TryFire();
+            if (isFired) playerAnimator.SetTrigger("Shot");
+            
+        }
 
         wantsPush = Input.GetKeyDown(KeyCode.C);
         if (wantsPush)
@@ -64,6 +84,13 @@ public class Player : Creature
 
         // 카메라 고정이니까(TopDownCamera fixedYaw), 카메라 기준 이동이 싫으면 그냥 월드 기준으로 써도 됨.
         Vector3 move = new Vector3(moveInput.x, 0f, moveInput.y);
+        playerAnimator.SetFloat("MoveSpeed", move.sqrMagnitude);
+
+        if (hasAim && (aimDirLengthSqr > 1f))
+        {
+            creatureModel.transform.forward = aimDir.normalized;
+        }
+
         if (move.sqrMagnitude > 1f) move.Normalize();
 
         Vector3 vel = rb.velocity;
@@ -102,6 +129,7 @@ public class Player : Creature
             Vector3 dir = hit.point - FirePoint.position; // 총알 발사점 기준이 더 정확
             dir.y = 0f;
 
+            aimDirLengthSqr = dir.sqrMagnitude;
             if (dir.sqrMagnitude > 0.0001f)
             {
                 aimDir = dir.normalized;
@@ -134,12 +162,15 @@ public class Player : Creature
     }
     protected override void Die()
     {
+        playerAnimator.SetTrigger("Die");
+
         Debug.Log("Player has died!");
 
         PlayerUI.instance.CallWhenDeath();
         SpawnManager.instance.WhenPlayerDeath();
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        Destroy(this); // 컴포넌트만 죽여보기
     }
 
     private bool CanPushNow()

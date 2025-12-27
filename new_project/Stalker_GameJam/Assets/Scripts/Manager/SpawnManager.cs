@@ -6,13 +6,31 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     static public SpawnManager instance;
+    
+    [System.Serializable]
+    public class NestedTuple
+    {
+        public EWaveStatus currentStatus;
+        public int rangeMonsterSpawnCount;
+        public int meleeMonsterSpawnCount;
+        public float rangeMonsterMoveSpeed;
+        public float rangeMonsterDamage;
+        public float rangeMonsterProjectileSpeed;
+        public float meleeMonsterMoveSpeed;
+        public float meleeMonsterDamage;
+        public float spawnInterval;
+        
+    }
+
 
     [SerializeField] GameObject rangeMonster;
     [SerializeField] GameObject meleeMonster;
     [SerializeField] Sprite GiftSprite1;
     [SerializeField] Sprite GiftSprite2;
     [SerializeField] Sprite GiftSprite3;
+    [SerializeField] NestedTuple[] MonsterSpawnRules;
     float enemyBuff = 1.0f;
+
     public Vector2 SpawnRangeMinMax;
     Coroutine DefaultSpawnCoroutine;
     Coroutine QuestSpawnCoroutine;
@@ -27,27 +45,32 @@ public class SpawnManager : MonoBehaviour
 
     public void BeginWave1Coroutine()
     {
+        NestedTuple rule = GetTuple(EWaveStatus.Wave1);
+        Debug.Assert(rule != null, "SpawnManager: No spawn rule for Wave1");
+
         GameManager.instance.currentStatus = EWaveStatus.Wave1;
         QuestSpawnCoroutine = null;
 
-        DefaultGroupUI.instance.playerCurrentObjectText.text = "Wave 1 Started!";
+        DefaultGroupUI.instance.playerCurrentObjectText.text = "40초간 가게 방어";
         PlayerUI.instance.missionIndex++;
+
+
 
         IEnumerator MySpawnCoroutine()
         {
-            for (int i = 0; i < 5; ++i)
+            for (int i = 0; i < rule.rangeMonsterSpawnCount; ++i)
             {
                 Instantiate(rangeMonster, GetSpawnPosition(), Quaternion.identity);
             }
-            for (int i = 0; i < 20; ++i)
+            for (int i = 0; i < rule.meleeMonsterSpawnCount; ++i)
             {
                 Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
             }
-            //yield return new WaitForSeconds(40f);
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(40f);
+            //yield return new WaitForSeconds(4f);
             // 여기에 보상
             GameManager.instance.currentStatus = EWaveStatus.Default2;
-            DefaultGroupUI.instance.playerCurrentObjectText.text = "Go To Shop 2!";
+            DefaultGroupUI.instance.playerCurrentObjectText.text = "두번째 선물 가게로 이동";
             PlayerUI.instance.missionIndex++;
             GiftUI.instance.Show(GiftSprite1);
         }
@@ -60,7 +83,7 @@ public class SpawnManager : MonoBehaviour
         GameManager.instance.currentStatus = EWaveStatus.Wave2;
         QuestSpawnCoroutine = null;
 
-        DefaultGroupUI.instance.playerCurrentObjectText.text = "Wave 2 Started!";
+        DefaultGroupUI.instance.playerCurrentObjectText.text = "60초간 가게 방어";
         PlayerUI.instance.missionIndex++;
 
         IEnumerator MySpawnCoroutine()
@@ -73,11 +96,11 @@ public class SpawnManager : MonoBehaviour
             {
                 Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
             }
-            //yield return new WaitForSeconds(40f);
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(60f);
+            //yield return new WaitForSeconds(4f);
             // 여기에 보상
             GameManager.instance.currentStatus = EWaveStatus.Default3;
-            DefaultGroupUI.instance.playerCurrentObjectText.text = "Go To Shop 3!";
+            DefaultGroupUI.instance.playerCurrentObjectText.text = "선물을 장식할 예쁜 꽃 찾기";
             PlayerUI.instance.missionIndex++;
 
             GiftUI.instance.Show(GiftSprite2);
@@ -92,7 +115,7 @@ public class SpawnManager : MonoBehaviour
         QuestSpawnCoroutine = null;
         GiftUI.instance.Show(GiftSprite3);
 
-        DefaultGroupUI.instance.playerCurrentObjectText.text = "Go to your Girlfriend's door, now!";
+        DefaultGroupUI.instance.playerCurrentObjectText.text = "사랑하는 너의 집으로 이동";
         PlayerUI.instance.missionIndex++;
 
         IEnumerator MySpawnCoroutine()
@@ -165,6 +188,15 @@ public class SpawnManager : MonoBehaviour
         DefaultSpawnCoroutine = StartCoroutine(MySpawnCoroutine());
     }
 
+    private NestedTuple GetTuple(EWaveStatus status)
+    {
+        foreach (NestedTuple tuple in MonsterSpawnRules)
+        {
+            if (tuple.currentStatus == status)
+                return tuple;
+        }
+        return null;
+    }
 
     private Vector3 GetSpawnPosition()
     {

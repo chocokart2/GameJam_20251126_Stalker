@@ -13,6 +13,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3629019778995599787, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: searchRange
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629019778995599787, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: attackRangeOverride
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4371653501837930106, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
       propertyPath: m_Name
@@ -68,7 +78,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3629019778995599787, guid: fe2d47682e0bff24082955c6a9950080, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -77,6 +88,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 8134758657232665870}
   m_SourcePrefab: {fileID: 100100000, guid: fe2d47682e0bff24082955c6a9950080, type: 3}
+--- !u!4 &1133147620210772282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8569788781881651578, guid: fe2d47682e0bff24082955c6a9950080,
+    type: 3}
+  m_PrefabInstance: {fileID: 8743666932677408832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1521043935213048783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7803730836807887759, guid: fe2d47682e0bff24082955c6a9950080,
+    type: 3}
+  m_PrefabInstance: {fileID: 8743666932677408832}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5043051975754946106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4371653501837930106, guid: fe2d47682e0bff24082955c6a9950080,
@@ -97,17 +120,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   creatureData: {fileID: 11400000, guid: 0396376c61e1efe478c2e881d5e59424, type: 2}
   weaponData: {fileID: 11400000, guid: a041fbd8f8125fb4ab405b8366bcbcba, type: 2}
-  firePoint: {fileID: 0}
-  knockbackOrigin: {fileID: 0}
-  rb: {fileID: 0}
+  firePoint: {fileID: 1133147620210772282}
+  knockbackOrigin: {fileID: 1521043935213048783}
+  rb: {fileID: 7525886471195774707}
   currentHealth: 0
   currentBulletCount: 0
   statMod: {fileID: 0}
   target: {fileID: 0}
   searchRange: 25
-  meleeRange: 1.8
+  meleeRange: 2
   attackStopBuffer: 0.1
-  weaponData: {fileID: 0}
   meleeSpawnForward: 0.8
   notFoundDieSeconds: 120
   turnDegPerSec: 720
@@ -118,3 +140,9 @@ MonoBehaviour:
   meleeStunDuration: 0
   meleePrefabLife: 0.2
   expReward: 1
+--- !u!54 &7525886471195774707 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 1235938347434260147, guid: fe2d47682e0bff24082955c6a9950080,
+    type: 3}
+  m_PrefabInstance: {fileID: 8743666932677408832}
+  m_PrefabAsset: {fileID: 0}

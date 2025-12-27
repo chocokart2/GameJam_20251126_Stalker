@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cdf22e7b5335774fb345cb96095b972, type: 3}
   m_Name: EnemyRifle01
   m_EditorClassIdentifier: 
-  weaponId: WPN_001_ENEYMGUN
+  weaponId: WPN_001_ENEYMGUN_1
   weaponType: 0
   damage: 6
-  fireRate: 45
+  fireRate: 30
   range: 15
   maxAmmo: 15
   bulletReloadTime: 3

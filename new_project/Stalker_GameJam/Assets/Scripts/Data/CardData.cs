@@ -37,4 +37,6 @@ public class CardData : ScriptableObject
     [Header("Limits")]
     public int maxLevel = 99;
     public string prerequisiteCardId; // ¾øÀ¸¸é ºóÄ­
+    [Header("Visual")]
+    public Sprite icon;
 }

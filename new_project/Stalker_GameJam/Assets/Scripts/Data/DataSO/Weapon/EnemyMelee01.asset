@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cdf22e7b5335774fb345cb96095b972, type: 3}
   m_Name: EnemyMelee01
   m_EditorClassIdentifier: 
-  weaponId: WPN_002_ENEMYMELEE
+  weaponId: WPN_002_ENEMYMELEE_1
   weaponType: 1
   damage: 3
-  fireRate: 12
-  range: 3
+  fireRate: 20
+  range: 5
   maxAmmo: 999
   bulletReloadTime: 1
   attackPrefab: {fileID: 5884869901172943750, guid: de9e8755018383b4f957f4f2b349e288,

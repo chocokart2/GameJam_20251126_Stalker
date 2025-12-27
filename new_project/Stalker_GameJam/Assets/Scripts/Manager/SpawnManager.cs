@@ -1,3 +1,4 @@
+using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,9 @@ public class SpawnManager : MonoBehaviour
 
     [SerializeField] GameObject rangeMonster;
     [SerializeField] GameObject meleeMonster;
+    [SerializeField] Sprite GiftSprite1;
+    [SerializeField] Sprite GiftSprite2;
+    [SerializeField] Sprite GiftSprite3;
     float enemyBuff = 1.0f;
     public Vector2 SpawnRangeMinMax;
     Coroutine DefaultSpawnCoroutine;
@@ -39,11 +43,13 @@ public class SpawnManager : MonoBehaviour
             {
                 Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
             }
-            yield return new WaitForSeconds(40f);
+            //yield return new WaitForSeconds(40f);
+            yield return new WaitForSeconds(4f);
             // 여기에 보상
             GameManager.instance.currentStatus = EWaveStatus.Default2;
             DefaultGroupUI.instance.playerCurrentObjectText.text = "Go To Shop 2!";
             PlayerUI.instance.missionIndex++;
+            GiftUI.instance.Show(GiftSprite1);
         }
 
         QuestSpawnCoroutine = StartCoroutine(MySpawnCoroutine());
@@ -67,13 +73,14 @@ public class SpawnManager : MonoBehaviour
             {
                 Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
             }
-            yield return new WaitForSeconds(40f);
+            //yield return new WaitForSeconds(40f);
+            yield return new WaitForSeconds(4f);
             // 여기에 보상
             GameManager.instance.currentStatus = EWaveStatus.Default3;
             DefaultGroupUI.instance.playerCurrentObjectText.text = "Go To Shop 3!";
             PlayerUI.instance.missionIndex++;
 
-
+            GiftUI.instance.Show(GiftSprite2);
         }
 
         QuestSpawnCoroutine = StartCoroutine(MySpawnCoroutine());
@@ -83,8 +90,9 @@ public class SpawnManager : MonoBehaviour
     {
         GameManager.instance.currentStatus = EWaveStatus.Wave3;
         QuestSpawnCoroutine = null;
+        GiftUI.instance.Show(GiftSprite3);
 
-        DefaultGroupUI.instance.playerCurrentObjectText.text = "Wave 3 Started!";
+        DefaultGroupUI.instance.playerCurrentObjectText.text = "Go to your Girlfriend's door, now!";
         PlayerUI.instance.missionIndex++;
 
         IEnumerator MySpawnCoroutine()
@@ -104,6 +112,11 @@ public class SpawnManager : MonoBehaviour
         }
 
         QuestSpawnCoroutine = StartCoroutine(MySpawnCoroutine());
+    }
+
+    public void GoalReached()
+    {
+        Debug.Log("!!!! Goal Reached! !!!!");
     }
 
     public void ApplyEnemyBuff(float value)

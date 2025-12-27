@@ -4,6 +4,9 @@ using UnityEngine;
 public class Creature : MonoBehaviour
 {
     public int CurrentHealth => currentHealth;
+    public int CurrentBulletCount => currentBulletCount;
+    public int MaxAmmo => GetFinalMaxAmmo();
+
     public int MaxHealth => GetFinalMaxHealth();
 
     [Header("Data")]
@@ -19,6 +22,7 @@ public class Creature : MonoBehaviour
     [Header("Runtime")]
     [SerializeField] private int currentHealth;
     [SerializeField] private int currentBulletCount;
+
 
     [SerializeField] private StatModifier statMod;
     public float AttackRange => weaponData != null ? weaponData.range : 0f;

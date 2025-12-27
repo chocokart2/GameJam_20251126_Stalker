@@ -8,26 +8,27 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FakePointLight
-  m_Shader: {fileID: 4800000, guid: a3a929c6ce1b6c24a86decaf6ab40814, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2ce8ecafdacfed143b1b6cd43caf5715, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _BLENDMODE_ADDITIVE
-  - _SCREENSHADOWS_OFF
-  - _TEXTUREPACKING_RED
-  - ___HALO____ON
+  m_ValidKeywords: []
   m_InvalidKeywords:
+  - DISTANCEFADE_ON
+  - _BLENDMODE_ADDITIVE
   - _FLICKERING_ON
   - _FLICKERRADIUS_ON
   - _NOISE_ON
   - _PARTICLEMESH_ON
   - _RECEIVESHADOWS_OFF
   - _RECEIVE_SHADOWS_OFF
+  - _SCREENSHADOWS_OFF
+  - _TEXTUREPACKING_RED
   - _USETEXTUREGRADIENT_ON
+  - ___HALO____ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 4000
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -70,7 +71,7 @@ Material:
     m_Ints: []
     m_Floats:
     - DayAlpha: 0
-    - DistanceFade: 0
+    - DistanceFade: 1
     - _AccurateColors: 0
     - _AlphaCutoff: 0.5
     - _Blendmode: 0
@@ -78,11 +79,13 @@ Material:
     - _CloseTransition: 0
     - _DayAlpha1: 0
     - _DayFading: 0
+    - _DepthBlending: 0
     - _DepthWrite: 0
     - _DitherIntensity: 0.5
     - _DitheringPattern: 0
     - _DstBlend: 1
     - _EXPERIMENTALShadows: 0
+    - _EdgeSoftness: 1
     - _FadeDistance: 80.3
     - _FadeOffset: 38
     - _FarFade: 200
@@ -93,10 +96,12 @@ Material:
     - _FlickerSoftness: 0.5
     - _FlickerSpeed: 2.08
     - _Flickering: 1
-    - _HaloDepthFade: 0.5
-    - _HaloPosterize: 1
+    - _GradientMax: 2
+    - _GradientMin: 0
+    - _HaloDepthFade: 2
+    - _HaloPosterize: 49
     - _HaloPower: 1
-    - _HaloSize: 1.75
+    - _HaloSize: 0.77
     - _HaloSoftness: 0.5
     - _Hardness: 0.526
     - _LightPosterize: 1
@@ -135,6 +140,7 @@ Material:
     - _StepSpacing: 3
     - _TexturePacking: 0
     - _TransitionDistance: 50
+    - _TurnOff: 0
     - _UseLightNormal: 0.5
     - _UseTextureGradient: 1
     - __HEAVYShadows: 0
@@ -151,6 +157,9 @@ Material:
     - _HTint: {r: 1, g: 1, b: 1, a: 1}
     - _HaloTint: {r: 2.670157, g: 2.2970276, b: 1.6751456, a: 1}
     - _LTint: {r: 1, g: 1, b: 1, a: 1}
+    - _LightColor: {r: 1, g: 0.9443759, b: 0.8349056, a: 1}
     - _LightTint: {r: 0.5849056, g: 0.5353853, b: 0.488341, a: 0.50980395}
+    - _OffColor: {r: 0.49056596, g: 0.49056596, b: 0.49056596, a: 0}
     - _Tint: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

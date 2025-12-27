@@ -72,7 +72,7 @@ Material:
     - _DiffuseVertexColorWeight: 1
     - _EmissiveVertexColorWeight: 0
     - _ID: 1
-    - _PixelSize: 3
+    - _PixelSize: 2
     m_Colors:
     - _AmbientLight: {r: 0.7830189, g: 0.7830189, b: 0.7830189, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

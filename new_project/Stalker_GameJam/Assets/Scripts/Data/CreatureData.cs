@@ -12,4 +12,13 @@ public class CreatureData : ScriptableObject
     //public AttackObject attackObjectPrefab;
 
     public PushSkillData pushSkillData;
+
+    public CreatureData(CreatureData one)
+    {
+        creatureType = one.creatureType;
+        memberName = one.memberName;
+        maxHealth = one.maxHealth;
+        moveSpeed = one.moveSpeed;
+        pushSkillData = one.pushSkillData;
+    }
 }

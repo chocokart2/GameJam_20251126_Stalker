@@ -14,4 +14,16 @@ public class WeaponData : ScriptableObject
 
     public Attack attackPrefab;
     public float projectileSpeed;
+
+    public WeaponData(WeaponData one)
+    {
+        this.weaponId = one.weaponId;
+        this.weaponType = one.weaponType;
+        this.damage = one.damage;
+        this.fireRate = one.fireRate;
+        this.range = one.range;
+        this.maxAmmo = one.maxAmmo;
+        this.bulletReloadTime = one.bulletReloadTime;
+        this.attackPrefab = one.attackPrefab;
+    }
 }

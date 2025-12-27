@@ -619,7 +619,7 @@ MonoBehaviour:
   - {fileID: 380423114}
   - {fileID: 1861967904}
   - {fileID: 1921616554}
-  healthText: {fileID: 0}
+  healthText: {fileID: 1424722732}
   timeText: {fileID: 1400500991}
   playerCurrentObjectText: {fileID: 1424722732}
   player: {fileID: 249256055}

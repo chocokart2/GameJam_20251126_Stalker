@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Enemy : Creature
 {
@@ -23,6 +24,9 @@ public class Enemy : Creature
     [Header("Reward")]
     [SerializeField] private int expReward = 1;
 
+    [Header("Animator")]
+    public Animator EnemyRangeAnimator;
+
     private EnemyState state = EnemyState.Search;
     private float notFoundTimer = 0f;
     private Vector3 desiredMoveDir;
@@ -35,7 +39,11 @@ public class Enemy : Creature
         base.Update();
         if (state == EnemyState.Dead) return;
 
-        if (IsDead) { EnterDead("HP <= 0"); return; }
+        if (IsDead)
+        {
+            EnterDead("HP <= 0");
+            return;
+        }
 
         bool hasTarget = AcquireTargetInSearchRange();
 
@@ -45,7 +53,7 @@ public class Enemy : Creature
             state = EnemyState.Search;
 
             if (notFoundTimer >= notFoundDieSeconds)
-                EnterDead("Target Not Found (120s)");
+                EnterDead("Target Not Found (timeout)");
 
             desiredMoveDir = Vector3.zero;
             return;
@@ -79,14 +87,22 @@ public class Enemy : Creature
             case EnemyState.Attack:
                 desiredMoveDir = Vector3.zero;
 
-                // 조준 각도 안이면 계속 발사(연사/쿨다운은 Creature.TryFire가 제어)
                 if (IsAimedEnough(aimFlatWS))
+                {
+                    // TryFire()가 실제 발사 성공여부를 안 주더라도,
+                    // 여기서는 "공격 상태에 들어가서 발사 시도하는 순간" 트리거를 쏨.
+                    // (완벽하게 하려면 Creature.TryFire 내부에서 성공 시점에 쏴야 함)
                     TryFire();
+                    AnimShot();
+                }
                 break;
         }
-        Debug.DrawRay(FirePoint.position, FirePoint.forward * 2f, Color.red);
-        Debug.DrawRay(FirePoint.position, aimFlatWS.normalized * 2f, Color.green);
 
+        if (FirePoint != null)
+        {
+            Debug.DrawRay(FirePoint.position, FirePoint.forward * 2f, Color.red);
+            Debug.DrawRay(FirePoint.position, aimFlatWS.normalized * 2f, Color.green);
+        }
     }
 
     private void FixedUpdate()
@@ -111,20 +127,55 @@ public class Enemy : Creature
             rb.velocity = new Vector3(0f, v.y, 0f);
         }
 
-        // 2) 회전: 항상 플레이어 바라보기 (Y축)
+        // 2) 회전
         if (aimFlatWS.sqrMagnitude > 0.0001f)
         {
             Quaternion targetRot = Quaternion.LookRotation(aimFlatWS.normalized, Vector3.up);
             Quaternion next = Quaternion.RotateTowards(rb.rotation, targetRot, turnDegPerSec * Time.fixedDeltaTime);
             rb.MoveRotation(next);
         }
+
+        // 3) MoveSpeed 갱신 (이거 없으면 Idle/Run 절대 안 바뀜)
+        float animSpeed = (state == EnemyState.Approach && desiredMoveDir.sqrMagnitude > 0.0001f) ? MoveSpeed : 0f;
+        AnimMoveSpeed(animSpeed);
     }
+
+    // -------------------------
+    // Animator
+    // -------------------------
+
+    private void AnimMoveSpeed(float speed)
+    {
+        if (EnemyRangeAnimator == null) return;
+        EnemyRangeAnimator.SetFloat("MoveSpeed", speed);
+    }
+
+
+    private void AnimShot()
+    {
+        if (EnemyRangeAnimator == null) return;
+
+        EnemyRangeAnimator.ResetTrigger("OnShot");
+        EnemyRangeAnimator.SetTrigger("OnShot");
+    }
+
+    private void AnimDie()
+    {
+        if (EnemyRangeAnimator == null) return;
+
+        EnemyRangeAnimator.ResetTrigger("OnDie");
+        EnemyRangeAnimator.SetTrigger("OnDie");
+    }
+
+    // -------------------------
+    // Aim / Fire
+    // -------------------------
 
     private Vector3 ComputeAimDirection()
     {
         if (target == null) return transform.forward;
 
-        Vector3 from = FirePoint.position;
+        Vector3 from = (FirePoint != null) ? FirePoint.position : transform.position;
         Vector3 to = target.position;
 
         if (!useLeadShot) return (to - from);
@@ -150,7 +201,6 @@ public class Enemy : Creature
         flatDirWS.y = 0f;
         if (flatDirWS.sqrMagnitude < 0.0001f) return false;
 
-        // FirePoint.forward 대신 "현재 몸체가 보는 방향" 사용
         Vector3 fwd = GetFacingForward();
         fwd.y = 0f;
         if (fwd.sqrMagnitude < 0.0001f) return false;
@@ -162,15 +212,16 @@ public class Enemy : Creature
     private Vector3 GetFacingForward()
     {
         Rigidbody rb = Rigidbody;
-        if (rb != null)
-            return rb.rotation * Vector3.forward;   // 물리 회전 기준
-
-        return transform.forward;                   // fallback
+        if (rb != null) return rb.rotation * Vector3.forward;
+        return transform.forward;
     }
+
+    // -------------------------
+    // Target / Range
+    // -------------------------
 
     private bool AcquireTargetInSearchRange()
     {
-        // 타겟이 파괴됐는지 체크
         if (target != null) return true;
 
         GameObject go = GameObject.FindGameObjectWithTag("Player");
@@ -214,31 +265,65 @@ public class Enemy : Creature
         return dir;
     }
 
+    // -------------------------
+    // Death / Reward
+    // -------------------------
+
     private void EnterDead(string reason)
     {
+        if (state == EnemyState.Dead) return;
+
         state = EnemyState.Dead;
+
+        // 사망 애니 트리거
+        AnimDie();
+
         Debug.Log($"Enemy Dead ({reason})");
-        Die();
+
+        // 여기서 base.Die() 직접 호출 금지
+        StartCoroutine(Co_DeathSequence());
+    }
+    private IEnumerator Co_DeathSequence()
+    {
+        // 1) 로직 정지
+        enabled = false;
+
+        if (Rigidbody != null)
+        {
+            Rigidbody.velocity = Vector3.zero;
+            Rigidbody.isKinematic = true;
+        }
+
+        Collider col = GetComponent<Collider>();
+        if (col != null) col.enabled = false;
+
+        // 2) 사망 애니 길이만큼 대기
+        float deathAnimTime = 3f; // 기본값
+
+        if (EnemyRangeAnimator != null)
+        {
+            yield return null; // 트리거 반영 프레임
+
+            AnimatorStateInfo st =
+                EnemyRangeAnimator.GetCurrentAnimatorStateInfo(0);
+
+            if (st.IsName("Die"))
+                deathAnimTime = st.length;
+        }
+
+        yield return new WaitForSeconds(deathAnimTime);
+
+        // 3) 이제 진짜 사망 처리 (Destroy는 Creature에서)
+        base.Die();
     }
     protected override void Die()
     {
-        GiveExpToPlayer();
-        base.Die();
     }
-
     private void GiveExpToPlayer()
     {
-        // 가장 단순/안전: 태그로 Player 찾고, PlayerProgress를 가져와서 exp 추가
-        //GameObject go = GameObject.FindGameObjectWithTag("Player");
-        //if (go == null) return;
-
-        //PlayerProgress prog = go.GetComponent<PlayerProgress>();
-        //PlayerProgress prog = Player.instance.gameObject.GetComponent<PlayerProgress>();
-        //if (prog == null) return;
-        
-        //prog.AddExp(expReward);
         PlayerProgress.instance.AddExp(expReward);
     }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.cyan;

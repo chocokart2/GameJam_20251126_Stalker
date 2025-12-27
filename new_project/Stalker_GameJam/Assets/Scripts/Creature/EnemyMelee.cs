@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class EnemyMelee : Creature
 {
     private enum EnemyState { Search, Approach, Attack, Dead }
@@ -9,8 +9,8 @@ public class EnemyMelee : Creature
 
     [Header("AI Ranges")]
     [SerializeField] private float searchRange = 25f;
-    [SerializeField] private float meleeRange = 1.8f;     // 근접 공격 사거리(XZ 기준)
-    [SerializeField] private float attackStopBuffer = 0.1f; // 너무 딱 붙어서 떨림 방지용
+    [SerializeField] private float meleeRange = 1.8f;
+    [SerializeField] private float attackStopBuffer = 0.1f;
     [SerializeField] private float meleeSpawnForward = 0.8f;
 
     [Header("AI Search Rule")]
@@ -19,19 +19,11 @@ public class EnemyMelee : Creature
     [Header("Rotate")]
     [SerializeField] private float turnDegPerSec = 720f;
 
-    [Header("Melee Attack")]
-    [SerializeField] private GameObject meleePrefab;  // MeleeAttack가 붙어있는 프리팹
-    [SerializeField] private float meleeCooldown = 1.0f;
-
-    [SerializeField] private int meleeDamage = 5;
-    [SerializeField] private float meleeKnockbackForce = 4f;
-    [SerializeField] private float meleeStunDuration = 0f;
-
-    [Tooltip("프리팹이 스스로 파괴되지 않으면 일정 시간 뒤 제거")]
-    [SerializeField] private float meleePrefabLife = 0.2f;
-
     [Header("Reward")]
     [SerializeField] private int expReward = 1;
+
+    [Header("Animator")]
+    public Animator EnemyMeleeAnimator;
 
     private EnemyState state = EnemyState.Search;
     private float notFoundTimer = 0f;
@@ -73,7 +65,8 @@ public class EnemyMelee : Creature
 
         // 항상 타겟을 바라보도록 회전 목표 갱신 (XZ 평면)
         aimFlatWS = GetDirToTargetXZ();
-        if (aimFlatWS.sqrMagnitude < 0.0001f) aimFlatWS = transform.forward;
+        if (aimFlatWS.sqrMagnitude < 0.0001f)
+            aimFlatWS = transform.forward;
 
         switch (state)
         {
@@ -88,14 +81,13 @@ public class EnemyMelee : Creature
                         desiredMoveDir = Vector3.zero;
                     else
                         desiredMoveDir = aimFlatWS;
-
                     break;
                 }
 
             case EnemyState.Attack:
                 desiredMoveDir = Vector3.zero;
 
-                // 쿨다운이면 근접 공격 발동
+                // 쿨다운이면 근접 공격 발동(성공했을 때만 트리거)
                 TryMeleeAttack();
                 break;
         }
@@ -130,7 +122,43 @@ public class EnemyMelee : Creature
             Quaternion next = Quaternion.RotateTowards(rb.rotation, targetRot, turnDegPerSec * Time.fixedDeltaTime);
             rb.MoveRotation(next);
         }
+
+        // 3) 애니: MoveSpeed 갱신 (Idle/Run 전이 핵심)
+        AnimMoveSpeed(rb.velocity);
     }
+
+    // =========================
+    // Animator Helpers
+    // =========================
+
+    private void AnimMoveSpeed(Vector3 velocity)
+    {
+        if (EnemyMeleeAnimator == null) return;
+
+        velocity.y = 0f;
+        float speed = velocity.magnitude;
+        EnemyMeleeAnimator.SetFloat("MoveSpeed", speed);
+    }
+
+    private void AnimShot()
+    {
+        if (EnemyMeleeAnimator == null) return;
+
+        EnemyMeleeAnimator.ResetTrigger("OnShot");
+        EnemyMeleeAnimator.SetTrigger("OnShot");
+    }
+
+    private void AnimDie()
+    {
+        if (EnemyMeleeAnimator == null) return;
+
+        EnemyMeleeAnimator.ResetTrigger("OnDie");
+        EnemyMeleeAnimator.SetTrigger("OnDie");
+    }
+
+    // =========================
+    // Melee Attack
+    // =========================
 
     private bool TryMeleeAttack()
     {
@@ -139,7 +167,7 @@ public class EnemyMelee : Creature
         if (Time.time < nextMeleeTime) return false;
 
         int fr = Mathf.Max(1, WeaponData.fireRate);
-        float cd = 60f / fr; // Creature.TryFire()와 동일 규칙
+        float cd = 60f / fr;
         nextMeleeTime = Time.time + cd;
 
         Vector3 spawnPos = (FirePoint ? FirePoint.position : transform.position)
@@ -154,22 +182,28 @@ public class EnemyMelee : Creature
         {
             meleeAtk.ConfigureMelee(
                 WeaponData.damage,
-                WeaponData.projectileSpeed,   // melee에선 “짧은 전진 속도”로 재해석 가능
-                WeaponData.range,             // 이동형일 때 최대 거리
-                0f,                           // 넉백 필요하면 WeaponData 확장 추천
-                0f,                           // 스턴 필요하면 WeaponData 확장 추천
+                WeaponData.projectileSpeed,
+                WeaponData.range,
+                0f,
+                0f,
                 transform,
                 Type
             );
         }
         else
         {
-            // 최소한 팀킬 방지는 반드시 세팅
             atk.Configure(WeaponData.damage, 0f, transform, 0f, Type);
         }
 
+        // ✅ 공격이 실제로 발동된 "이 순간"에만 트리거
+        AnimShot();
+
         return true;
     }
+
+    // =========================
+    // Target / Range
+    // =========================
 
     private bool AcquireTargetInSearchRange()
     {
@@ -210,22 +244,60 @@ public class EnemyMelee : Creature
         return Vector3.Distance(a, b);
     }
 
+    // =========================
+    // Death / Reward
+    // =========================
+
     private void EnterDead(string reason)
     {
+        if (state == EnemyState.Dead) return;
+
         state = EnemyState.Dead;
+
+        AnimDie();
+
         Debug.Log($"EnemyMelee Dead ({reason})");
-        Die();
+
+        StartCoroutine(Co_DeathSequence());
+    }
+
+    private IEnumerator Co_DeathSequence()
+    {
+        enabled = false;
+
+        if (Rigidbody != null)
+        {
+            Rigidbody.velocity = Vector3.zero;
+            Rigidbody.isKinematic = true;
+        }
+
+        Collider col = GetComponent<Collider>();
+        if (col != null) col.enabled = false;
+
+        float deathAnimTime = 3f;
+
+        if (EnemyMeleeAnimator != null)
+        {
+            yield return null;
+
+            AnimatorStateInfo st =
+                EnemyMeleeAnimator.GetCurrentAnimatorStateInfo(0);
+
+            if (st.IsName("Die"))
+                deathAnimTime = st.length;
+        }
+
+        yield return new WaitForSeconds(deathAnimTime);
+
+        base.Die();
     }
 
     protected override void Die()
     {
-        GiveExpToPlayer();
-        base.Die();
     }
 
     private void GiveExpToPlayer()
     {
-        // Enemy.cs 방식 그대로
         PlayerProgress.instance.AddExp(expReward);
     }
 

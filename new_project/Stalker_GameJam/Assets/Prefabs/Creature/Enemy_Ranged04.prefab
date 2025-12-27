@@ -16,10 +16,20 @@ PrefabInstance:
         type: 2}
     - target: {fileID: 3732525526223384469, guid: 60ded6728e354db408018904b1e0a15a,
         type: 3}
+      propertyPath: searchRange
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3732525526223384469, guid: 60ded6728e354db408018904b1e0a15a,
+        type: 3}
       propertyPath: creatureData
       value: 
       objectReference: {fileID: 11400000, guid: d66c0fdb678e96749b484e84289a5c81,
         type: 2}
+    - target: {fileID: 3732525526223384469, guid: 60ded6728e354db408018904b1e0a15a,
+        type: 3}
+      propertyPath: attackRangeOverride
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4412258527458703428, guid: 60ded6728e354db408018904b1e0a15a,
         type: 3}
       propertyPath: m_Name

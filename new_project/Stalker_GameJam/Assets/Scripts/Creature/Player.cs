@@ -192,6 +192,7 @@ protected override void Update()
         SpawnManager.instance.WhenPlayerDeath();
         SoundManager.Instance.PlaySfx("P_Die");
 
+        FindFirstObjectByType<DeathUIController>(FindObjectsInactive.Include)?.ShowAndGoTitle();
         //Destroy(gameObject);
         Destroy(this); // 컴포넌트만 죽여보기
     }

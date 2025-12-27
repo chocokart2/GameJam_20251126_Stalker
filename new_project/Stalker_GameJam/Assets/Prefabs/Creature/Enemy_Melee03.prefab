@@ -8,10 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1133078229754796708, guid: 9bb739498af431b4d897041a33efafea,
+        type: 3}
+      propertyPath: weaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4cbb0cc17d325a644887b252941175ec,
+        type: 2}
+    - target: {fileID: 1133078229754796708, guid: 9bb739498af431b4d897041a33efafea,
+        type: 3}
+      propertyPath: creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4933783e8c3295644a075e25e2053fe7,
+        type: 2}
     - target: {fileID: 4224783608341410192, guid: 9bb739498af431b4d897041a33efafea,
         type: 3}
       propertyPath: m_Name
-      value: EnemyBase Variant Variant
+      value: Enemy_Melee03
       objectReference: {fileID: 0}
     - target: {fileID: 8789481388182367092, guid: 9bb739498af431b4d897041a33efafea,
         type: 3}

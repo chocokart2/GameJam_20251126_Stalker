@@ -8,6 +8,31 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1712776470513692673, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: m_Height
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712776470513692673, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.35919216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712776470513692673, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.045562685
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712776470513692673, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712776470513692673, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.09524515
+      objectReference: {fileID: 0}
     - target: {fileID: 2271187225247232948, guid: 85c1aa889499aa04abfe2fa275b57cce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58,10 +83,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5920251923651837569, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: weaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: 059de4eb98f597243bae183660471f9e,
+        type: 2}
+    - target: {fileID: 5920251923651837569, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 04525e351d4d49c42a78463db251261e,
+        type: 2}
+    - target: {fileID: 5920251923651837569, guid: 85c1aa889499aa04abfe2fa275b57cce,
+        type: 3}
+      propertyPath: attackRangeOverride
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6692085376784623952, guid: 85c1aa889499aa04abfe2fa275b57cce,
         type: 3}
       propertyPath: m_Name
-      value: EnemyBase Variant Variant
+      value: Enemy_Ranged02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

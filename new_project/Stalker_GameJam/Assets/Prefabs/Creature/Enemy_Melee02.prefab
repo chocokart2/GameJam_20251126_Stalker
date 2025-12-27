@@ -61,8 +61,20 @@ PrefabInstance:
     - target: {fileID: 5043051975754946106, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
         type: 3}
       propertyPath: m_Name
-      value: EnemyBase Variant Variant
+      value: Enemy_Melee02
       objectReference: {fileID: 0}
+    - target: {fileID: 8134758657232665870, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
+        type: 3}
+      propertyPath: weaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: 585cc4951ea8e4444a1cedd9b9b488b8,
+        type: 2}
+    - target: {fileID: 8134758657232665870, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
+        type: 3}
+      propertyPath: creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 21cb6a08eae8506419fb1845467c66c7,
+        type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

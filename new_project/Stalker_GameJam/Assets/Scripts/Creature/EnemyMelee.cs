@@ -195,7 +195,7 @@ public class EnemyMelee : Creature
             atk.Configure(WeaponData.damage, 0f, transform, 0f, Type);
         }
 
-        // ✅ 공격이 실제로 발동된 "이 순간"에만 트리거
+        // 공격이 실제로 발동된 "이 순간"에만 트리거
         AnimShot();
 
         return true;

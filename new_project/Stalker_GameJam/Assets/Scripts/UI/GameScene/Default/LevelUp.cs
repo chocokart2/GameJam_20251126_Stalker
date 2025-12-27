@@ -20,6 +20,7 @@ public class LevelUp : MonoBehaviour
 
     private PlayerProgress progress;
     private CardData[] offered = new CardData[3];
+    public Image[] rewardImages = new Image[3];
 
     private void Awake()
     {
@@ -154,12 +155,25 @@ public class LevelUp : MonoBehaviour
                 rewardButtons[i].interactable = (c != null);
 
             if (rewardTexts[i] != null)
+                rewardTexts[i].text = (c == null) ? "NULL" : c.cardName;
+
+            if (rewardImages[i] != null)
             {
-                if (c == null) rewardTexts[i].text = "NULL";
-                else rewardTexts[i].text = c.cardName;
+                if (c == null || c.icon == null)
+                {
+                    rewardImages[i].sprite = null;
+                    rewardImages[i].enabled = false;   // ºóÄ­ÀÌ¸é ¼û±è(¼±ÅÃ)
+                }
+                else
+                {
+                    rewardImages[i].sprite = c.icon;
+                    rewardImages[i].enabled = true;
+                    rewardImages[i].preserveAspect = true; // ³×¸ð ¿µ¿ª¿¡ Âî±×·¯Áü ¹æÁö(¼±ÅÃ)
+                }
             }
         }
     }
+
 
     private void OnClickReward(int index)
     {

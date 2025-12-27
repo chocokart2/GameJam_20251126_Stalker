@@ -120,13 +120,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8624721641285138219, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8624721641285138219, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8624721641285138219, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8624721641285138219, guid: fe2d47682e0bff24082955c6a9950080,
+        type: 3}
       propertyPath: m_Center.y
-      value: 0.7
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 8624721641285138219, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9219091897945240734, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
@@ -181,7 +196,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 3629019778995599787, guid: fe2d47682e0bff24082955c6a9950080, type: 3}
     - {fileID: 2193435677153661748, guid: fe2d47682e0bff24082955c6a9950080, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1550289979509713530, guid: fe2d47682e0bff24082955c6a9950080, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2723649015578598542, guid: fe2d47682e0bff24082955c6a9950080,
         type: 3}
@@ -224,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitFeedBack: {fileID: 0}
-  creatureData: {fileID: 11400000, guid: 0396376c61e1efe478c2e881d5e59424, type: 2}
+  creatureData: {fileID: 11400000, guid: 4388544088b96444f838ba6124ccb742, type: 2}
   weaponData: {fileID: 11400000, guid: a041fbd8f8125fb4ab405b8366bcbcba, type: 2}
   firePoint: {fileID: 1133147620210772282}
   knockbackOrigin: {fileID: 1521043935213048783}

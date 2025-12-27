@@ -58,10 +58,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4926674294530890084, guid: d80ff66e9f0212341a3215654946e697,
+        type: 3}
+      propertyPath: weaponData
+      value: 
+      objectReference: {fileID: 11400000, guid: 3df2d68d110997b4abc02b254b2aa5c4,
+        type: 2}
+    - target: {fileID: 4926674294530890084, guid: d80ff66e9f0212341a3215654946e697,
+        type: 3}
+      propertyPath: creatureData
+      value: 
+      objectReference: {fileID: 11400000, guid: 1356d2bc0c2a4db43bd1b5dabe6cf3d0,
+        type: 2}
     - target: {fileID: 8162742165216801360, guid: d80ff66e9f0212341a3215654946e697,
         type: 3}
       propertyPath: m_Name
-      value: EnemyBase Variant Variant
+      value: Enemy_Melee04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -21,3 +21,4 @@ MonoBehaviour:
   value: 60
   maxLevel: 99
   prerequisiteCardId: 
+  icon: {fileID: 21300000, guid: f5187e1855c45d942bc7097ebbe4a3af, type: 3}

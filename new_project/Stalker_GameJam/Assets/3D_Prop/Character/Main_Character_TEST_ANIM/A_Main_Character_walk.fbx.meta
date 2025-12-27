@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee6952e145c7d0f498cf7ffe8fe683d3
+guid: b5f32a0baca0b544397f59cd09370679
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -44,12 +44,12 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
+      keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
@@ -576,7 +576,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: bf960da7fcd84b64db2a5d6aef0543b8,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 1280f69077af0454098ca3b45bbe2200,
     type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3

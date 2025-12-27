@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using MoreMountains.Feedbacks;
 
 public class Creature : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Creature : MonoBehaviour
     public int MaxAmmo => GetFinalMaxAmmo();
 
     public int MaxHealth => GetFinalMaxHealth();
+    public MMF_Player hitFeedBack;
 
     [Header("Data")]
     [SerializeField] private CreatureData creatureData;
@@ -25,6 +27,7 @@ public class Creature : MonoBehaviour
 
 
     [SerializeField] private StatModifier statMod;
+
     public float AttackRange => weaponData != null ? weaponData.range : 0f;
     public float ProjectileSpeed => weaponData != null ? weaponData.projectileSpeed : 0f;
 
@@ -87,6 +90,7 @@ public class Creature : MonoBehaviour
             currentHealth = 0;
             Die();
         }
+        hitFeedBack?.PlayFeedbacks();
     }
 
     public void ApplyStun(float duration)

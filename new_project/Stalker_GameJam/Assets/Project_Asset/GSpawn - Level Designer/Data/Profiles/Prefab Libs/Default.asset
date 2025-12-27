@@ -1,0 +1,4406 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8678519575149240107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Chicken_Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: f076b2ef-035f-42ae-b601-91289bc01378
+  _prefabAsset: {fileID: 7751335321120492999, guid: 52c59b27e6d96f74faa19c7df03bb76f,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 7751335321120492999, guid: 52c59b27e6d96f74faa19c7df03bb76f,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -123.73446, y: -0.008077399, z: 45.12606}
+    _rotation: {x: 6.1232336e-17, y: -0, z: -0, w: 1}
+    _scale: {x: 0.47244102, y: 0.47244102, z: 0.47244102}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 13.462545, y: 11.709482, z: 12.00052}
+  _uiSelected: 0
+--- !u!114 &-8625682810217455929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_CTPTrashCan_02
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 5ab223a6-85a8-415c-bdc0-edc312ef5038
+  _prefabAsset: {fileID: 2807142278202659315, guid: f48b59678641a2e4db118e9159220dc1,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2807142278202659315, guid: f48b59678641a2e4db118e9159220dc1,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.3456662, y: 2.2872932, z: 1.2398388}
+  _uiSelected: 0
+--- !u!114 &-8173918921190199419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b09c502d52d26944bd03a0b831a19c4, type: 3}
+  m_Name: Dirty
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 2bf91f60-1ac3-4914-9945-cfc7de95cc2c
+  _parentLib: {fileID: 0}
+  _directChildren: []
+  _prefabsVisibleInManager: 1
+  _libName: Dirty
+  _folderPath:
+    _path: Assets/3D_Prop/Environment/Dirty
+    _reveresedPath: Dirty/Environment/3D_Prop/Assets
+  _prefabs:
+  - {fileID: 1186699894160796613}
+  - {fileID: -6861353405147906465}
+  - {fileID: 5990916288680728119}
+  - {fileID: -2106963997777636474}
+  - {fileID: -4094502465924115724}
+  - {fileID: 361727227006524397}
+  - {fileID: 3417149325695904372}
+  - {fileID: -1857695109122875219}
+  - {fileID: 8863638920564801188}
+  - {fileID: -8678519575149240107}
+  - {fileID: 3996858442956982456}
+  - {fileID: -5610922883352102722}
+  - {fileID: -235745234204511874}
+  - {fileID: -7417675105405282214}
+  - {fileID: 8155554232607803612}
+  - {fileID: -3159007682977158350}
+  - {fileID: 4321363641354752114}
+  - {fileID: 5964680810464001462}
+  - {fileID: 8897480054283116828}
+  - {fileID: -6724466764527841346}
+  - {fileID: -5609308228178581159}
+  - {fileID: 7064513480374890387}
+  - {fileID: 509519881649040662}
+  - {fileID: -6093684467987649861}
+  - {fileID: 5336766700964561790}
+  - {fileID: 7234561845709654910}
+  - {fileID: 1278300220429926074}
+  - {fileID: -4571400712013013474}
+  - {fileID: 7230744160273490070}
+  - {fileID: -5459682571524590619}
+  - {fileID: -5159874703369893162}
+  _uiSelected: 1
+  _uiPinned: 0
+--- !u!114 &-7925350069936453502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Baloon
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: e3566384-3b0a-47cb-9ecc-4ec90f9e564e
+  _prefabAsset: {fileID: 1245181718898250, guid: f04265788aa22044c8d382d94eb000e8,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1245181718898250, guid: f04265788aa22044c8d382d94eb000e8,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0, y: -0, z: -0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 8.105942, y: 13.717238, z: 8.094851}
+  _uiSelected: 0
+--- !u!114 &-7900127428280779342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Mountain3
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 4b9503da-a184-485a-bf6a-fef8bc4ec31d
+  _prefabAsset: {fileID: 1593043170722708, guid: 1fb0c81b91e17d247a01d01f2c15ba26,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1593043170722708, guid: 1fb0c81b91e17d247a01d01f2c15ba26,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 54.59874, y: 92.63204, z: 175.46906}
+  _uiSelected: 0
+--- !u!114 &-7504016849223515439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Hospital
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 86594a7d-7a0e-47ab-9831-b21e8cd60360
+  _prefabAsset: {fileID: 363025940278517486, guid: eb1a3f979ef5c8743a26ef5a30ec6511,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 363025940278517486, guid: eb1a3f979ef5c8743a26ef5a30ec6511,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: -2.6
+  _tags: 0
+  _modelSize: {x: 36.807426, y: 18.96103, z: 19.581688}
+  _uiSelected: 0
+--- !u!114 &-7417675105405282214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Super_Market
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 78304666-afc6-485a-a5b6-f6a5e094a35e
+  _prefabAsset: {fileID: 8083818155891616622, guid: 72658e438cb6e144d9de8808622e86f3,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8083818155891616622, guid: 72658e438cb6e144d9de8808622e86f3,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -130.26384, y: -0.008368942, z: 127.2339}
+    _rotation: {x: 4.3297803e-17, y: 0.7071068, z: -4.3297803e-17, w: 0.7071068}
+    _scale: {x: 0.47244114, y: 0.47244102, z: 0.47244114}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 28.503006, y: 9.094168, z: 15.903518}
+  _uiSelected: 0
+--- !u!114 &-7216759037510091780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Tree1
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: a76636aa-6f05-4774-b1ca-2c2eb3245f32
+  _prefabAsset: {fileID: 1626916158554016, guid: b397840dccff1eb4eb52954b9e41d3d2,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1626916158554016, guid: b397840dccff1eb4eb52954b9e41d3d2,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 358.11768, y: 0.0998998, z: 176.49306}
+    _rotation: {x: -0.031499173, y: 0.043590825, z: 0.015024409, w: -0.9984397}
+    _scale: {x: 3.1329412, y: 3.132941, z: 3.1329412}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.9323437, y: 6.154938, z: 1.9323437}
+  _uiSelected: 1
+--- !u!114 &-7084819394684992160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b09c502d52d26944bd03a0b831a19c4, type: 3}
+  m_Name: Clean
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 377d8ff1-124a-4107-8602-2afa7a0ae038
+  _parentLib: {fileID: 0}
+  _directChildren: []
+  _prefabsVisibleInManager: 1
+  _libName: Clean
+  _folderPath:
+    _path: Assets/3D_Prop/Environment/Clean
+    _reveresedPath: Clean/Environment/3D_Prop/Assets
+  _prefabs:
+  - {fileID: -7925350069936453502}
+  - {fileID: -243448934906157768}
+  - {fileID: 3304627087097402063}
+  - {fileID: 6331545445370629950}
+  - {fileID: -1046830053753954929}
+  - {fileID: -5191450986188547208}
+  - {fileID: -2626483935333869028}
+  - {fileID: 5995313438712145010}
+  - {fileID: -4615923931168264085}
+  - {fileID: -4952107743861847315}
+  - {fileID: 3578428014217398847}
+  - {fileID: -3764147846203029773}
+  - {fileID: 3889378499806621822}
+  - {fileID: -209367923169334055}
+  - {fileID: -4820420946312994293}
+  - {fileID: 7189451772681113104}
+  - {fileID: -4507461668320509538}
+  - {fileID: 1035829398993169956}
+  - {fileID: 624400869515842595}
+  - {fileID: -5993516961482933628}
+  - {fileID: -3132675565317449728}
+  - {fileID: 7557558197504345546}
+  - {fileID: 4677753018946160886}
+  - {fileID: -5441133618499263442}
+  - {fileID: 6733501043407733025}
+  - {fileID: 5233190191710559368}
+  - {fileID: 6508207642975483911}
+  - {fileID: -864098126149095416}
+  - {fileID: -6814773717526937457}
+  - {fileID: -7504016849223515439}
+  - {fileID: 8402492921209599310}
+  - {fileID: 2312225535076104583}
+  - {fileID: -4895050609287346438}
+  - {fileID: 5455353791144317196}
+  - {fileID: -7900127428280779342}
+  - {fileID: -4419979684220785272}
+  - {fileID: -3654742410224377780}
+  - {fileID: 3423667596385360994}
+  - {fileID: 2874874154055086646}
+  - {fileID: 8489064241200173528}
+  - {fileID: 2333228643081054488}
+  - {fileID: 7948901308993669377}
+  - {fileID: 2658524606394268443}
+  - {fileID: 6999040828683920482}
+  - {fileID: 1531150945160984721}
+  - {fileID: -3634594495326529192}
+  - {fileID: 7728147699457068368}
+  - {fileID: 489723589770698380}
+  - {fileID: -5914658365008084163}
+  - {fileID: 3156655314366863006}
+  - {fileID: 7915619413828137849}
+  - {fileID: 7229467546437928120}
+  - {fileID: -5197689134649978412}
+  - {fileID: 8379104961470435433}
+  - {fileID: -808137899439892882}
+  - {fileID: -6315219870248275204}
+  - {fileID: 1349177330343294499}
+  - {fileID: 1598446725480271117}
+  - {fileID: 1809558941008167488}
+  - {fileID: -8625682810217455929}
+  - {fileID: 6731604217391059120}
+  - {fileID: 285451215975474837}
+  - {fileID: -4571576424457144641}
+  - {fileID: -5401218785624612012}
+  - {fileID: -5383633268129287351}
+  - {fileID: 3659157924378300238}
+  - {fileID: -6849600825514697721}
+  - {fileID: 6544722601753015102}
+  - {fileID: -6718276590398586362}
+  - {fileID: -5209627959186428746}
+  - {fileID: -4674812263599529038}
+  - {fileID: -4487953842749102546}
+  - {fileID: -3507937900647121177}
+  - {fileID: 4495915132996484136}
+  - {fileID: -5809444446085810446}
+  - {fileID: 8638129016576087020}
+  - {fileID: 8105527931621771408}
+  - {fileID: -4636098751934207009}
+  - {fileID: 3270105752422455141}
+  - {fileID: -1430950593231554952}
+  - {fileID: -6137504386820746899}
+  - {fileID: -582014800084900996}
+  - {fileID: 5470648680027621860}
+  - {fileID: 8653126634881408349}
+  - {fileID: -1065061753999923237}
+  - {fileID: -5402649125640690324}
+  - {fileID: 2194660321803229150}
+  - {fileID: -5254407692087661452}
+  - {fileID: 3826202634696957780}
+  - {fileID: -6458552741699295665}
+  - {fileID: 1027197188773235652}
+  - {fileID: 5780151843064122412}
+  - {fileID: -7216759037510091780}
+  - {fileID: 2137758984558426764}
+  - {fileID: 4107765607536786831}
+  _uiSelected: 0
+  _uiPinned: 0
+--- !u!114 &-6861353405147906465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building002
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 513f0b67-9cbb-492a-89f0-9dba817e7dcd
+  _prefabAsset: {fileID: 1892581614492797120, guid: 28ba99e6445be464cb8e96e0049cdcac,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1892581614492797120, guid: 28ba99e6445be464cb8e96e0049cdcac,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -303.76544, y: 3.6999853, z: -126.453926}
+    _rotation: {x: -0.00000006657904, y: 0.00000041723254, z: 2.4868997e-14, w: 1}
+    _scale: {x: 3.0330513, y: 3.0330513, z: 3.0330513}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 3.7000003
+  _tags: 0
+  _modelSize: {x: 13.206445, y: 9.0943575, z: 20.5947}
+  _uiSelected: 0
+--- !u!114 &-6849600825514697721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_RoofWaterStore_01
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 7676b270-f504-48a7-91d7-fde94936cea7
+  _prefabAsset: {fileID: 8329679192468709426, guid: 47306f9326ee563408b420aa09b37e95,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8329679192468709426, guid: 47306f9326ee563408b420aa09b37e95,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.3305914, y: 4.3509445, z: 2.2953916}
+  _uiSelected: 0
+--- !u!114 &-6814773717526937457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Gas_station_sign
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 0040bb2a-9f8c-4654-91bd-732b44d37662
+  _prefabAsset: {fileID: 1267890889357474, guid: 8c368e11e8139c947862eab281f512e3,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1267890889357474, guid: 8c368e11e8139c947862eab281f512e3,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 6, y: 6, z: 6}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.2497816, y: 11.007795, z: 4.5694942}
+  _uiSelected: 0
+--- !u!114 &-6724466764527841346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_building_metion
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: d8944cb1-d7b3-4b33-a8a5-e69ac5d45476
+  _prefabAsset: {fileID: 8796227497337327208, guid: 4dca5020f63447b4296f0fe2dd757d3b,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8796227497337327208, guid: 4dca5020f63447b4296f0fe2dd757d3b,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -12.951752, y: -0.0022790516, z: 294.04034}
+    _rotation: {x: -0.00000009415697, y: 0.7071068, z: 0.00000009415697, w: 0.7071068}
+    _scale: {x: 5.080677, y: 3.340725, z: 4.008855}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 15.271112, y: 19.339802, z: 16.461763}
+  _uiSelected: 0
+--- !u!114 &-6718276590398586362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_RoofWaterStore_04
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 511a77e3-46a3-4214-bd23-5ac637785ac5
+  _prefabAsset: {fileID: 8016488275312950323, guid: 78049b883c6549443a44bd045f2b8ce6,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8016488275312950323, guid: 78049b883c6549443a44bd045f2b8ce6,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.0948, y: 10.50332, z: 4.0948}
+  _uiSelected: 0
+--- !u!114 &-6458552741699295665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Rock5
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 5338ca62-b84c-4df6-97c4-d569ebb84937
+  _prefabAsset: {fileID: 1617890578762308, guid: d4c28ac193936fe41aa35fb684452678,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1617890578762308, guid: d4c28ac193936fe41aa35fb684452678,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0, y: -0, z: -0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.212731, y: 1.6894047, z: 1.2127309}
+  _uiSelected: 0
+--- !u!114 &-6315219870248275204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Traffic Signal_small
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: d010ac7e-04e9-4b8a-9450-096fb365d2ea
+  _prefabAsset: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 2857b989c828950448ead142ca28e4a3, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.82800007, y: 8.443059, z: 0.90000004}
+  _uiSelected: 0
+--- !u!114 &-6137504386820746899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_04
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: b1f08cc6-30f6-40ca-81aa-2b55ac7dcdee
+  _prefabAsset: {fileID: 9208280024704128269, guid: aed1104f428065b49adcf13dac2ed8c7,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 9208280024704128269, guid: aed1104f428065b49adcf13dac2ed8c7,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.6000473, y: 8.590912, z: 3.6000473}
+  _uiSelected: 0
+--- !u!114 &-6093684467987649861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_chain_link_fence_001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 9bfd3a2e-0d90-4b83-a33e-f3b710bca896
+  _prefabAsset: {fileID: 6016647997100017898, guid: 99122fdcf93bb9d4886edbb4619f0198,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 6016647997100017898, guid: 99122fdcf93bb9d4886edbb4619f0198,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+    _scale: {x: 1, y: 1.0000002, z: 1.0000002}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.412281, y: 0.43279764, z: 2.0419629}
+  _uiSelected: 0
+--- !u!114 &-5993516961482933628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Super Market
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 29d363c7-e122-425b-8b5d-dae862c7b28b
+  _prefabAsset: {fileID: 100000, guid: c3e95e72d6dba334594c3c5c37fcf18a, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: c3e95e72d6dba334594c3c5c37fcf18a, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 28.503004, y: 9.094168, z: 15.903516}
+  _uiSelected: 0
+--- !u!114 &-5914658365008084163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Roof prop air
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 44c60692-f60b-4248-bf42-c60503d1ea57
+  _prefabAsset: {fileID: 100000, guid: 120449a04911a924ca1239be382ff0be, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 120449a04911a924ca1239be382ff0be, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.8234506, y: 1.1531502, z: 1.4126666}
+  _uiSelected: 0
+--- !u!114 &-5809444446085810446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_TrashBag_01
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: be93659d-77b2-482b-908d-5051e8a824a1
+  _prefabAsset: {fileID: 7546771523220581105, guid: 90f04355ba51ba74e8446c8a05abd7cd,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 7546771523220581105, guid: 90f04355ba51ba74e8446c8a05abd7cd,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 2.5, y: 2.5, z: 2.5}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.4417881, y: 1.4808795, z: 1.4417881}
+  _uiSelected: 0
+--- !u!114 &-5610922883352102722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Gas_Station__2_
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: f8377a45-ceda-4aef-8b69-b04ee6bea904
+  _prefabAsset: {fileID: 2844376382335343741, guid: 0e74b733907a08d4b9b3cc8a8f11ee3b,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2844376382335343741, guid: 0e74b733907a08d4b9b3cc8a8f11ee3b,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 319.91724, y: -0.012695143, z: 210.73015}
+    _rotation: {x: -4.3297803e-17, y: 0.7071068, z: -4.3297803e-17, w: -0.7071068}
+    _scale: {x: 0.47244114, y: 0.47244102, z: 0.47244114}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 15.60001, y: 9.59328, z: 30.722399}
+  _uiSelected: 0
+--- !u!114 &-5609308228178581159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_building_music_store
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 15b995db-58e1-461e-b5ae-5ed8b7e40b70
+  _prefabAsset: {fileID: 9015270898770829673, guid: 65ca2178bff82c14994963238b79cacc,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 9015270898770829673, guid: 65ca2178bff82c14994963238b79cacc,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 6.1232336e-17, y: -3.7493994e-33, z: 0, w: 1}
+    _scale: {x: 0.47244102, y: 0.47244102, z: 0.47244102}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 13.462544, y: 11.709482, z: 12.423781}
+  _uiSelected: 0
+--- !u!114 &-5459682571524590619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Hospital_002
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: efaa6af7-fa0c-4851-8dd4-f30d93d7248d
+  _prefabAsset: {fileID: 4005806556152808167, guid: b4b6b9bb282418f42860822d4c72fd84,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 4005806556152808167, guid: b4b6b9bb282418f42860822d4c72fd84,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -350.30502, y: -0.019738233, z: 87.95526}
+    _rotation: {x: -0.00000009415697, y: 0.7071068, z: 0.00000009415697, w: 0.7071068}
+    _scale: {x: 0.39370114, y: 0.39370102, z: 0.39370114}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 36.807446, y: 18.96104, z: 19.5817}
+  _uiSelected: 0
+--- !u!114 &-5441133618499263442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Env_ResidentBuilding_05
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 666d74dc-bd23-48bb-bcf4-03bc78bc49e2
+  _prefabAsset: {fileID: 2661994169556932180, guid: 0972cd229ac9d20489bbc3a57a51be46,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2661994169556932180, guid: 0972cd229ac9d20489bbc3a57a51be46,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 19.767889, y: 11.83248, z: 10.118643}
+  _uiSelected: 0
+--- !u!114 &-5402649125640690324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Rock1
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 27586018-bebe-4d24-86b6-b484871cc98e
+  _prefabAsset: {fileID: 1480820142073226, guid: 579ffa4757c6d0d4fbaac8133338ddb9,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1480820142073226, guid: 579ffa4757c6d0d4fbaac8133338ddb9,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.0409503, y: 1.5319834, z: 2.7607784}
+  _uiSelected: 0
+--- !u!114 &-5401218785624612012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_RoadCone_01
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 2fbce414-2b3e-4311-b695-9a3b1cdb32c8
+  _prefabAsset: {fileID: 5562890943874257140, guid: b5ec79143a507e74d878f65422c4f863,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 5562890943874257140, guid: b5ec79143a507e74d878f65422c4f863,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.8735616, y: 1.3195233, z: 0.8735616}
+  _uiSelected: 0
+--- !u!114 &-5383633268129287351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_RoofVent_03
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 7a7202cb-3293-4e82-91ae-88dccb2b5960
+  _prefabAsset: {fileID: 4677566573622310684, guid: f7d9fce91721779419f3bf22b82da35d,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 4677566573622310684, guid: f7d9fce91721779419f3bf22b82da35d,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.7336183, y: 0.32870093, z: 1.7336183}
+  _uiSelected: 0
+--- !u!114 &-5254407692087661452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Rock3
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: c861e454-3020-4669-86a7-9f19d76fa0fc
+  _prefabAsset: {fileID: 1180508800726534, guid: 4f061963d8f46cc469cad812f02ec73d,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1180508800726534, guid: 4f061963d8f46cc469cad812f02ec73d,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.5314364, y: 1.74825, z: 2.3165393}
+  _uiSelected: 0
+--- !u!114 &-5209627959186428746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_StreetSign_Bump
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 7b1d967a-38c0-4c58-8960-615c15f87717
+  _prefabAsset: {fileID: 7195187737987913630, guid: d3e0ea8d2ad84a44b9969cd6eb557c95,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 7195187737987913630, guid: d3e0ea8d2ad84a44b9969cd6eb557c95,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.8262482, y: 7.1405916, z: 0.40560782}
+  _uiSelected: 0
+--- !u!114 &-5197689134649978412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Traffic cone
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 808cfd47-36a1-4de2-8927-06c2ac382380
+  _prefabAsset: {fileID: 100000, guid: 52f3bf47c9c62af4588469ff668b805c, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 52f3bf47c9c62af4588469ff668b805c, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.7848643, y: 0.92120963, z: 0.82525516}
+  _uiSelected: 0
+--- !u!114 &-5191450986188547208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_2
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: c6de29fb-45e6-4d65-9e41-7af7650dd558
+  _prefabAsset: {fileID: 1829935911855672, guid: 7f76863629d4c4041b8ac5413ffc8115,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1829935911855672, guid: 7f76863629d4c4041b8ac5413ffc8115,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 13.206446, y: 9.094358, z: 20.594702}
+  _uiSelected: 0
+--- !u!114 &-5159874703369893162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Market__1_
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: da845edf-9f54-4a8e-97ec-69fcb3624f23
+  _prefabAsset: {fileID: 5051271608107547050, guid: 9acc08db474000445b01584dc58a329e,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 5051271608107547050, guid: 9acc08db474000445b01584dc58a329e,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 1.4011612, y: -0.026095835, z: -52.916664}
+    _rotation: {x: 0.00000009415697, y: 0.7071068, z: 0.00000009415697, w: -0.7071068}
+    _scale: {x: 0.39370114, y: 0.39370102, z: 0.39370114}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 36.80797, y: 10.057011, z: 20.074286}
+  _uiSelected: 0
+--- !u!114 &-4952107743861847315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Auto Service
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: ada2f31e-493e-4d8b-94a2-291b04bdf697
+  _prefabAsset: {fileID: 100000, guid: 121f662ea65e2cf40a50c66470757a9e, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 121f662ea65e2cf40a50c66470757a9e, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 21.925814, y: 8.399454, z: 9.916403}
+  _uiSelected: 0
+--- !u!114 &-4895050609287346438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Mountain1
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 2a67c7e7-eaa1-4c97-9970-a290c17da252
+  _prefabAsset: {fileID: 1160963606632120, guid: b88e0958f0200b049b024d1b10d5aa6a,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1160963606632120, guid: b88e0958f0200b049b024d1b10d5aa6a,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 137.0774, y: 199.36067, z: 137.0774}
+  _uiSelected: 0
+--- !u!114 &-4820420946312994293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Fruits  Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: c1e901d8-7f7b-4f10-9e39-7048f5a8afa9
+  _prefabAsset: {fileID: 100000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 931fa17f0ab17504bbfc8903e54e6a16, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 14.551424, y: 13.9267235, z: 14.5869875}
+  _uiSelected: 0
+--- !u!114 &-4674812263599529038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_StreetSign_RoadNarrows
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: db79403f-87e4-4d72-82b3-b0092aea741e
+  _prefabAsset: {fileID: 8567076991721654980, guid: cafcf6bb427652a4980d23bb3a13e778,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8567076991721654980, guid: cafcf6bb427652a4980d23bb3a13e778,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.2236524, y: 7.731827, z: 0.40025458}
+  _uiSelected: 0
+--- !u!114 &-4636098751934207009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_01
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 0a0212c9-9eeb-4445-bef4-3be05c68c6a2
+  _prefabAsset: {fileID: 3489192851198715285, guid: 6ce5d694780084341b1025650bdd432c,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 3489192851198715285, guid: 6ce5d694780084341b1025650bdd432c,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.1828175, y: 7.6357675, z: 4.109982}
+  _uiSelected: 0
+--- !u!114 &-4615923931168264085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_7
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 125d6c0c-f183-4b0a-9417-b529f13fffef
+  _prefabAsset: {fileID: 1031486620785512, guid: c27393c176c111f40b319030144136d3,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1031486620785512, guid: c27393c176c111f40b319030144136d3,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 14.526904, y: 20.398481, z: 12.7131815}
+  _uiSelected: 0
+--- !u!114 &-4571576424457144641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Plant_03
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: b8341ab8-62e9-4c57-8d3b-6c95e423108d
+  _prefabAsset: {fileID: 5158498826984448136, guid: af59dafe9d2b0e24a8ed1f5cae3dd8f1,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 5158498826984448136, guid: af59dafe9d2b0e24a8ed1f5cae3dd8f1,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.2823509, y: 1.8793142, z: 1.2823509}
+  _uiSelected: 0
+--- !u!114 &-4571400712013013474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_wood_001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: a30029c9-44c4-42e9-9678-d1d9f7e7a571
+  _prefabAsset: {fileID: 550635901005655499, guid: 0a2f409677c9f12488d37f2c0f9a2155,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 550635901005655499, guid: 0a2f409677c9f12488d37f2c0f9a2155,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+    _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.0927482, y: 2.9434123, z: 0.26977986}
+  _uiSelected: 0
+--- !u!114 &-4507461668320509538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Gift Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: bf0754be-6063-4862-9f8c-b05e04b46fd6
+  _prefabAsset: {fileID: 100000, guid: 9ccda285cd5f1ce4fa00133b50ba5cbc, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 9ccda285cd5f1ce4fa00133b50ba5cbc, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 13.462542, y: 7.798804, z: 12.686393}
+  _uiSelected: 0
+--- !u!114 &-4487953842749102546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_StreetSign_Slope
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 1e145474-10fc-471d-a69f-03ff51823b82
+  _prefabAsset: {fileID: 1017346253599117535, guid: 7a04df6b61db6ff42b148c4257895853,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1017346253599117535, guid: 7a04df6b61db6ff42b148c4257895853,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.8262482, y: 7.1405916, z: 0.39915454}
+  _uiSelected: 0
+--- !u!114 &-4419979684220785272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Pole
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 6c1bbdbc-b845-4ffb-9713-28d31d0127b0
+  _prefabAsset: {fileID: 1357405834527522, guid: ae5e084f5562988409c50203ad4e4522,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1357405834527522, guid: ae5e084f5562988409c50203ad4e4522,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.450408, y: 6.358479, z: 0.29223523}
+  _uiSelected: 0
+--- !u!114 &-4094502465924115724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_4__1_
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: b4e01ba9-8419-4e19-bb97-4efe10e99e4c
+  _prefabAsset: {fileID: 5610464920896212686, guid: 2c764828a75efbb43a0f7f575d4abbed,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 5610464920896212686, guid: 2c764828a75efbb43a0f7f575d4abbed,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -394.98587, y: -0.000026957932, z: -227.61267}
+    _rotation: {x: 0.00000009415697, y: 0.7071068, z: 0.00000009415697, w: -0.7071068}
+    _scale: {x: 3.149607, y: 3.149606, z: 3.149607}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 23.173492, y: 9.090505, z: 17.286318}
+  _uiSelected: 0
+--- !u!114 &-3764147846203029773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Books Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: eafb7b25-100e-496b-8730-3e189dfeb950
+  _prefabAsset: {fileID: 100000, guid: 4c14ffc6a7f79e942885227ac141590c, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 4c14ffc6a7f79e942885227ac141590c, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 14.44708, y: 10.028488, z: 14.442719}
+  _uiSelected: 0
+--- !u!114 &-3654742410224377780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Bench_1
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 05deaaeb-3b88-43d0-9307-5e8faa5c78c8
+  _prefabAsset: {fileID: 100000, guid: 62125825e49febf4a89f76daf85d9ca7, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 62125825e49febf4a89f76daf85d9ca7, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4, y: 0.9255103, z: 1.1181253}
+  _uiSelected: 0
+--- !u!114 &-3634594495326529192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Hydrant
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 76254ec0-306b-4667-a676-b9c40b48a437
+  _prefabAsset: {fileID: 100000, guid: e0e851c58997b9c438fae494e3412749, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: e0e851c58997b9c438fae494e3412749, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.43499997, y: 1.0203788, z: 0.43500006}
+  _uiSelected: 0
+--- !u!114 &-3507937900647121177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_StreetSign_Speed_80
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: db35693b-c25a-455f-91f2-652f878035b0
+  _prefabAsset: {fileID: 3721384110733165218, guid: 1c2918fe314f83c41b8b492cb71218bc,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 3721384110733165218, guid: 1c2918fe314f83c41b8b492cb71218bc,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.3799999, y: 7.454237, z: 0.40202615}
+  _uiSelected: 0
+--- !u!114 &-3159007682977158350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Env_Residentbuilding_001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 45b4bba5-5a27-445b-bdc7-1d2ce106b3b3
+  _prefabAsset: {fileID: 14884795103072382, guid: ef385915b6b7eaf45b00693103c8d793,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 14884795103072382, guid: ef385915b6b7eaf45b00693103c8d793,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 77.479126, y: 0.9032022, z: 286.75812}
+    _rotation: {x: -0, y: -1, z: -0.00000013315805, w: 0}
+    _scale: {x: 0.6692909, y: 0.669291, z: 0.6692909}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0.89999914
+  _tags: 0
+  _modelSize: {x: 19.76788, y: 11.832475, z: 10.118638}
+  _uiSelected: 0
+--- !u!114 &-3132675565317449728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Dumpster1
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 8c0c8c71-c027-495c-b263-4b4eb3f2ec1e
+  _prefabAsset: {fileID: 1717002665888706, guid: 0c7ea03d72c8d314a82df1ead7b6da0d,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1717002665888706, guid: 0c7ea03d72c8d314a82df1ead7b6da0d,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0, y: -0, z: -0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.977968, y: 2.7740989, z: 2.7220697}
+  _uiSelected: 0
+--- !u!114 &-2626483935333869028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_3
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 893ada84-3b79-4320-9f93-6c9f2cb86d72
+  _prefabAsset: {fileID: 1585875130647480, guid: b237287092cb91448883e3245fd45ca7,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1585875130647480, guid: b237287092cb91448883e3245fd45ca7,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 11.500401, y: 13.408865, z: 18.281252}
+  _uiSelected: 0
+--- !u!114 &-2106963997777636474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_10__2_
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: c76a7eca-e88e-4a11-9fe5-73d40fe6909d
+  _prefabAsset: {fileID: 2201062782094537144, guid: f5f8e954ac44ca949a9152c77cf2f462,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2201062782094537144, guid: f5f8e954ac44ca949a9152c77cf2f462,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -179.29903, y: 12.796655, z: -318.05292}
+    _rotation: {x: -0.00000009415697, y: 0.7071068, z: 0.00000009415697, w: 0.7071068}
+    _scale: {x: 2.9921265, y: 2.9921257, z: 2.9921265}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 12.8
+  _tags: 0
+  _modelSize: {x: 12.569607, y: 24.741821, z: 9.982975}
+  _uiSelected: 0
+--- !u!114 &-1857695109122875219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Bar
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: f0ba655d-c22d-42db-b7c7-2d83bc3186f7
+  _prefabAsset: {fileID: 3284057017175849633, guid: e2a67737f855adf43acf15e1a2dc525a,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 3284057017175849633, guid: e2a67737f855adf43acf15e1a2dc525a,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 137.6564, y: -0.009705558, z: 79.56296}
+    _rotation: {x: -4.3297803e-17, y: 0.7071068, z: -4.3297803e-17, w: -0.7071068}
+    _scale: {x: 0.47244114, y: 0.47244102, z: 0.47244114}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 8.8294735, y: 12.493217, z: 8.888969}
+  _uiSelected: 0
+--- !u!114 &-1430950593231554952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_03
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 3c335069-f7d9-448b-a128-fae521c0425b
+  _prefabAsset: {fileID: 2060589233173438422, guid: 8ce6b6e7fcdc39243881ee68d05db72a,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2060589233173438422, guid: 8ce6b6e7fcdc39243881ee68d05db72a,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.52366, y: 7.5234942, z: 4.5236597}
+  _uiSelected: 0
+--- !u!114 &-1065061753999923237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_08
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: f2415b5c-dbca-4781-88f9-f49fd0ef1c78
+  _prefabAsset: {fileID: 6184434111218818029, guid: 5ed59cd74d779b247a0de3970801fda1,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 6184434111218818029, guid: 5ed59cd74d779b247a0de3970801fda1,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.9791129, y: 7.02508, z: 3.9177403}
+  _uiSelected: 0
+--- !u!114 &-1046830053753954929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_14
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: e217765c-c182-4834-9d7b-f2923cb916ec
+  _prefabAsset: {fileID: 1886745272221272, guid: 4f52870e0b40be34d867f3bc68390757,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1886745272221272, guid: 4f52870e0b40be34d867f3bc68390757,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 15.271109, y: 19.339802, z: 16.461763}
+  _uiSelected: 0
+--- !u!114 &-864098126149095416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Fence2
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 8dbe3f91-ab04-4f1e-a15a-818e2d4b27e9
+  _prefabAsset: {fileID: 1053852469213784, guid: 7547692bcae67134dbc16a3cedb6bdeb,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1053852469213784, guid: 7547692bcae67134dbc16a3cedb6bdeb,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 7, y: 7, z: 7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 5.326849, y: 2.1212547, z: 0.23148015}
+  _uiSelected: 0
+--- !u!114 &-808137899439892882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Traffic Signal_big
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: ab6179c8-20f3-43b8-8ad7-3e68e47e6576
+  _prefabAsset: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: d4cfcf659200d7548b90a5580c3ab18f, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 89, y: 0, z: 89}
+    _rotation: {x: -0, y: -1, z: 0.000000021855696, w: 0}
+    _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.1201296, y: 9.029923, z: 0.90000004}
+  _uiSelected: 0
+--- !u!114 &-582014800084900996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_05
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 303b08fa-88c3-40c4-a79f-778a6227e028
+  _prefabAsset: {fileID: 2315945574744369591, guid: 77f6a103abe35be4988d429034fe818f,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2315945574744369591, guid: 77f6a103abe35be4988d429034fe818f,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.2939172, y: 8.699109, z: 3.2939172}
+  _uiSelected: 0
+--- !u!114 &-243448934906157768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building Sky_small_color01
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: a980ce67-7896-4173-abd2-f5f0dfb41cbe
+  _prefabAsset: {fileID: 100000, guid: 6a690a756dbd65141a09a3ad7fafacc4, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 6a690a756dbd65141a09a3ad7fafacc4, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 15.6, y: 20.314663, z: 15.678538}
+  _uiSelected: 0
+--- !u!114 &-235745234204511874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Gift_Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 61283410-f203-44e2-8aea-10b4f11ca7f7
+  _prefabAsset: {fileID: 8705944615714297994, guid: 4a77debc8121b1645aae1a889e7463fa,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8705944615714297994, guid: 4a77debc8121b1645aae1a889e7463fa,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -237.89212, y: -8.060142, z: 48.1929}
+    _rotation: {x: -2.1943695e-17, y: 0.93358064, z: -5.716537e-17, w: -0.3583674}
+    _scale: {x: 0.5149607, y: 0.5149607, z: 0.5149607}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 11.650018
+  _tags: 0
+  _modelSize: {x: 13.4625435, y: 7.7988048, z: 12.686394}
+  _uiSelected: 0
+--- !u!114 &-209367923169334055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Coffee Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: db314404-5f6c-4653-8b12-7768e3a36338
+  _prefabAsset: {fileID: 100000, guid: e1d9101af5d96d94ca99efe2de0bac21, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: e1d9101af5d96d94ca99efe2de0bac21, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 23.250359, y: 8.402074, z: 14.949369}
+  _uiSelected: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d27d60231fbfd54a8dd0a2b498f7841, type: 3}
+  m_Name: Default
+  m_EditorClassIdentifier: 
+  _profileName: Default
+  _libs:
+  - {fileID: -8173918921190199419}
+  - {fileID: -7084819394684992160}
+--- !u!114 &285451215975474837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Plant_02
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: d4017db7-986e-48d7-8204-424b3976d260
+  _prefabAsset: {fileID: 4868475246395876155, guid: 0cc8a06d3a3346548bb4bb92ee2a569c,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 4868475246395876155, guid: 0cc8a06d3a3346548bb4bb92ee2a569c,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.155588, y: 1.4051927, z: 1.155588}
+  _uiSelected: 0
+--- !u!114 &361727227006524397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_7
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 17296743-3ca5-4c1a-aa7d-23d85d099dbb
+  _prefabAsset: {fileID: 3103863886683833622, guid: 805fec58cdcc0c24c877a007e18ee841,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 3103863886683833622, guid: 805fec58cdcc0c24c877a007e18ee841,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -241.60132, y: -0.010778209, z: 122.29624}
+    _rotation: {x: 0.00000009415697, y: 0.7071068, z: 0.00000009415697, w: -0.7071068}
+    _scale: {x: 3.149607, y: 3.149606, z: 3.149607}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 14.526903, y: 20.398478, z: 12.713181}
+  _uiSelected: 0
+--- !u!114 &489723589770698380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Roof Helipad
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: fac0576e-5ae1-4ce5-9125-dc1c69cb08be
+  _prefabAsset: {fileID: 100000, guid: 796948bfa75e5ee4ba5a68eabfa08ec3, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 796948bfa75e5ee4ba5a68eabfa08ec3, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 7.657976, y: 0.6761554, z: 7.7761126}
+  _uiSelected: 0
+--- !u!114 &509519881649040662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_building_sky_small_color
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 5a277d4d-1a24-4308-99d3-3b6803f93a44
+  _prefabAsset: {fileID: 8189946384404221847, guid: 79fb5451ba75cb64dbb7f1c5499472c2,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8189946384404221847, guid: 79fb5451ba75cb64dbb7f1c5499472c2,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 6.1232336e-17, y: -3.7493994e-33, z: 0, w: 1}
+    _scale: {x: 0.47244102, y: 0.47244102, z: 0.47244102}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 15.600004, y: 20.314665, z: 15.678539}
+  _uiSelected: 0
+--- !u!114 &624400869515842595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Pizza
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 4267dbfd-13c2-4059-93c8-bcca3eaba8e5
+  _prefabAsset: {fileID: 100000, guid: 1d53359c70324d14c989d7058b50ec6b, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 1d53359c70324d14c989d7058b50ec6b, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 17.96521, y: 9.354437, z: 16.281446}
+  _uiSelected: 0
+--- !u!114 &1027197188773235652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Sewer
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 1c254d41-5544-4a30-9a97-04d3cee6dabb
+  _prefabAsset: {fileID: 1971663780839092, guid: 5599f850a647e0f44ae3575ff0660056,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1971663780839092, guid: 5599f850a647e0f44ae3575ff0660056,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.79837704, y: 0.79837704, z: 0.7314575}
+  _uiSelected: 0
+--- !u!114 &1035829398993169956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Music Store
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 3cda4274-7747-4cf8-afd8-6dfc32607a2d
+  _prefabAsset: {fileID: 100000, guid: 1682119d19a954f4a8020f36112606ed, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 1682119d19a954f4a8020f36112606ed, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 13.462543, y: 11.709482, z: 12.4237795}
+  _uiSelected: 0
+--- !u!114 &1186699894160796613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: building001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 158f032c-b5ba-4178-8f04-0ffce0b262ed
+  _prefabAsset: {fileID: 7406108891139849299, guid: 89c889f389c132849abb9bec2ae36690,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 7406108891139849299, guid: 89c889f389c132849abb9bec2ae36690,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -280.5812, y: -0.000015168423, z: -133.14182}
+    _rotation: {x: 0.000000047078483, y: -0.7071068, z: -0.000000047078483, w: -0.7071068}
+    _scale: {x: 3.149607, y: 3.149606, z: 3.149607}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 18.545652, y: 16.253622, z: 17.88786}
+  _uiSelected: 0
+--- !u!114 &1278300220429926074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_hospital_001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: b95f50bf-4036-43f3-97bf-2820d7bc081c
+  _prefabAsset: {fileID: 5738416903189841382, guid: 6b0007ca91309e346980549aa5cc4744,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 5738416903189841382, guid: 6b0007ca91309e346980549aa5cc4744,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -285.95026, y: 0.00000014951092, z: 98.02163}
+    _rotation: {x: -0, y: 0.7071068, z: 0.7071068, w: 0}
+    _scale: {x: 1.0000005, y: 1.0000002, z: 1.0000002}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 24.051872, y: 20.174252, z: 29.611109}
+  _uiSelected: 0
+--- !u!114 &1349177330343294499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Traffic Sign_speed limit
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 20fdb18b-a1a7-431e-bf12-8a14a5bfa103
+  _prefabAsset: {fileID: 100000, guid: 6ade71c5c1c1d014895f70f40ed67ed5, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 6ade71c5c1c1d014895f70f40ed67ed5, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.68482965, y: 2.3659415, z: 0.067284}
+  _uiSelected: 0
+--- !u!114 &1531150945160984721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Fence
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: dc80526e-4db0-4068-a7bb-852ca49cda92
+  _prefabAsset: {fileID: 100000, guid: d2100f10c342364479e7a527f9ef5429, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: d2100f10c342364479e7a527f9ef5429, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.8000008, y: 2.2166052, z: 0.16000009}
+  _uiSelected: 0
+--- !u!114 &1598446725480271117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Traffic Sign_stop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: f0f34561-9849-4693-9bd0-cc06f0389f47
+  _prefabAsset: {fileID: 100000, guid: 6c862cab8ca035a448da05df5868553a, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 6c862cab8ca035a448da05df5868553a, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.72380984, y: 2.4326887, z: 0.07033244}
+  _uiSelected: 0
+--- !u!114 &1809558941008167488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Windmill
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: ebe9524e-d103-481a-bd4f-f2cb9251c231
+  _prefabAsset: {fileID: 100002, guid: 0b6fafa63b69b174584365f2641586a4, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100002, guid: 0b6fafa63b69b174584365f2641586a4, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 6.3634834, y: 13.624335, z: 2.2868133}
+  _uiSelected: 0
+--- !u!114 &2137758984558426764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Tree2
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 1b14906d-6a0b-4b18-b8dd-52ab6f5d100a
+  _prefabAsset: {fileID: 1062202482891122, guid: ef9674bbeff69404699ea6f9ef05e3c5,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1062202482891122, guid: ef9674bbeff69404699ea6f9ef05e3c5,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0, y: -0, z: -0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.2097225, y: 7.8322425, z: 4.2097235}
+  _uiSelected: 0
+--- !u!114 &2194660321803229150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Rock2
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: d190ca83-b100-48e7-b303-d57a1f22e67b
+  _prefabAsset: {fileID: 1286967437872256, guid: dfdb79010d6ec61498da16553bc2010d,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1286967437872256, guid: dfdb79010d6ec61498da16553bc2010d,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.3278947, y: 0.82348984, z: 2.7915733}
+  _uiSelected: 0
+--- !u!114 &2312225535076104583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Market
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 68515424-1110-4504-b439-16f646af7ff3
+  _prefabAsset: {fileID: 4722627683411591535, guid: 580e175accc4f644e8c5daa4090d0293,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 4722627683411591535, guid: 580e175accc4f644e8c5daa4090d0293,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 36.80795, y: 10.057005, z: 20.074274}
+  _uiSelected: 0
+--- !u!114 &2333228643081054488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_BillBoard_small
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 29feae9f-0870-4376-a5c5-086bf290a38a
+  _prefabAsset: {fileID: 100000, guid: b549b1699e4cdad44b2c014041303df4, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: b549b1699e4cdad44b2c014041303df4, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.6140438, y: 2.623557, z: 0.2934581}
+  _uiSelected: 0
+--- !u!114 &2658524606394268443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Coffee shop chair
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 31467e1c-160f-4d95-b9f7-b718f59dcaf2
+  _prefabAsset: {fileID: 100000, guid: 97229e82747352a43b48688ec573f8e4, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 97229e82747352a43b48688ec573f8e4, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.6533005, y: 2.7314625, z: 2.7898455}
+  _uiSelected: 0
+--- !u!114 &2874874154055086646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_BillBoard_large
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 91af0e95-11e0-45e9-aa6f-43f395302f83
+  _prefabAsset: {fileID: 100000, guid: 653e28c8a1ae11240a6cdaac2f9ee8ea, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 653e28c8a1ae11240a6cdaac2f9ee8ea, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 8.643173, y: 5.16031, z: 1.5837457}
+  _uiSelected: 0
+--- !u!114 &3156655314366863006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Roof Solar Panel
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 9a7d15c9-47f9-4a17-90d8-a815b184bdcc
+  _prefabAsset: {fileID: 100000, guid: 0fcc0b85550a21d4f8dea0cf26372739, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 0fcc0b85550a21d4f8dea0cf26372739, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.263578, y: 0.6275749, z: 2.0418673}
+  _uiSelected: 0
+--- !u!114 &3270105752422455141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_02
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 3141e084-257c-4a38-acae-c5ccd050ee6e
+  _prefabAsset: {fileID: 5716472912363847415, guid: dae355c214058de40833e1dc07b9568c,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 5716472912363847415, guid: dae355c214058de40833e1dc07b9568c,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.086233, y: 7.5234942, z: 3.0862327}
+  _uiSelected: 0
+--- !u!114 &3304627087097402063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_1
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: b160eedf-5a63-40eb-a9c9-1f7209862e02
+  _prefabAsset: {fileID: 1721413571161172, guid: e8f84364a3bab68439ddd5592994c8f3,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1721413571161172, guid: e8f84364a3bab68439ddd5592994c8f3,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 18.545654, y: 16.253626, z: 17.88786}
+  _uiSelected: 0
+--- !u!114 &3417149325695904372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Auto_Service__1_
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 28d5735d-62d8-42e4-a6cb-6736269174e0
+  _prefabAsset: {fileID: 6533260605958024191, guid: 15ff9f4a57a76bb48becd20a25a5c309,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 6533260605958024191, guid: 15ff9f4a57a76bb48becd20a25a5c309,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -64.084206, y: 1.248074, z: -152.63304}
+    _rotation: {x: -0, y: -1, z: -0, w: 0}
+    _scale: {x: 0.47244102, y: 0.47244102, z: 0.47244102}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 1.25
+  _tags: 0
+  _modelSize: {x: 21.925816, y: 8.399455, z: 9.916405}
+  _uiSelected: 0
+--- !u!114 &3423667596385360994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Bench_2
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: e2d4ecef-c98b-4c9f-b7ca-a5e9963ca874
+  _prefabAsset: {fileID: 100000, guid: 6458a4c9f91f22741a5064b5b7cfd892, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 6458a4c9f91f22741a5064b5b7cfd892, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4, y: 1.7802231, z: 1.4000002}
+  _uiSelected: 0
+--- !u!114 &3578428014217398847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Bar
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 50175d3b-1b09-4ae3-87f5-8a111ffc016f
+  _prefabAsset: {fileID: 100000, guid: 3667b1c4d7f532647b9156782c0c80f0, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 3667b1c4d7f532647b9156782c0c80f0, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 8.829473, y: 12.493216, z: 8.8889675}
+  _uiSelected: 0
+--- !u!114 &3659157924378300238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_RoofVent_09
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 3165bba3-4eb9-4fdc-b69f-499added48a0
+  _prefabAsset: {fileID: 885629353238408710, guid: 8a4d827d320c77445badcc14a0c3654b,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 885629353238408710, guid: 8a4d827d320c77445badcc14a0c3654b,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.0975778, y: 1.3874573, z: 1.505552}
+  _uiSelected: 0
+--- !u!114 &3826202634696957780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Rock4
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: f1453b05-42bc-466f-9eb4-5dfde270c819
+  _prefabAsset: {fileID: 1539235665596228, guid: 6c9f85f47d04bb143a5ea9f18a5eceb3,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1539235665596228, guid: 6c9f85f47d04bb143a5ea9f18a5eceb3,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.2921832, y: 0.82348955, z: 2.2921832}
+  _uiSelected: 0
+--- !u!114 &3889378499806621822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Chicken Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: f0279223-5fa2-420c-8db4-0dba5ab5a2d7
+  _prefabAsset: {fileID: 100000, guid: 8b3eca4c34b9e1148a3c4d42a48dd5b8, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 8b3eca4c34b9e1148a3c4d42a48dd5b8, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 13.462544, y: 11.70948, z: 12.000519}
+  _uiSelected: 0
+--- !u!114 &3996858442956982456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Coffee_Shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 93377bd6-0dca-4581-94c2-0c06fb4b5b8e
+  _prefabAsset: {fileID: 3446896112262057502, guid: e66736c0942a0654ebe5cf4ac0f6b9a7,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 3446896112262057502, guid: e66736c0942a0654ebe5cf4ac0f6b9a7,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -199.43927, y: -0.0037022976, z: -217.8435}
+    _rotation: {x: -0, y: 1, z: -6.1232336e-17, w: 0}
+    _scale: {x: 0.47244102, y: 0.47244102, z: 0.47244102}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 23.250359, y: 8.402074, z: 14.949372}
+  _uiSelected: 0
+--- !u!114 &4107765607536786831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Tree3
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: bf8f294c-d007-4313-a5d2-0677b4be40f0
+  _prefabAsset: {fileID: 1798200037690972, guid: 8b477577c341efd4e804900764682190,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1798200037690972, guid: 8b477577c341efd4e804900764682190,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.7645849, y: 8.689957, z: 1.7645849}
+  _uiSelected: 0
+--- !u!114 &4321363641354752114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Env_ResidentBuilding_002
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 71754d1d-438a-45a9-b56e-72b3572d2ca6
+  _prefabAsset: {fileID: 4321668043645715470, guid: dd5145dac3e3aa74ea744e8e50d8ecde,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 4321668043645715470, guid: dd5145dac3e3aa74ea744e8e50d8ecde,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 331.3952, y: 0.0032024065, z: 209.85382}
+    _rotation: {x: -0, y: -1, z: -0.00000013315805, w: 0}
+    _scale: {x: 0.669291, y: 0.669291, z: 0.669291}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 27.089954, y: 9.8152895, z: 11.078675}
+  _uiSelected: 0
+--- !u!114 &4495915132996484136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_StreetSign_Stright
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: c3576d5a-4adb-410f-b351-4797408bf7d8
+  _prefabAsset: {fileID: 9184815084564154866, guid: 2d56fd4bf1c3c6b46950b833f0917d15,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 9184815084564154866, guid: 2d56fd4bf1c3c6b46950b833f0917d15,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.7861521, y: 7.403411, z: 0.36893803}
+  _uiSelected: 0
+--- !u!114 &4677753018946160886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Env_CommercialBuilding_02
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: fb0b6027-6e70-48ed-bbd0-edbc09fe4564
+  _prefabAsset: {fileID: 8585650954766913903, guid: 5c06f3174e1062d44b9caa19b044b217,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8585650954766913903, guid: 5c06f3174e1062d44b9caa19b044b217,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 21.725716, y: 11.625557, z: 22.725552}
+  _uiSelected: 0
+--- !u!114 &5233190191710559368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Fast_food_sign
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 3f716a78-d145-4122-94fa-bcf92ac8e927
+  _prefabAsset: {fileID: 1290672681045164, guid: 917116b069928c940a521316f2914951,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1290672681045164, guid: 917116b069928c940a521316f2914951,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 6, y: 6, z: 6}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.95114636, y: 9.7120075, z: 4.7104692}
+  _uiSelected: 0
+--- !u!114 &5336766700964561790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_department_store_001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 9afad74f-c1c6-46c7-9ea0-f2ff8a6f31f8
+  _prefabAsset: {fileID: 1475647718798673708, guid: f312aac57461195449b36bb731a118b5,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1475647718798673708, guid: f312aac57461195449b36bb731a118b5,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -176.06815, y: -0.000014896439, z: -90.01745}
+    _rotation: {x: -0.000000057601163, y: -0.7071068, z: 0.000000057601163, w: -0.7071068}
+    _scale: {x: 1.0000002, y: 1, z: 1.0000002}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 49.28736, y: 18.812136, z: 36.11025}
+  _uiSelected: 0
+--- !u!114 &5455353791144317196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Mountain2
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 6944b318-52e4-462f-9612-028ee85a7d33
+  _prefabAsset: {fileID: 1616489164608278, guid: 86ba6b31e43d1d8448ab34920b56a506,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1616489164608278, guid: 86ba6b31e43d1d8448ab34920b56a506,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 99.76878, y: 116.83973, z: 99.76878}
+  _uiSelected: 0
+--- !u!114 &5470648680027621860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_06
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 50fef4e1-d8e1-4648-97f6-bba84dd948fc
+  _prefabAsset: {fileID: 7698324677040609889, guid: d0e7a696e4ad0fc4e951bdf7a9deb112,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 7698324677040609889, guid: d0e7a696e4ad0fc4e951bdf7a9deb112,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.4, y: 8.530182, z: 3.4}
+  _uiSelected: 0
+--- !u!114 &5780151843064122412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Trash_can
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 103ff8d3-1b87-49dc-90e0-659069a32f8f
+  _prefabAsset: {fileID: 1348043732710766, guid: c8f3ff5dee56bcc4d80a8bc74d8cee4a,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1348043732710766, guid: c8f3ff5dee56bcc4d80a8bc74d8cee4a,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.4229467, y: 1.5984166, z: 1.4961749}
+  _uiSelected: 0
+--- !u!114 &5964680810464001462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_barrier_001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 03531fbe-f8fd-478f-ba1e-5f56b4153577
+  _prefabAsset: {fileID: 7521737243769547946, guid: 8bdca3aa7583e1e4194e321bae4bc711,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 7521737243769547946, guid: 8bdca3aa7583e1e4194e321bae4bc711,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+    _scale: {x: 2, y: 2, z: 2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4, y: 0.9365436, z: 2.377752}
+  _uiSelected: 0
+--- !u!114 &5990916288680728119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: building003
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 5ce7d8fc-4293-41f5-a59c-4cda05b7e90f
+  _prefabAsset: {fileID: 1105172232748636529, guid: 7645a0770af947045a43af40347eafef,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1105172232748636529, guid: 7645a0770af947045a43af40347eafef,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 225.87375, y: 8.112798, z: -70.44914}
+    _rotation: {x: -0.00000006657903, y: -0, z: -0, w: 1}
+    _scale: {x: 3.1496062, y: 3.149606, z: 3.1496062}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 11.5004, y: 13.408864, z: 18.28125}
+  _uiSelected: 0
+--- !u!114 &5995313438712145010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_4
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 9ffd03a6-1d80-4c11-9a7d-72562b93a52a
+  _prefabAsset: {fileID: 1104469224843184, guid: 4c701139b81d9c140b18bb741804c1ec,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1104469224843184, guid: 4c701139b81d9c140b18bb741804c1ec,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 23.173496, y: 9.090506, z: 17.28632}
+  _uiSelected: 0
+--- !u!114 &6331545445370629950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_10
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 710645c7-43d0-448f-bfb8-1a8a6e86bfd7
+  _prefabAsset: {fileID: 1215413189062718, guid: cb88af5ac7cab444fba90fe60546b4af,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1215413189062718, guid: cb88af5ac7cab444fba90fe60546b4af,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 12.569609, y: 24.741825, z: 9.982977}
+  _uiSelected: 0
+--- !u!114 &6508207642975483911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Fence1
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: faca4d97-1950-4c3d-a330-f30404221404
+  _prefabAsset: {fileID: 1867997887009210, guid: d2e79c8668a58d24ca48342d6b35f50c,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1867997887009210, guid: d2e79c8668a58d24ca48342d6b35f50c,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 4, y: 4, z: 4}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.2908337, y: 1.4243615, z: 0.17127448}
+  _uiSelected: 0
+--- !u!114 &6544722601753015102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_RoofWaterStore_02
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 2d9b6954-3977-49a4-a2bc-6f1840325008
+  _prefabAsset: {fileID: 5458440356880860002, guid: b4d64c3bfc807654dbb408f48b2d69da,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 5458440356880860002, guid: b4d64c3bfc807654dbb408f48b2d69da,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.5422835, y: 4.8674564, z: 3.5422835}
+  _uiSelected: 0
+--- !u!114 &6731604217391059120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Plant_01
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 95107a46-bf06-45e1-b82b-9e7eeaeb73a4
+  _prefabAsset: {fileID: 9162471113531258047, guid: 66d271533f6d75c49ae9d706f6882fe6,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 9162471113531258047, guid: 66d271533f6d75c49ae9d706f6882fe6,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.27485, y: 1.8674134, z: 1.2287594}
+  _uiSelected: 0
+--- !u!114 &6733501043407733025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Env_ResidentBuilding_06
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 05158f6d-3da2-452f-9739-1a6207d4f0b4
+  _prefabAsset: {fileID: 3101863424185786759, guid: 38a5fcee4e05f704ab5d33d3ceeddc64,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 3101863424185786759, guid: 38a5fcee4e05f704ab5d33d3ceeddc64,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 27.089968, y: 9.815294, z: 11.078682}
+  _uiSelected: 0
+--- !u!114 &6999040828683920482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Dustbin
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: fabe2b8b-a709-465f-a907-3fc0032af7c8
+  _prefabAsset: {fileID: 100000, guid: d59a4f6080634af41a616bc51af1d2d9, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: d59a4f6080634af41a616bc51af1d2d9, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.93336296, y: 1.1128854, z: 0.9333631}
+  _uiSelected: 0
+--- !u!114 &7064513480374890387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_building_pizza
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: ac11c8bc-af74-4497-9e5e-8fdb087f4b58
+  _prefabAsset: {fileID: 8922132801285793535, guid: b343186790b9a9545873c4706d063519,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8922132801285793535, guid: b343186790b9a9545873c4706d063519,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 102.268295, y: -0.020086143, z: 78.90733}
+    _rotation: {x: -0, y: 1, z: -6.1232336e-17, w: 0}
+    _scale: {x: 0.47244102, y: 0.47244102, z: 0.47244102}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 17.965212, y: 9.354438, z: 16.281448}
+  _uiSelected: 0
+--- !u!114 &7189451772681113104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Gas Station
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: a57bced3-b68e-4a31-b57b-8c7e66db1949
+  _prefabAsset: {fileID: 100000, guid: 260808cfd9b21994d8c3007a7bc9934c, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 260808cfd9b21994d8c3007a7bc9934c, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1.2, y: 1.2, z: 1.2}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 15.6, y: 9.593279, z: 30.722395}
+  _uiSelected: 0
+--- !u!114 &7229467546437928120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Street Light
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 43ad1cc2-3a35-44f9-b0fe-5ae9e8bf0961
+  _prefabAsset: {fileID: 100000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.5291188, y: 6.427493, z: 0.6}
+  _uiSelected: 0
+--- !u!114 &7230744160273490070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_wood_002
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 0c1b9ce7-e4b6-4663-ad56-16068dbfbc40
+  _prefabAsset: {fileID: 4663651899123541502, guid: 4e0ba85c41769234eaba253071184b73,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 4663651899123541502, guid: 4e0ba85c41769234eaba253071184b73,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -8.956769, y: 0, z: 4.203456}
+    _rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+    _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.0927482, y: 2.9618487, z: 0.26977986}
+  _uiSelected: 0
+--- !u!114 &7234561845709654910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_drum_001
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 7a28ff8e-0700-4931-b9f5-00d726a5c9f4
+  _prefabAsset: {fileID: 8644551340995151439, guid: 63283266e05692448b35ae865adf1fa4,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8644551340995151439, guid: 63283266e05692448b35ae865adf1fa4,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+    _scale: {x: 1.5, y: 1.5, z: 1.5969458}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.2670803, y: 1.2670803, z: 1.84559}
+  _uiSelected: 0
+--- !u!114 &7557558197504345546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Dumpster_02
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 30f42627-0b03-49db-9810-9d9fe6f4ee92
+  _prefabAsset: {fileID: 1133395938930822, guid: 191dc05d0a9ddfb44b79686b5de7322f,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1133395938930822, guid: 191dc05d0a9ddfb44b79686b5de7322f,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0, y: 0, z: 0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 4.7828703, y: 2.686792, z: 2.4284513}
+  _uiSelected: 0
+--- !u!114 &7728147699457068368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Roof Antenna
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: bc8ce7e8-193c-4b49-8166-99d1a5dabd56
+  _prefabAsset: {fileID: 100000, guid: acf38ccf2258add4ba3aa2d89b708d2a, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: acf38ccf2258add4ba3aa2d89b708d2a, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.4260542, y: 8.10815, z: 1.4256363}
+  _uiSelected: 0
+--- !u!114 &7915619413828137849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Roof_prop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 500ec4a6-9330-456b-89ab-7930eb112f4c
+  _prefabAsset: {fileID: 100000, guid: 918397a7e0523114ea408fc4eb8ca157, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 918397a7e0523114ea408fc4eb8ca157, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.0696306, y: 1.020291, z: 2.701781}
+  _uiSelected: 0
+--- !u!114 &7948901308993669377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Bus Stop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: ed4f9422-4884-415d-bf19-d01aef1bf73e
+  _prefabAsset: {fileID: 100000, guid: 8fa324388c16b5c4eac9846338b35b17, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 8fa324388c16b5c4eac9846338b35b17, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 6, y: 4.975605, z: 4}
+  _uiSelected: 0
+--- !u!114 &8105527931621771408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_TrashBag_03
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 47d6e9ef-93de-42b0-afd1-1ccac91cda8c
+  _prefabAsset: {fileID: 3839937426720405642, guid: 589b98b3e53a1954a8c97c5ade8db01b,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 3839937426720405642, guid: 589b98b3e53a1954a8c97c5ade8db01b,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 2.5, y: 2.5, z: 2.5}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 1.180868, y: 1.2657129, z: 1.1860873}
+  _uiSelected: 0
+--- !u!114 &8155554232607803612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Env_CommercialBuilding_02__2_
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 3ecbace3-d793-4cb7-bf17-32fcaa2f2a74
+  _prefabAsset: {fileID: 2986012050629896371, guid: ebfbbccd6dcdce844bf2f573c579b712,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2986012050629896371, guid: ebfbbccd6dcdce844bf2f573c579b712,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0.00000013315805, y: 0, z: -0, w: 1}
+    _scale: {x: 0.669291, y: 0.669291, z: 0.669291}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 21.725706, y: 11.625551, z: 22.725542}
+  _uiSelected: 1
+--- !u!114 &8379104961470435433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_Traffic Control Barrier Fence
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 9b1cfd39-c5d2-4f03-a355-b5db83522326
+  _prefabAsset: {fileID: 100000, guid: 484404636ac422042a24ac95512dc2d3, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 484404636ac422042a24ac95512dc2d3, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.6, y: 2.047512, z: 0.20000002}
+  _uiSelected: 0
+--- !u!114 &8402492921209599310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Manhole
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 54d60c5e-83b9-4920-8329-94bb4f947447
+  _prefabAsset: {fileID: 1282098206197310, guid: 9a0b779f15f159140a646e9bda381af7,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1282098206197310, guid: 9a0b779f15f159140a646e9bda381af7,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: -0, y: -0, z: -0, w: 1}
+    _scale: {x: 8, y: 8, z: 8}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.243263, y: 0.17682055, z: 2.243263}
+  _uiSelected: 0
+--- !u!114 &8489064241200173528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Props_BillBoard_medium
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: da396b5d-434f-4fa9-9456-562bb29ba3d3
+  _prefabAsset: {fileID: 100000, guid: 24ecc5bb467b3fe4b9c1660c3678ef90, type: 3}
+  _preview:
+    _prefabAsset: {fileID: 100000, guid: 24ecc5bb467b3fe4b9c1660c3678ef90, type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 0, y: 0, z: 0}
+    _rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+    _scale: {x: 1, y: 1, z: 1}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 3.0660477, y: 5.380954, z: 1.3206664}
+  _uiSelected: 0
+--- !u!114 &8638129016576087020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_TrashBag_02
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: b9efb979-09b8-4053-9144-8d0e50bd018f
+  _prefabAsset: {fileID: 1321557082916968712, guid: 881b67db361f8c143a38219d59804bd9,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 1321557082916968712, guid: 881b67db361f8c143a38219d59804bd9,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 2.5, y: 2.5, z: 2.5}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 0.9973207, y: 1.3125691, z: 0.9870759}
+  _uiSelected: 0
+--- !u!114 &8653126634881408349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Prop_Tree_07
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 5ef46555-d337-41d5-b4c5-cde4cf701b92
+  _prefabAsset: {fileID: 2613924079921196393, guid: 2643cc8c8bd191d4aa2a0f3d50abab65,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2613924079921196393, guid: 2643cc8c8bd191d4aa2a0f3d50abab65,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -0, y: 0, z: 0}
+    _rotation: {x: 0, y: -0, z: -0, w: 1}
+    _scale: {x: 1.7, y: 1.7, z: 1.7}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 2.8952925, y: 8.530182, z: 2.8952925}
+  _uiSelected: 0
+--- !u!114 &8863638920564801188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: Building_Books_Shop__1_
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 1c58b92b-bfb1-4f29-a172-24c89d5dd672
+  _prefabAsset: {fileID: 8785547990898337805, guid: 58aed2cf658c5d04a9115d8d7f83ba3a,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 8785547990898337805, guid: 58aed2cf658c5d04a9115d8d7f83ba3a,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: -89.072845, y: -0.016583642, z: -31.183157}
+    _rotation: {x: -0, y: -1, z: 6.1232336e-17, w: 0}
+    _scale: {x: 0.47244102, y: 0.47244102, z: 0.47244102}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 0
+  _tags: 0
+  _modelSize: {x: 14.447082, y: 10.028489, z: 14.44272}
+  _uiSelected: 0
+--- !u!114 &8897480054283116828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfdaf7f2c4c1d04580d676ed3717f21, type: 3}
+  m_Name: F_building_Fruits_shop
+  m_EditorClassIdentifier: 
+  _guid:
+    _guidString: 45e54a14-7aa2-49c3-9834-2335ce32b098
+  _prefabAsset: {fileID: 2340186528077155868, guid: 99fcf354227701047be8cac0dfcce0dd,
+    type: 3}
+  _preview:
+    _prefabAsset: {fileID: 2340186528077155868, guid: 99fcf354227701047be8cac0dfcce0dd,
+      type: 3}
+    _texture: {fileID: 0}
+    _yaw: 0
+    _pitch: 0
+  _sceneToObjectGroup:
+    _serializedKeys: []
+    _serializedValues: []
+  _spawnGuideTransformTRS:
+    _position: {x: 10.250214, y: 34.10227, z: -198.54694}
+    _rotation: {x: 0.00000009415697, y: -0.7071068, z: -0.00000009415697, w: -0.7071068}
+    _scale: {x: -0.041007876, y: -0.04100787, z: -0.041007876}
+  _modularSnapVerticalStep: 0
+  _surfaceSnapAppliedOffsetFromSurface: 34.100002
+  _tags: 0
+  _modelSize: {x: 14.551426, y: 13.9267235, z: 14.586989}
+  _uiSelected: 0

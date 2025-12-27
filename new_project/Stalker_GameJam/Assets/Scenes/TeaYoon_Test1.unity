@@ -192,6 +192,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08a964aa3b1ddfa4e8e2746d8a8c25c7, type: 3}
+--- !u!1 &399524755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6298443516930500240, guid: 7a5821b80ed08db4082075e827d98e1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 621090241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &399695537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -677,6 +683,16 @@ PrefabInstance:
       propertyPath: 'MissionPosition.Array.data[5]'
       value: 
       objectReference: {fileID: 1432258322}
+    - target: {fileID: 6254224302268815863, guid: 7a5821b80ed08db4082075e827d98e1d,
+        type: 3}
+      propertyPath: creatureModel
+      value: 
+      objectReference: {fileID: 399524755}
+    - target: {fileID: 6254224302268815863, guid: 7a5821b80ed08db4082075e827d98e1d,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 1193907241}
     - target: {fileID: 6293768842140523644, guid: 7a5821b80ed08db4082075e827d98e1d,
         type: 3}
       propertyPath: m_Name
@@ -1375,6 +1391,12 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!95 &1193907241 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1474969067852288221, guid: 7a5821b80ed08db4082075e827d98e1d,
+    type: 3}
+  m_PrefabInstance: {fileID: 621090241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1203474706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2178,9 +2200,9 @@ MonoBehaviour:
     type: 3}
   meleeMonster: {fileID: 5043051975754946106, guid: 82a1a92bdd5214b4d8a8169fe3ecaae4,
     type: 3}
-  GiftSprite1: {fileID: 21300000, guid: 09043005e648cec47ad0a64c98c26ce4, type: 3}
-  GiftSprite2: {fileID: 21300000, guid: 09043005e648cec47ad0a64c98c26ce4, type: 3}
-  GiftSprite3: {fileID: 21300000, guid: 09043005e648cec47ad0a64c98c26ce4, type: 3}
+  GiftSprite1: {fileID: 21300000, guid: a588948d4ecc1b64e866d89042420e3a, type: 3}
+  GiftSprite2: {fileID: 21300000, guid: 16f73ca414ddda64ebc5e70802cdb3da, type: 3}
+  GiftSprite3: {fileID: 21300000, guid: 204e23a13ddc7d54e8d07d934fb1d0fa, type: 3}
   SpawnRangeMinMax: {x: 15, y: 30}
 --- !u!4 &1740414339
 Transform:

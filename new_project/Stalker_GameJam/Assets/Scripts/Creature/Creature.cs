@@ -77,6 +77,16 @@ public class Creature : MonoBehaviour
         //nextPushTime = 0f;
     }
 
+    public void ApplyValue(int moveSpeed, int damage, int projectileSpeed)
+    {
+        // 데이터 오염 방지
+        weaponData = new WeaponData(weaponData);
+        weaponData.damage = damage;
+        weaponData.projectileSpeed = projectileSpeed;
+        creatureData = new CreatureData(creatureData);
+        creatureData.moveSpeed = moveSpeed;
+    }
+
     // ------------------------
     // Damage / Stun
     // ------------------------

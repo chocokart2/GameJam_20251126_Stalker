@@ -13,13 +13,9 @@ public class SpawnManager : MonoBehaviour
         public EWaveStatus currentStatus;
         public int rangeMonsterSpawnCount;
         public int meleeMonsterSpawnCount;
-        public float rangeMonsterMoveSpeed;
-        public float rangeMonsterDamage;
-        public float rangeMonsterProjectileSpeed;
-        public float meleeMonsterMoveSpeed;
-        public float meleeMonsterDamage;
+        public GameObject rangeMonsterObject;
+        public GameObject meleeMonsterObject;
         public float spawnInterval;
-        
     }
 
 
@@ -54,17 +50,15 @@ public class SpawnManager : MonoBehaviour
         DefaultGroupUI.instance.playerCurrentObjectText.text = "40초간 가게 방어";
         PlayerUI.instance.missionIndex++;
 
-
-
         IEnumerator MySpawnCoroutine()
         {
             for (int i = 0; i < rule.rangeMonsterSpawnCount; ++i)
             {
-                Instantiate(rangeMonster, GetSpawnPosition(), Quaternion.identity);
+                Instantiate(rule.rangeMonsterObject, GetSpawnPosition(), Quaternion.identity);
             }
             for (int i = 0; i < rule.meleeMonsterSpawnCount; ++i)
             {
-                Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
+                Instantiate(rule.meleeMonsterObject, GetSpawnPosition(), Quaternion.identity);
             }
             yield return new WaitForSeconds(40f);
             //yield return new WaitForSeconds(4f);
@@ -80,6 +74,9 @@ public class SpawnManager : MonoBehaviour
 
     public void BeginWave2Coroutine()
     {
+        NestedTuple rule = GetTuple(EWaveStatus.Wave2);
+        Debug.Assert(rule != null, "SpawnManager: No spawn rule for Wave2");
+
         GameManager.instance.currentStatus = EWaveStatus.Wave2;
         QuestSpawnCoroutine = null;
 
@@ -88,13 +85,13 @@ public class SpawnManager : MonoBehaviour
 
         IEnumerator MySpawnCoroutine()
         {
-            for (int i = 0; i < 15; ++i)
+            for (int i = 0; i < rule.rangeMonsterSpawnCount; ++i)
             {
-                Instantiate(rangeMonster, GetSpawnPosition(), Quaternion.identity);
+                Instantiate(rule.rangeMonsterObject, GetSpawnPosition(), Quaternion.identity);
             }
-            for (int i = 0; i < 25; ++i)
+            for (int i = 0; i < rule.meleeMonsterSpawnCount; ++i)
             {
-                Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
+                Instantiate(rule.meleeMonsterObject, GetSpawnPosition(), Quaternion.identity);
             }
             yield return new WaitForSeconds(60f);
             //yield return new WaitForSeconds(4f);
@@ -111,6 +108,9 @@ public class SpawnManager : MonoBehaviour
 
     public void BeginWave3Coroutine()
     {
+        NestedTuple rule = GetTuple(EWaveStatus.Wave3);
+        Debug.Assert(rule != null, "SpawnManager: No spawn rule for Wave3");
+
         GameManager.instance.currentStatus = EWaveStatus.Wave3;
         QuestSpawnCoroutine = null;
         GiftUI.instance.Show(GiftSprite3);
@@ -122,15 +122,15 @@ public class SpawnManager : MonoBehaviour
         {
             while (true)
             {
-                for (int i = 0; i < 10; ++i)
+                for (int i = 0; i < rule.rangeMonsterSpawnCount; ++i)
                 {
-                    Instantiate(rangeMonster, GetSpawnPosition(), Quaternion.identity);
+                    Instantiate(rule.rangeMonsterObject, GetSpawnPosition(), Quaternion.identity);
                 }
-                for (int i = 0; i < 10; ++i)
+                for (int i = 0; i < rule.meleeMonsterSpawnCount; ++i)
                 {
-                    Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
+                    Instantiate(rule.meleeMonsterObject, GetSpawnPosition(), Quaternion.identity);
                 }
-                yield return new WaitForSeconds(20f);
+                yield return new WaitForSeconds(rule.spawnInterval);
             }
         }
 
@@ -173,15 +173,25 @@ public class SpawnManager : MonoBehaviour
         {
             while (true)
             {
-                for (int i = 0; i < 5; ++i)
+                if (GameManager.instance.currentStatus != EWaveStatus.Default1 &&
+                    GameManager.instance.currentStatus != EWaveStatus.Default2 &&
+                    GameManager.instance.currentStatus != EWaveStatus.Default3)
                 {
-                    Instantiate(rangeMonster, GetSpawnPosition(), Quaternion.identity);
+                    yield return null;
+                    continue;
                 }
-                for (int i = 0; i < 5; ++i)
+                
+                NestedTuple rule = GetTuple(GameManager.instance.currentStatus);
+
+                for (int i = 0; i < rule.rangeMonsterSpawnCount; ++i)
                 {
-                    Instantiate(meleeMonster, GetSpawnPosition(), Quaternion.identity);
+                    Instantiate(rule.rangeMonsterObject, GetSpawnPosition(), Quaternion.identity);
                 }
-                yield return new WaitForSeconds(30f);
+                for (int i = 0; i < rule.meleeMonsterSpawnCount; ++i)
+                {
+                    Instantiate(rule.meleeMonsterObject, GetSpawnPosition(), Quaternion.identity);
+                }
+                yield return new WaitForSeconds(rule.spawnInterval);
             }
         }
 

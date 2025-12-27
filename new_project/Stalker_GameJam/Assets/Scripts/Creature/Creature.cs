@@ -147,7 +147,7 @@ public class Creature : MonoBehaviour
         return true;
     }
 
-    public bool TryReload()
+    public virtual bool TryReload()
     {
         if (weaponData == null) return false;
         if (reloading) return false;
@@ -155,6 +155,7 @@ public class Creature : MonoBehaviour
         if (currentBulletCount >= maxAmmo) return false;
 
         reloading = true;
+
         Invoke(nameof(FinishReload), weaponData.bulletReloadTime);
         return true;
     }

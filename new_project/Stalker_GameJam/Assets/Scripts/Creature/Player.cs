@@ -3,13 +3,15 @@ using static UnityEngine.Mesh;
 
 public class Player : Creature
 {
+    static public Player instance;
+
     public float PushSkillCooldown => Mathf.Max(nextPushTime - Time.time, 0);
 
     [Header("Move")]
     [SerializeField] private float moveSpeed = 6f;
 
     [Header("Aim (Mouse Raycast)")]
-    [SerializeField] private LayerMask aimMask;         // Ground¸¸ Ã¼Å© ÃßÃµ
+    [SerializeField] private LayerMask aimMask;         // Groundë§Œ ì²´í¬ ì¶”ì²œ
     [SerializeField] private float aimMaxDistance = 500f;
 
     [Header("Push Skill")]
@@ -23,8 +25,14 @@ public class Player : Creature
     private bool wantsPush;
 
     private bool hasAim;
-    private Vector3 aimDir; // y=0 Æò¸é ¹æÇâ
+    private Vector3 aimDir; // y=0 í‰ë©´ ë°©í–¥
+    
+    private void Awake()
+    {
+        base.Awake();
 
+        instance = this;
+    }
 
     protected override void Update()
     {
@@ -54,7 +62,7 @@ public class Player : Creature
         Rigidbody rb = Rigidbody;
         if (rb == null) return;
 
-        // Ä«¸Ş¶ó °íÁ¤ÀÌ´Ï±î(TopDownCamera fixedYaw), Ä«¸Ş¶ó ±âÁØ ÀÌµ¿ÀÌ ½ÈÀ¸¸é ±×³É ¿ùµå ±âÁØÀ¸·Î ½áµµ µÊ.
+        // ì¹´ë©”ë¼ ê³ ì •ì´ë‹ˆê¹Œ(TopDownCamera fixedYaw), ì¹´ë©”ë¼ ê¸°ì¤€ ì´ë™ì´ ì‹«ìœ¼ë©´ ê·¸ëƒ¥ ì›”ë“œ ê¸°ì¤€ìœ¼ë¡œ ì¨ë„ ë¨.
         Vector3 move = new Vector3(moveInput.x, 0f, moveInput.y);
         if (move.sqrMagnitude > 1f) move.Normalize();
 
@@ -65,7 +73,7 @@ public class Player : Creature
         rb.velocity = vel;
     }
 
-    // ÃÑ¾Ë ¡°È¸Àü¡±¸¸ ¸¶¿ì½º ¹æÇâÀ¸·Î
+    // ì´ì•Œ â€œíšŒì „â€ë§Œ ë§ˆìš°ìŠ¤ ë°©í–¥ìœ¼ë¡œ
     protected override Quaternion GetFireRotation()
     {
         if (hasAim && aimDir.sqrMagnitude > 0.0001f)
@@ -78,7 +86,7 @@ public class Player : Creature
     {
         hasAim = false;
 
-        // È­¸é ¹ÛÀÌ¸é ¾Æ¿¹ °»½Å ÁßÁö (¿øÄ¡ ¾Ê´Â Æ¦ ¹æÁö)
+        // í™”ë©´ ë°–ì´ë©´ ì•„ì˜ˆ ê°±ì‹  ì¤‘ì§€ (ì›ì¹˜ ì•ŠëŠ” íŠ ë°©ì§€)
         Vector3 m = Input.mousePosition;
         if (m.x < 0f || m.y < 0f || m.x > Screen.width || m.y > Screen.height)
             return;
@@ -88,10 +96,10 @@ public class Player : Creature
 
         Ray ray = cam.ScreenPointToRay(m);
 
-        // 1) Ground ·¹ÀÌ¾î Raycast ¿ì¼±
+        // 1) Ground ë ˆì´ì–´ Raycast ìš°ì„ 
         if (Physics.Raycast(ray.origin, ray.direction, out RaycastHit hit, aimMaxDistance, aimMask, QueryTriggerInteraction.Ignore))
         {
-            Vector3 dir = hit.point - FirePoint.position; // ÃÑ¾Ë ¹ß»çÁ¡ ±âÁØÀÌ ´õ Á¤È®
+            Vector3 dir = hit.point - FirePoint.position; // ì´ì•Œ ë°œì‚¬ì  ê¸°ì¤€ì´ ë” ì •í™•
             dir.y = 0f;
 
             if (dir.sqrMagnitude > 0.0001f)
@@ -102,7 +110,7 @@ public class Player : Creature
             return;
         }
 
-        // 2) ÇÃ·£B: ¹Ù´Ú Äİ¶óÀÌ´õ°¡ ¾øÀ» ¶§¸¦ ´ëºñÇÑ Æò¸é ±³Â÷
+        // 2) í”ŒëœB: ë°”ë‹¥ ì½œë¼ì´ë”ê°€ ì—†ì„ ë•Œë¥¼ ëŒ€ë¹„í•œ í‰ë©´ êµì°¨
         Plane plane = new Plane(Vector3.up, new Vector3(0f, FirePoint.position.y, 0f));
         if (plane.Raycast(ray, out float enter))
         {
@@ -117,6 +125,7 @@ public class Player : Creature
             }
         }
     }
+
     private float GetFinalMoveSpeed()
     {
         StatModifier stat = GetComponent<StatModifier>();
@@ -126,6 +135,10 @@ public class Player : Creature
     protected override void Die()
     {
         Debug.Log("Player has died!");
+
+        PlayerUI.instance.CallWhenDeath();
+        SpawnManager.instance.WhenPlayerDeath();
+
         Destroy(gameObject);
     }
 
@@ -153,13 +166,13 @@ public class Player : Creature
         if (stat != null)
             finalKb = stat.Eval(StatType.Push_Force, finalKb);
 
-        // ¿©±â¸¸ ¹Ù²Ù¸é Push_Force Ä«µå°¡ ÁøÂ¥·Î ¹İ¿µµÊ
+        // ì—¬ê¸°ë§Œ ë°”ê¾¸ë©´ Push_Force ì¹´ë“œê°€ ì§„ì§œë¡œ ë°˜ì˜ë¨
         meleeAttack.Configure(
             pushSkillData.damage,
             finalKb,
-            transform,                 // ³Ë¹é ±âÁØÁ¡
+            transform,                 // ë„‰ë°± ê¸°ì¤€ì 
             pushSkillData.stunDuration,
-            Type                       // ÀÚ±â Å¸ÀÔ ¸é¿ª
+            Type                       // ìê¸° íƒ€ì… ë©´ì—­
         );
     }
 

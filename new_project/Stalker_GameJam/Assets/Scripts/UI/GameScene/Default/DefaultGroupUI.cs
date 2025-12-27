@@ -6,6 +6,8 @@ using TMPro;
 
 public class DefaultGroupUI : MonoBehaviour
 {
+    public static DefaultGroupUI instance;
+
     public Image healthBar;
     public Image skillCooltimeBar;
     public Image levelExpBar;
@@ -14,7 +16,12 @@ public class DefaultGroupUI : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TextMeshProUGUI playerCurrentObjectText;
     public Player player;
-    public PlayerProgress progress;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,32 +34,41 @@ public class DefaultGroupUI : MonoBehaviour
     {
         if (player == null)
         {
-            // ÇÃ·¹ÀÌ¾î ¿ÀºêÁ§Æ®°¡ DestroyµÈ »óÅÂ (MissingReference ¹æÁö)
+            // í”Œë ˆì´ì–´ ì˜¤ë¸Œì íŠ¸ê°€ Destroyëœ ìƒíƒœ (MissingReference ë°©ì§€)
             if (healthBar != null) healthBar.fillAmount = 0f;
             if (healthText != null) healthText.text = "0/0";
             if (levelExpBar != null) levelExpBar.fillAmount = 0f;
 
-            enabled = false;  // UI ¾÷µ¥ÀÌÆ® Áß´Ü
+            enabled = false;  // UI ì—…ë°ì´íŠ¸ ì¤‘ë‹¨
             return;
         }
-        // ½Ã°£ ¾÷µ¥ÀÌÆ®
+        // ì‹œê°„ ì—…ë°ì´íŠ¸
         int time = (int)Time.time;
         int minutes = time / 60;
         int seconds = time % 60;
         timeText.text = $"{minutes:D2}:{seconds:D2}";
 
-        // ÇÃ·¹ÀÌ¾î Ã¼·Â
+        // í”Œë ˆì´ì–´ ì²´ë ¥
         healthBar.fillAmount =
             (float)player.CurrentHealth
             / player.MaxHealth;
         healthText.text =
             $"{player.CurrentHealth:D2}/{player.MaxHealth:D2}";
 
-        // ÇÃ·¹ÀÌ¾î ½ºÅ³ ÄğÅ¸ÀÓ
-        //skillCooltimeBar.fillAmount =
-        //    1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
+        // í”Œë ˆì´ì–´ ìŠ¤í‚¬ ì¿¨íƒ€ì„
 
-        // ÇÃ·¹ÀÌ¾î °æÇèÄ¡
+        if (player.PushSkillCooldown > 0f)
+        {
+            skillCooltimeBar.fillAmount =
+               1f - (player.PushSkillCooldown / player.PushSkillData.cooldown);
+        }
+        else
+        {
+            skillCooltimeBar.fillAmount = 0f;
+        }
+
+        
+        // í”Œë ˆì´ì–´ ê²½í—˜ì¹˜
         if (progress != null && levelExpBar != null)
         {
             int need = Mathf.Max(1, progress.NeedExpToNext);
@@ -60,8 +76,8 @@ public class DefaultGroupUI : MonoBehaviour
         }
     }
 
-        // TODO - ´ÙÀ½ ¸ÓÁö¿¡ Ãß°¡
-        // ¼±¹° ¸®½ºÆ® º¸°ü
+        // TODO - ë‹¤ìŒ ë¨¸ì§€ì— ì¶”ê°€
+        // ì„ ë¬¼ ë¦¬ìŠ¤íŠ¸ ë³´ê´€
         public bool TryAddGiftToFirstEmpty(Sprite giftSprite)
         {
         if (giftSprite == null) return false;
@@ -72,15 +88,15 @@ public class DefaultGroupUI : MonoBehaviour
             Image slot = giftSlot[i];
             if (slot == null) continue;
 
-            // ºóÄ­ ±âÁØ: sprite°¡ null
+            // ë¹ˆì¹¸ ê¸°ì¤€: spriteê°€ null
             if (slot.sprite == null)
             {
                 slot.sprite = giftSprite;
-                slot.enabled = true;  // È¤½Ã ºñÈ°¼º/¼û±èÀÌ¸é ÄÑÁÖ±â
-                slot.color = Color.white; // ¾ËÆÄ 0À¸·Î ÇØ³ù´ø °æ¿ì ´ëºñ
+                slot.enabled = true;  // í˜¹ì‹œ ë¹„í™œì„±/ìˆ¨ê¹€ì´ë©´ ì¼œì£¼ê¸°
+                slot.color = Color.white; // ì•ŒíŒŒ 0ìœ¼ë¡œ í•´ë†¨ë˜ ê²½ìš° ëŒ€ë¹„
                 return true;
             }
         }
-        return false; // ºóÄ­ ¾øÀ½
+        return false; // ë¹ˆì¹¸ ì—†ìŒ
     }
 }

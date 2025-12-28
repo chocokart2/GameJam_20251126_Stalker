@@ -29,6 +29,8 @@ public class DeathUIController : MonoBehaviour
 
     private void GoTitle()
     {
+        SoundManager.Instance.StopBgm();
+        SoundManager.Instance.PlayBgm("MainMenu");
         SceneManager.LoadScene(titleSceneName);
     }
 }

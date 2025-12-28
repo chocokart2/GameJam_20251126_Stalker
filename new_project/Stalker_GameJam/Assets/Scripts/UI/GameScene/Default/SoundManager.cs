@@ -68,6 +68,12 @@ public class SoundManager : MonoBehaviour
         else Debug.LogWarning($"BGM ¸øÃ£À½: {name}");
     }
 
+    public void StopBgm()
+    {
+        bgmSource.Stop();
+        bgmSource.clip = null;
+    }
+
     public void PlaySfx(string name)
     {
         if (soundDict.TryGetValue(name, out AudioClip clip))
